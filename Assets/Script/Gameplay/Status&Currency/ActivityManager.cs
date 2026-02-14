@@ -5,7 +5,8 @@ public class ActivityManager : MonoBehaviour
 {
     public static ActivityManager instance;
 
-    public List<activitySO> activities = new List<activitySO>();
+    [SerializeField] private List<ActivitySO> _activities = new List<ActivitySO>();
+    [SerializeField] private int _indexActivity;
 
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class ActivityManager : MonoBehaviour
 
     public void ActiveActivity()
     {
-        StatusManager.instance.CalculatEffects(activities);
+        StatusManager.instance.CalculatEffects(_activities[_indexActivity]);
+        PerkManager.instance.UpdatePerk(_activities[_indexActivity]);
     }
 }

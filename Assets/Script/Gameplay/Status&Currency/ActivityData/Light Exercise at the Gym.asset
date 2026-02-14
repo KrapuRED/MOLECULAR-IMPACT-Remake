@@ -10,14 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 798dbd99609cdf0419ac90613379e654, type: 3}
-  m_Name: activity
+  m_Name: Light Exercise at the Gym
   m_EditorClassIdentifier: 
-  activityName: 0
+  activityID: Activity_Light_Exercise_at_the_Gym
+  activityName: Light Exercise at the Gym
   activityType: 1
   benefits:
   - status: 0
-    valueBenefit: 10
-  - status: 3
+    valueBenefit: 5
+  - status: 2
     valueBenefit: 40
   - status: 4
-    valueBenefit: 0
+    valueBenefit: -25
+  perkStatus:
+  - perkName: Fitness Enthusiast
+    perkPoint: 1
+  - perkName: Disciplined
+    perkPoint: 1
+  - perkName: Endorphin Boost
+    perkPoint: 1

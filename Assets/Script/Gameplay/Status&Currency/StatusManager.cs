@@ -25,44 +25,34 @@ public class StatusManager : MonoBehaviour
     }
 
     //TO CALCULATE EFFECTS FOR STATUS AND CURRENCY
-    public void CalculatEffects(List<activitySO> activitys)
+    public void CalculatEffects(ActivitySO activity)
     {
-        foreach (var activity in activitys)
+        for (int i = 0; i < activity.benefits.Length; i++)
         {
-            //Check the activity have benefit or not
-            if (activity.benefits.Length < 0)
+            switch (activity.benefits[i].status)
             {
-                Debug.Log($"this {activity.activityName} is not have any benefit");
-                continue;
-            }
-
-            for (int i = 0; i < activity.benefits.Length; i++)
-            {
-                switch (activity.benefits[i].status)
-                {
-                    case Status.Happiness:
-                        Debug.Log($"{activity.activityName} is giving Happiness {activity.benefits[i].valueBenefit}");
-                        _statusHappiness += activity.benefits[i].valueBenefit;
-                        continue;
-                    case Status.Fitness:
-                        Debug.Log($"{activity.activityName} is giving Fitness {activity.benefits[i].valueBenefit}");
-                        _statusFitness += activity.benefits[i].valueBenefit;
-                        continue;
-                    case Status.Intelligence:
-                        Debug.Log($"{activity.activityName} is giving Intelligence {activity.benefits[i].valueBenefit}");
-                        _statusIntelligence += activity.benefits[i].valueBenefit;
-                        continue;
-                    case Status.Social:
-                        _statusSocial += activity.benefits[i].valueBenefit;
-                        Debug.Log($"{activity.activityName} is giving Social {activity.benefits[i].valueBenefit}");
-                        continue;
-                    case Status.Currency:
-                        Debug.Log($"{activity.activityName} is giving Currency {activity.benefits[i].valueBenefit}");
-                        _statusCurrency += activity.benefits[i].valueBenefit;
-                        break;
-                    default:
-                        break;
-                }
+                case Status.Happiness:
+                    //Debug.Log($"{activity.activityName} is giving Happiness {activity.benefits[i].valueBenefit}");
+                    _statusHappiness += activity.benefits[i].valueBenefit;
+                    continue;
+                case Status.Fitness:
+                    //Debug.Log($"{activity.activityName} is giving Fitness {activity.benefits[i].valueBenefit}");
+                    _statusFitness += activity.benefits[i].valueBenefit;
+                    continue;
+                case Status.Intelligence:
+                    //Debug.Log($"{activity.activityName} is giving Intelligence {activity.benefits[i].valueBenefit}");
+                    _statusIntelligence += activity.benefits[i].valueBenefit;
+                    continue;
+                case Status.Social:
+                    //Debug.Log($"{activity.activityName} is giving Social {activity.benefits[i].valueBenefit}");
+                    _statusSocial += activity.benefits[i].valueBenefit;
+                    continue;
+                case Status.Currency:
+                    //Debug.Log($"{activity.activityName} is giving Currency {activity.benefits[i].valueBenefit}");
+                    _statusCurrency += activity.benefits[i].valueBenefit;
+                    break;
+                default:
+                    break;
             }
         }
     }

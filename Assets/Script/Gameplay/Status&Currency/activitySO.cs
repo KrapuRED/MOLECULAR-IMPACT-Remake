@@ -1,10 +1,5 @@
 using UnityEngine;
 
-public enum ActivityName
-{
-    LightBookReading
-}
-
 public enum ActivityType
 {
     None,
@@ -21,12 +16,13 @@ public enum Status
     Currency
 }
 
-
-[CreateAssetMenu(fileName = "activity", menuName = "activity card/activity")]
-public class activitySO : ScriptableObject
+[CreateAssetMenu(fileName = "activityData", menuName = "Game Data/activitySO")]
+public class ActivitySO : ScriptableObject
 {
-    public ActivityName activityName;
+    public string activityID;
+    public string activityName;
     public ActivityType activityType;
+
 
     [System.Serializable]
     public class Benefit
@@ -35,4 +31,7 @@ public class activitySO : ScriptableObject
         public int valueBenefit;
     }
     public Benefit[] benefits;
+
+    [Header("Perks")]
+    public PerkStatus[] perkStatus;
 }
