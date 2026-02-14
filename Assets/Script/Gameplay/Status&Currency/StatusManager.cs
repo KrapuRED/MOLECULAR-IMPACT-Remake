@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class StatusManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class StatusManager : MonoBehaviour
     [Range(0, 100)]
     [SerializeField] private float ststusIntelligence;
     [SerializeField] private int currency;
+
+    [Header("Activity Status")]
+    public List<activitySO> activitys;
 
     //TO CALCULATE EFFECTS FOR STATUS AND CURRENCY
     public void CallculaterEffects()
