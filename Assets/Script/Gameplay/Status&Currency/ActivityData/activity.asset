@@ -15,5 +15,9 @@ MonoBehaviour:
   activityName: 0
   activityType: 1
   benefits:
+  - status: 0
+    valueBenefit: 10
   - status: 3
     valueBenefit: 40
+  - status: 4
+    valueBenefit: 0
