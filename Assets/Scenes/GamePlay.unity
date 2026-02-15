@@ -201,7 +201,7 @@ MonoBehaviour:
   _statusSocial: 0
   _statusFitness: 0
   _statusIntelligence: 0
-  _statusCurrency: 0
+  _statusCurrency: 120
 --- !u!4 &605567670
 Transform:
   m_ObjectHideFlags: 0
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _activities:
-  - {fileID: 11400000, guid: 8586080790763994e88bd815811d79ec, type: 2}
+  - {fileID: 11400000, guid: d0d1c1b41c2549443bbb2ec94dc980b2, type: 2}
   _indexActivity: 0
 --- !u!4 &808394037
 Transform:
@@ -446,44 +446,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c59875939b76c249850dd77629bbe7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  perkStatus:
-  - perkName: Fitness Enthusiast
-    perkPoint: 0
-  - perkName: Endorphin Boost
-    perkPoint: 0
-  - perkName: Disciplined
-    perkPoint: 0
-  - perkName: High Literacy
-    perkPoint: 19
-  - perkName: Intellectual
-    perkPoint: 0
-  - perkName: Critical Thinker
-    perkPoint: 0
-  - perkName: Social Butterfly
-    perkPoint: 0
-  - perkName: Charismatic
-    perkPoint: 0
-  - perkName: Circle
-    perkPoint: 0
-  - perkName: Gambling Addiction
-    perkPoint: 0
-  - perkName: Financial Ruin
-    perkPoint: 0
-  - perkName: Gambling Compulsive
-    perkPoint: 0
-  - perkName: Stressed
-    perkPoint: 0
-  - perkName: Alcohol Addiction
-    perkPoint: 0
-  - perkName: Hangover
-    perkPoint: 0
+  perkStatus: []
   perkDatas:
   - perkData: {fileID: 11400000, guid: 2b98ee5191e941b43bcd8b522de78996, type: 2}
     isActive: 0
-    duration: 0
-  perkPermanentDatas: []
-  perkCommitmentDatas: []
-  perkTemporyDatas: []
+  - perkData: {fileID: 11400000, guid: 5a4e228d75d96b14e9d79cbc1b7ab593, type: 2}
+    isActive: 0
+  - perkData: {fileID: 11400000, guid: a13a5f50dababa6428ebc0752e96d097, type: 2}
+    isActive: 0
+  - perkData: {fileID: 11400000, guid: f432765c81100124c8bff6a4035ac09e, type: 2}
+    isActive: 0
+  - perkData: {fileID: 11400000, guid: 6910254833719484fbbd1c6116ed5a9c, type: 2}
+    isActive: 0
+  - perkData: {fileID: 11400000, guid: 999b0814005f8154f9d153624cd09c25, type: 2}
+    isActive: 0
+  - perkData: {fileID: 11400000, guid: 040363c90f18489468b467033b5abc59, type: 2}
+    isActive: 0
+  - perkData: {fileID: 11400000, guid: af0c74921b8cd7a4fb3d36ee3081d651, type: 2}
+    isActive: 0
+  - perkData: {fileID: 11400000, guid: 099ab81ea23a9b8449976884693704bc, type: 2}
+    isActive: 0
+  - perkData: {fileID: 11400000, guid: 6485ed376b1ff104e97614788e9987c8, type: 2}
+    isActive: 0
+  - perkData: {fileID: 11400000, guid: f34805cf84a392e48a4e7ef3a4c44693, type: 2}
+    isActive: 0
+  - perkData: {fileID: 11400000, guid: 8ea9fe77e1bf3c14f8c1eb3cb6b19f2d, type: 2}
+    isActive: 0
+  - perkData: {fileID: 11400000, guid: ccf1f45973175f84baf817c669c29b8f, type: 2}
+    isActive: 0
+  - perkData: {fileID: 11400000, guid: 13d934bc549b7de4cad3afe51cfbaf07, type: 2}
+    isActive: 0
+  - perkData: {fileID: 11400000, guid: a2a74bcd557242a4a8fcc5248667dd40, type: 2}
+    isActive: 0
+  _perkPermanentDatas: []
+  _perkCommitmentDatas: []
+  _perkTemporaryDatas: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

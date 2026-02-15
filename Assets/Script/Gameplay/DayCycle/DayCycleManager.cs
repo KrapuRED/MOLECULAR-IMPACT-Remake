@@ -30,6 +30,7 @@ public class DayCycleManager : MonoBehaviour
     public WeekType weekType => _weekType;
     [SerializeField] private int _dayCount;
     [SerializeField] private int _weekCount;
+    public int weekCount => _weekCount;
 
     private void Awake()
     {
@@ -46,7 +47,7 @@ public class DayCycleManager : MonoBehaviour
 
         //get the _startDay by day count
         _currentDay = _startDay = (Days)_dayCount;
-
+        StartCoroutine(TestDayCycle());
     }
 
     private void NextDay()
@@ -63,7 +64,12 @@ public class DayCycleManager : MonoBehaviour
 
         //count week
         if (indexDay == 0)
+        {
             _weekCount++;
+            PerkManager.instance.CheckDurationTemporaryPerk();
+        }
+
+        StartCoroutine(TestDayCycle());
     }
 
     private IEnumerator TestDayCycle()

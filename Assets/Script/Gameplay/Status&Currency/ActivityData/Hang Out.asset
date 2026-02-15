@@ -10,25 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 798dbd99609cdf0419ac90613379e654, type: 3}
-  m_Name: Light Exercise at the Gym
+  m_Name: Hang Out
   m_EditorClassIdentifier: 
-  activityID: activity_light_exercise
-  activityName: Light Exercise at the Gym
+  activityID: activity_hang_out
+  activityName: Hang Out
   activityType: 1
   benefits:
   - status: 0
-    valueBenefit: 5
-  - status: 2
-    valueBenefit: 40
+    valueBenefit: 10
+  - status: 1
+    valueBenefit: 30
   - status: 4
-    valueBenefit: -25
+    valueBenefit: -100
   perkStatus:
-  - perkName: Fitness Enthusiast
-    perkID: perk_fitness_enthusiast
+  - perkName: Social Butterfly
+    perkID: perk_social_butterfly
     perkPoint: 1
-  - perkName: Disciplined
-    perkID: perk_disciplined
+  - perkName: Charismatic
+    perkID: perk_charismatic
     perkPoint: 1
-  - perkName: Endorphin Boost
-    perkID: perk_endorphin_boost
-    perkPoint: 1
+  - perkName: Circle
+    perkID: perk_circle
+    perkPoint: 0
+  - perkName: Stressed
+    perkID: perk_stressed
+    perkPoint: -1

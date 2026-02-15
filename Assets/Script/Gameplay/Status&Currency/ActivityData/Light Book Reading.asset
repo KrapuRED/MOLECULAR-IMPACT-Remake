@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Light Book Reading
   m_EditorClassIdentifier: Assembly-CSharp::ActivitySO
-  activityID: Activity_Light_Book_Reading
+  activityID: activity_light_book_reading
   activityName: Light Book Reading
   activityType: 1
   benefits:
@@ -20,8 +20,11 @@ MonoBehaviour:
     valueBenefit: 40
   perkStatus:
   - perkName: High Literacy
+    perkID: perk_permanent_High_Literacy
     perkPoint: 1
   - perkName: Intellectual
+    perkID: perk_intellectual
     perkPoint: 1
   - perkName: Critical Thinker
+    perkID: perk_critical _thinker
     perkPoint: 1

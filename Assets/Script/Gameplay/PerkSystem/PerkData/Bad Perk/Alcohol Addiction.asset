@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 047df06ce528f284e9eacc5e65f9d339, type: 3}
-  m_Name: High Literacy
+  m_Name: Alcohol Addiction
   m_EditorClassIdentifier: 
-  perkID: perk_permanent_High_Literacy
-  perkName: High Literacy
+  perkID: perk_alcohol_addiction
+  perkName: Alcohol Addiction
   perkDescription: 
-  perkRequirement: 20
-  perkType: 1
+  perkRequirement: 10
+  perkType: 2
   perkDuration: 1
-  perkEffect:
-  - effectName: 
-    effectValue: 0
+  perkEffect: []

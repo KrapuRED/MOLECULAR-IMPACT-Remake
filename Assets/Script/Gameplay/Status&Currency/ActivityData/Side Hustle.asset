@@ -10,25 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 798dbd99609cdf0419ac90613379e654, type: 3}
-  m_Name: Light Exercise at the Gym
+  m_Name: Side Hustle
   m_EditorClassIdentifier: 
-  activityID: activity_light_exercise
-  activityName: Light Exercise at the Gym
+  activityID: activity_side_hustle
+  activityName: Side Hustle
   activityType: 1
   benefits:
   - status: 0
-    valueBenefit: 5
+    valueBenefit: -15
   - status: 2
-    valueBenefit: 40
+    valueBenefit: 5
   - status: 4
-    valueBenefit: -25
+    valueBenefit: 120
   perkStatus:
-  - perkName: Fitness Enthusiast
-    perkID: perk_fitness_enthusiast
-    perkPoint: 1
-  - perkName: Disciplined
-    perkID: perk_disciplined
-    perkPoint: 1
-  - perkName: Endorphin Boost
-    perkID: perk_endorphin_boost
+  - perkName: Stressed
+    perkID: perk_stressed
     perkPoint: 1

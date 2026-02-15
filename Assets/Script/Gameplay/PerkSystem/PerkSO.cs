@@ -34,6 +34,7 @@ public class PerkSO : ScriptableObject
     public int perkRequirement;
     public PerkType perkType;
     public PerkDuration perkDuration;
+    public int longDuration;
 
     public PerkEffect[] perkEffect;
 }
