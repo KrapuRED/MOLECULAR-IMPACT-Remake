@@ -152,7 +152,7 @@ public class PerkManager : MonoBehaviour
                 Debug.LogError($"There no {activityData.perkStatus[i].perkID} inside of Perk Status Dictionary!");
             }
         }
-        TestDictionary();
+        //TestDictionary();
     }
 
     /* Summary CheckPerkRequirement

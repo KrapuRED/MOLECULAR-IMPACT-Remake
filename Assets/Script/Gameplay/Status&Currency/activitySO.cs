@@ -21,6 +21,7 @@ public class ActivitySO : ScriptableObject
 {
     public string activityID;
     public string activityName;
+    public Sprite activityIcon;
     public ActivityType activityType;
 
 

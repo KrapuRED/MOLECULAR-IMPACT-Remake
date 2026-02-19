@@ -9,6 +9,7 @@ public enum Days
     Thursday ,
     Friday ,
     Saturday,
+    Sunday,
     COUNT
 }
 
@@ -25,12 +26,16 @@ public class DayCycleManager : MonoBehaviour
     [Header("status week and day")]
     [SerializeField] private Days _startDay;
     [SerializeField] private Days _currentDay;
-    public Days currenData => _currentDay;
     [SerializeField] private WeekType _weekType;
-    public WeekType weekType => _weekType;
     [SerializeField] private int _dayCount;
     [SerializeField] private int _weekCount;
+
+    public WeekType weekType => _weekType;
+    public Days currenData => _currentDay;
     public int weekCount => _weekCount;
+
+    [Header("Events")]
+    public UpdateWeekCountEventSO updateWeekCountEvent;
 
     private void Awake()
     {
@@ -47,7 +52,8 @@ public class DayCycleManager : MonoBehaviour
 
         //get the _startDay by day count
         _currentDay = _startDay = (Days)_dayCount;
-        StartCoroutine(TestDayCycle());
+        UpdateUI();
+        //StartCoroutine(TestDayCycle());
     }
 
     private void NextDay()
@@ -57,7 +63,7 @@ public class DayCycleManager : MonoBehaviour
         _currentDay = (Days)indexDay;
 
         //To Change WeekType
-        if (_currentDay != Days.Saturday)
+        if (indexDay <= 4)
             _weekType = WeekType.weekDay;
         else
             _weekType = WeekType.weekEnd;
@@ -69,12 +75,18 @@ public class DayCycleManager : MonoBehaviour
             PerkManager.instance.CheckDurationTemporaryPerk();
         }
 
-        StartCoroutine(TestDayCycle());
+        UpdateUI();
+        //StartCoroutine(TestDayCycle());
     }
 
     private IEnumerator TestDayCycle()
     {
         yield return new WaitForSeconds(2.5f);
         NextDay();
+    }
+
+    public void UpdateUI()
+    {
+        updateWeekCountEvent.RaiseEvent(_weekCount);
     }
 }

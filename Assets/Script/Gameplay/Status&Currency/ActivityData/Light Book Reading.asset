@@ -9,22 +9,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 798dbd99609cdf0419ac90613379e654, type: 3}
   m_Name: Light Book Reading
   m_EditorClassIdentifier: Assembly-CSharp::ActivitySO
-  activityID: activity_light_book_reading
+  activityID: activity_Light_Book_Reading
   activityName: Light Book Reading
+  activityIcon: {fileID: 9128663351278669249, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
   activityType: 1
   benefits:
   - status: 3
     valueBenefit: 40
   perkStatus:
-  - perkName: High Literacy
-    perkID: perk_permanent_High_Literacy
+  - perkName: High_Literacy
+    perkID: perk_high_literacy
     perkPoint: 1
   - perkName: Intellectual
     perkID: perk_intellectual
     perkPoint: 1
-  - perkName: Critical Thinker
+  - perkName: critical _thinker
     perkID: perk_critical _thinker
     perkPoint: 1

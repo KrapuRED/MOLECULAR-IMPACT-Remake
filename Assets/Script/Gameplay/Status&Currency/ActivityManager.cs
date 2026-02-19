@@ -23,6 +23,12 @@ public class ActivityManager : MonoBehaviour
 
     public void ActiveActivity()
     {
+        if (_activities.Count <= 0)
+        {
+            Debug.LogWarning("There are no activities on ActivityManager");
+            return;
+        }
+
         StatusManager.instance.CalculatEffects(_activities[_indexActivity]);
         PerkManager.instance.UpdatePerk(_activities[_indexActivity]);
     }

@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 047df06ce528f284e9eacc5e65f9d339, type: 3}
-  m_Name: Social Butterfly
+  m_Name: Intellectual
   m_EditorClassIdentifier: 
-  perkID: perk_social_butterfly
-  perkName: Social Butterfly
+  perkID: perk_intellectual
+  perkName: Intellectual
   perkDescription: 
-  perkRequirement: 10
+  perkRequirement: 25
   perkType: 1
-  perkDuration: 2
+  perkDuration: 1
+  longDuration: 0
   perkEffect: []
