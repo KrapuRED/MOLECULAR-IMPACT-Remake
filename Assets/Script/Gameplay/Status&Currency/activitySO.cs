@@ -16,7 +16,7 @@ public enum Status
     Currency
 }
 
-[CreateAssetMenu(fileName = "activityData", menuName = "Game Data/activitySO")]
+[CreateAssetMenu(fileName = "_activityData", menuName = "Game Data/activitySO")]
 public class ActivitySO : ScriptableObject
 {
     public string activityID;
