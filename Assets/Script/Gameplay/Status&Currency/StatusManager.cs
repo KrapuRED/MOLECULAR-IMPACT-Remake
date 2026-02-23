@@ -27,6 +27,11 @@ public class StatusManager : MonoBehaviour
             Destroy(gameObject);
     }
 
+    private void Start()
+    {
+        UpdateUI();
+    }
+
     //TO CALCULATE EFFECTS FOR STATUS AND CURRENCY
     public void CalculatEffects(ActivitySO activity)
     {
