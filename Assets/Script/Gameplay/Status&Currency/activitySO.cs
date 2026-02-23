@@ -7,13 +7,11 @@ public enum ActivityType
     Bad
 }
 
-public enum Status
+[System.Serializable]
+public class Benefit
 {
-    Happiness,
-    Social,
-    Fitness,
-    Intelligence,
-    Currency
+    public StatusSO statusData;
+    public float valueBenefit;
 }
 
 [CreateAssetMenu(fileName = "_activityData", menuName = "Game Data/activitySO")]
@@ -24,13 +22,6 @@ public class ActivitySO : ScriptableObject
     public Sprite activityIcon;
     public ActivityType activityType;
 
-
-    [System.Serializable]
-    public class Benefit
-    {
-        public Status status;
-        public int valueBenefit;
-    }
     public Benefit[] benefits;
 
     [Header("Perks")]

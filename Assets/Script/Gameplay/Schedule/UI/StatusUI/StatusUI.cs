@@ -1,16 +1,22 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class StatusUI : MonoBehaviour
 {
-    [SerializeField] private string _statusID;
-    [SerializeField] private TextMeshProUGUI nameStatusText;
-    [SerializeField] private TextMeshProUGUI valueStatusText;
-    [SerializeField] private Image iconStatusText;
 
-    private void UpdateStatusUI(string statusID, string statusName, int valueStatus)
+    public UpdateStatusNonCurrencyEventSO updateStatusNonCurrencyEvent;
+
+    public virtual void UpdateStatusUI(StatusSO statusData, float valueStatus)
     {
 
+    }
+
+    private void OnEnable()
+    {
+        updateStatusNonCurrencyEvent.Register(UpdateStatusUI);
+    }
+
+    private void OnDisable()
+    {
+        updateStatusNonCurrencyEvent.Unregister(UpdateStatusUI);
     }
 }

@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activityID: activity_light_exercise
   activityName: Light Exercise at the Gym
+  activityIcon: {fileID: 0}
   activityType: 1
   benefits:
-  - status: 0
+  - statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
     valueBenefit: 5
-  - status: 2
+  - statusData: {fileID: 11400000, guid: 1c1cd316b8501f6448aedb0a0c80f19c, type: 2}
     valueBenefit: 40
-  - status: 4
+  - statusData: {fileID: 11400000, guid: 94e09528bf5b5224ea6ee321b0edbae0, type: 2}
     valueBenefit: -25
   perkStatus:
   - perkName: Fitness Enthusiast

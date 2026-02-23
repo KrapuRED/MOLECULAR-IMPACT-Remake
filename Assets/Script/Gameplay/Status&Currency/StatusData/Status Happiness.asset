@@ -9,14 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 798dbd99609cdf0419ac90613379e654, type: 3}
-  m_Name: Test-Perk
+  m_Script: {fileID: 11500000, guid: b73f7fc6d37319d49b4be7b7c6e3fb3b, type: 3}
+  m_Name: Status Happiness
   m_EditorClassIdentifier: 
-  activityID: 
-  activityName: 
-  activityType: 0
-  benefits: []
-  perkStatus:
-  - perkName: endorphin_boost
-    perkID: perk_endorphin_boost
-    perkPoint: 25
+  statusID: status_happiness
+  statusName: Happiness
+  statusIcon: {fileID: 0}

@@ -19,6 +19,7 @@ public enum PerkDuration
 public class PerkEffect
 {
     public string effectName;
+    public StatusSO statusData;
     public int effectValue;
 }
 

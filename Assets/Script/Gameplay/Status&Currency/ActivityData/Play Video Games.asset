@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activityID: activity_play_video_games
   activityName: Play Video Games
+  activityIcon: {fileID: 0}
   activityType: 1
   benefits:
-  - status: 0
+  - statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
     valueBenefit: 15
-  - status: 1
+  - statusData: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
     valueBenefit: 5
-  - status: 3
+  - statusData: {fileID: 11400000, guid: a2aa9485e610cba45a1e678ec3631661, type: 2}
     valueBenefit: 5
   perkStatus:
   - perkName: Stressed

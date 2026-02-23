@@ -10,21 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 798dbd99609cdf0419ac90613379e654, type: 3}
-  m_Name: Try Online Gambling
+  m_Name: Test-Activity 1
   m_EditorClassIdentifier: 
-  activityID: activity_try_online_gambling
-  activityName: Try Online Gambling
+  activityID: activity_test_2
+  activityName: Test Activiy 2
   activityIcon: {fileID: 0}
-  activityType: 2
+  activityType: 0
   benefits:
-  - statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
-    valueBenefit: 20
   - statusData: {fileID: 11400000, guid: 94e09528bf5b5224ea6ee321b0edbae0, type: 2}
-    valueBenefit: -100
-  perkStatus:
-  - perkName: Gambling Addiction
-    perkID: perl_gambling_addiction
-    perkPoint: 1
-  - perkName: Gambling Compulsive
-    perkID: perk_gambling_compulsive
-    perkPoint: 1
+    valueBenefit: 10
+  perkStatus: []

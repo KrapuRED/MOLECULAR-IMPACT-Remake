@@ -45,7 +45,7 @@ public class ActivityCardUI : MonoBehaviour
         for (int i = 0; i < _activityData.benefits.Length; i++)
         {
             _benefits[i].gameObject.SetActive(true);
-            _benefits[i].SetActivityCardBenefitUI(_activityData.benefits[i].status.ToString(),
+            _benefits[i].SetActivityCardBenefitUI(_activityData.benefits[i].statusData.statusName,
                                                   _activityData.benefits[i].valueBenefit.ToString());
         }
     }

@@ -14,6 +14,7 @@ public class ScheduleManager : MonoBehaviour
     [SerializeField] private int _maxActivities;
     [SerializeField] private Transform _containerSelectedActivities;
     [SerializeField] private List<ActivitySO> _selectedActivityDatas = new List<ActivitySO>();
+    public int totalSelectedActivities => _selectedActivityDatas.Count;
     [SerializeField] private GenerateSelectedActivityCardUI _generateSelectedActivityCardUI;
 
     [Header("Events")]

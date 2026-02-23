@@ -17,7 +17,7 @@ MonoBehaviour:
   activityIcon: {fileID: 9128663351278669249, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
   activityType: 1
   benefits:
-  - status: 3
+  - statusData: {fileID: 11400000, guid: a2aa9485e610cba45a1e678ec3631661, type: 2}
     valueBenefit: 40
   perkStatus:
   - perkName: High_Literacy

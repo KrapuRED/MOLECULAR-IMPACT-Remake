@@ -18,4 +18,8 @@ MonoBehaviour:
   perkRequirement: 15
   perkType: 1
   perkDuration: 1
-  perkEffect: []
+  longDuration: 0
+  perkEffect:
+  - effectName: 
+    statusData: {fileID: 0}
+    effectValue: 0

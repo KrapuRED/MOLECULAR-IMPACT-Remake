@@ -19,4 +19,7 @@ MonoBehaviour:
   perkType: 1
   perkDuration: 1
   longDuration: 0
-  perkEffect: []
+  perkEffect:
+  - effectName: 20% Increase in Money Earn.
+    statusData: {fileID: 11400000, guid: 94e09528bf5b5224ea6ee321b0edbae0, type: 2}
+    effectValue: 20

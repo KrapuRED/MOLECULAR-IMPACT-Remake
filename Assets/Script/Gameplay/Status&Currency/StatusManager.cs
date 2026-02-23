@@ -1,23 +1,24 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+[System.Serializable]
+public class PlayerStatus
+{
+    public StatusSO statusData;
+    [Range(0, 100)]
+    public float statusValue;
+}
+
 public class StatusManager : MonoBehaviour
 {
     public static StatusManager instance;
 
-    [Header("Status")]
-    [Range(0, 100)]
-    [SerializeField] private float _statusHappiness;
-    [Range(0, 100)]
-    [SerializeField] private float _statusSocial;
-    [Range(0, 100)]
-    [SerializeField] private float _statusFitness;
-    [Range(0, 100)]
-    [SerializeField] private float _statusIntelligence;
-    [SerializeField] private int _statusCurrency;
+    [Header("Status Config")]
+    [SerializeField]
+    private List<PlayerStatus> _status = new List<PlayerStatus>();
 
     [Header("Events")]
-    [SerializeField] private UpdateStatusCurrencyEventSO _updateStatusCurrencyUI;
+    [SerializeField] private UpdateStatusNonCurrencyEventSO _updateStatusNonCurrencyUI;
 
     private void Awake()
     {
@@ -33,40 +34,31 @@ public class StatusManager : MonoBehaviour
     }
 
     //TO CALCULATE EFFECTS FOR STATUS AND CURRENCY
-    public void CalculatEffects(ActivitySO activity)
+    public void CalculatBenefitToStatus(ActivitySO activity)
     {
-        for (int i = 0; i < activity.benefits.Length; i++)
+       foreach (var benefit in activity.benefits)
         {
-            switch (activity.benefits[i].status)
+            var statusBenefit = _status.Find(s => s.statusData.statusID == benefit.statusData.statusID);
+
+            if (statusBenefit != null)
             {
-                case Status.Happiness:
-                    //Debug.Log($"{activity.activityName} is giving Happiness {activity.benefits[i].valueBenefit}");
-                    _statusHappiness += activity.benefits[i].valueBenefit;
-                    continue;
-                case Status.Fitness:
-                    //Debug.Log($"{activity.activityName} is giving Fitness {activity.benefits[i].valueBenefit}");
-                    _statusFitness += activity.benefits[i].valueBenefit;
-                    continue;
-                case Status.Intelligence:
-                    //Debug.Log($"{activity.activityName} is giving Intelligence {activity.benefits[i].valueBenefit}");
-                    _statusIntelligence += activity.benefits[i].valueBenefit;
-                    continue;
-                case Status.Social:
-                    //Debug.Log($"{activity.activityName} is giving Social {activity.benefits[i].valueBenefit}");
-                    _statusSocial += activity.benefits[i].valueBenefit;
-                    continue;
-                case Status.Currency:
-                    //Debug.Log($"{activity.activityName} is giving Currency {activity.benefits[i].valueBenefit}");
-                    _statusCurrency += activity.benefits[i].valueBenefit;
-                    break;
-                default:
-                    break;
+                if (benefit.statusData.statusType == StatusType.Non_Currency)
+                    statusBenefit.statusValue += benefit.valueBenefit;
+                else
+                    CurrencyManager.instance.UpdateCurrency(benefit.valueBenefit);
+            }
+            else
+            {
+                Debug.LogWarning($"Status {benefit.statusData.name} not found in player status list.");
             }
         }
     }
 
     public void UpdateUI()
     {
-        _updateStatusCurrencyUI.OnRiase(_statusCurrency);
+        foreach (var status in _status)
+        {
+            _updateStatusNonCurrencyUI.OnRaise(status.statusData, status.statusValue);
+        }
     }
 }

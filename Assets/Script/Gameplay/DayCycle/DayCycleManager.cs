@@ -53,7 +53,7 @@ public class DayCycleManager : MonoBehaviour
         //get the _startDay by day count
         _currentDay = _startDay = (Days)_dayCount;
         UpdateUI();
-        //StartCoroutine(TestDayCycle());
+        StartCoroutine(TestDayCycle());
     }
 
     private void NextDay()
@@ -75,8 +75,10 @@ public class DayCycleManager : MonoBehaviour
             PerkManager.instance.CheckDurationTemporaryPerk();
         }
 
+        ActivityManager.instance.ActiveActivity();
+
         UpdateUI();
-        //StartCoroutine(TestDayCycle());
+        StartCoroutine(TestDayCycle());
     }
 
     private IEnumerator TestDayCycle()

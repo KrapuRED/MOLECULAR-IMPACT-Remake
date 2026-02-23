@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activityID: activity_hang_out
   activityName: Hang Out
+  activityIcon: {fileID: 0}
   activityType: 1
   benefits:
-  - status: 0
+  - statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
     valueBenefit: 10
-  - status: 1
+  - statusData: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
     valueBenefit: 30
-  - status: 4
+  - statusData: {fileID: 11400000, guid: 94e09528bf5b5224ea6ee321b0edbae0, type: 2}
     valueBenefit: -100
   perkStatus:
   - perkName: Social Butterfly

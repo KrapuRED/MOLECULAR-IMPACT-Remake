@@ -28,8 +28,20 @@ public class ActivityManager : MonoBehaviour
             Debug.LogWarning("There are no activities on ActivityManager");
             return;
         }
+        if (_indexActivity >= _activities.Count)
+        {
+            Debug.Log($"Done with all activities!");
+            return;
+        }
+        if (_activities[_indexActivity] == null)
+        {
+            Debug.Log($"There are no activity on {_indexActivity}");
+            return;
+        }
 
-        StatusManager.instance.CalculatEffects(_activities[_indexActivity]);
+
+        StatusManager.instance.CalculatBenefitToStatus(_activities[_indexActivity]);
         PerkManager.instance.UpdatePerk(_activities[_indexActivity]);
+        _indexActivity++;
     }
 }

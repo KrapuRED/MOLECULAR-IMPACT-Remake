@@ -6,7 +6,7 @@ public class CurrencyUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI currencyValueText;
     public UpdateStatusCurrencyEventSO updateStatusCurrency;
 
-    public void UpdateCurrencyUI(int statusCurrency)
+    public void UpdateCurrencyUI(float statusCurrency)
     {
         currencyValueText.text = $"{statusCurrency}";
     }
