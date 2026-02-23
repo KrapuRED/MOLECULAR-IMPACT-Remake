@@ -9,18 +9,13 @@ public class ActivityCardUI : MonoBehaviour
     [Header("Benefit Config UI")]
     public Transform containerBenefitUI;
     [SerializeField] private ActivityCardBenefitUI[] _benefits;
-    [SerializeField] private bool _isSelected;
     
 
     [Header("Reference")]
     public TextMeshProUGUI nameActivityText;
     public Image iconActivityImg;
 
-    [Header("Events")]
-    public CancelSelectedActivityEventSO cancelSelectedActivityEvent;
-
     public ActivitySO activityData => _activityData;
-    public bool isSelected => _isSelected;
 
     private void Awake()
     {
@@ -53,26 +48,5 @@ public class ActivityCardUI : MonoBehaviour
             _benefits[i].SetActivityCardBenefitUI(_activityData.benefits[i].status.ToString(),
                                                   _activityData.benefits[i].valueBenefit.ToString());
         }
-    }
-
-    public void SelectedActivity()
-    {
-        _isSelected = true;
-    }
-
-    private void CancelSelectedActivity(ActivitySO activityData)
-    {
-        if (activityData == _activityData && _isSelected)
-            _isSelected = false;
-    }
-
-    private void OnEnable()
-    {
-        cancelSelectedActivityEvent.Register(CancelSelectedActivity);
-    }
-
-    private void OnDisable()
-    {
-        cancelSelectedActivityEvent.Unregister(CancelSelectedActivity);
     }
 }

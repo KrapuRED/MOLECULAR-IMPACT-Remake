@@ -16,6 +16,9 @@ public class StatusManager : MonoBehaviour
     [SerializeField] private float _statusIntelligence;
     [SerializeField] private int _statusCurrency;
 
+    [Header("Events")]
+    [SerializeField] private UpdateStatusCurrencyEventSO _updateStatusCurrencyUI;
+
     private void Awake()
     {
         if (instance == null)
@@ -55,5 +58,10 @@ public class StatusManager : MonoBehaviour
                     break;
             }
         }
+    }
+
+    public void UpdateUI()
+    {
+        _updateStatusCurrencyUI.OnRiase(_statusCurrency);
     }
 }

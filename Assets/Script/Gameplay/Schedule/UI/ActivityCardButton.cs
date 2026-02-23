@@ -6,10 +6,6 @@ public class ActivityCardButton : MonoBehaviour
 
     public void OnClickButton()
     {
-        if (!_activityCardUI.isSelected)
-        {
-            ScheduleManager.instance.AddSelectedActivity(_activityCardUI.activityData);
-            _activityCardUI.SelectedActivity();
-        }
+        ScheduleManager.instance.AddSelectedActivity(_activityCardUI.activityData.activityID);
     }
 }

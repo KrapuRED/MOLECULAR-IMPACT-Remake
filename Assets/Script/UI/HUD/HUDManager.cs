@@ -67,5 +67,6 @@ public class HUDManager : MonoBehaviour
     private void RefreshUI()
     {
         DayCycleManager.instance.UpdateUI();
+        StatusManager.instance.UpdateUI();
     }
 }

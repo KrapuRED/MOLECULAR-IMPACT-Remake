@@ -18,7 +18,6 @@ public class ScheduleManager : MonoBehaviour
 
     [Header("Events")]
     [SerializeField] private TotalActivitiesCountEventSO _totalActivitiesCountEvent;
-    [SerializeField] private CancelSelectedActivityEventSO _cancelSelectedActivityEvent;
 
     private void Awake()
     {
@@ -42,15 +41,30 @@ public class ScheduleManager : MonoBehaviour
         }
     }
 
+    private ActivitySO ActivityDataByID(string activityID)
+    {
+        for(int i = 0;  i < _activityDatas.Length; i++)
+        {
+            if (_activityDatas[i].activityID == activityID)
+            {
+                return _activityDatas[i];
+            }
+        }
+        return null;
+    }
+
     //Add Selected Activities to List
-    public void AddSelectedActivity(ActivitySO activityData)
+    public void AddSelectedActivity(string activityID)
     {
         if (_selectedActivityDatas.Count >= _maxActivities)
             return;
 
-        _selectedActivityDatas.Add(activityData);
+        //find the data by ID
+        ActivitySO selectedActivity = ActivityDataByID(activityID);
+
+        _selectedActivityDatas.Add(selectedActivity);
         //Generate Icon for Selected Activity
-        _generateSelectedActivityCardUI.GenerateSelectedActivityCard(activityData, _containerSelectedActivities);
+        _generateSelectedActivityCardUI.GenerateSelectedActivityCard(selectedActivity, _containerSelectedActivities);
         ScheduleManagerUpdateUI();
     }
 
@@ -62,8 +76,6 @@ public class ScheduleManager : MonoBehaviour
             if (_selectedActivityDatas[i].activityID == activityData.activityID)
             {
                 _selectedActivityDatas.RemoveAt(i);
-                //call event to that card is able to pick again
-                _cancelSelectedActivityEvent.OnRaise(activityData);
                 ScheduleManagerUpdateUI();
                 break;
             }
