@@ -19,6 +19,7 @@ public class StatusManager : MonoBehaviour
 
     [Header("Events")]
     [SerializeField] private UpdateStatusNonCurrencyEventSO _updateStatusNonCurrencyUI;
+    [SerializeField] private RefreshStatusUIEventSO _refreshStatusUI;
 
     private void Awake()
     {
@@ -60,5 +61,15 @@ public class StatusManager : MonoBehaviour
         {
             _updateStatusNonCurrencyUI.OnRaise(status.statusData, status.statusValue);
         }
+    }
+
+    private void OnEnable()
+    {
+        _refreshStatusUI.Register(UpdateUI);
+    }
+
+    private void OnDisable()
+    {
+        _refreshStatusUI.Unregister(UpdateUI);
     }
 }

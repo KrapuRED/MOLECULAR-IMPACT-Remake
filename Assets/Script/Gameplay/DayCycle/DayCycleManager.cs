@@ -36,6 +36,7 @@ public class DayCycleManager : MonoBehaviour
 
     [Header("Events")]
     public UpdateWeekCountEventSO updateWeekCountEvent;
+    [SerializeField] private RefreshStatusUIEventSO _refreshStatusUI;
 
     private void Awake()
     {
@@ -53,10 +54,10 @@ public class DayCycleManager : MonoBehaviour
         //get the _startDay by day count
         _currentDay = _startDay = (Days)_dayCount;
         UpdateUI();
-        StartCoroutine(TestDayCycle());
+        //StartCoroutine(TestDayCycle());
     }
 
-    private void NextDay()
+    public void NextDay()
     {
         _dayCount++;
         int indexDay = _dayCount % (int)Days.COUNT;
@@ -78,7 +79,7 @@ public class DayCycleManager : MonoBehaviour
         ActivityManager.instance.ActiveActivity();
 
         UpdateUI();
-        StartCoroutine(TestDayCycle());
+        //StartCoroutine(TestDayCycle());
     }
 
     private IEnumerator TestDayCycle()
@@ -90,5 +91,15 @@ public class DayCycleManager : MonoBehaviour
     public void UpdateUI()
     {
         updateWeekCountEvent.RaiseEvent(_weekCount);
+    }
+
+    private void OnEnable()
+    {
+        _refreshStatusUI.Register(UpdateUI);
+    }
+
+    private void OnDisable()
+    {
+        _refreshStatusUI.Unregister(UpdateUI);
     }
 }

@@ -9,8 +9,8 @@ public class HUD : MonoBehaviour
 
     }
 
-    public virtual void HidePanel(bool isOpen)
+    public virtual void HidePanel()
     {
-
+        gameObject.SetActive(false);
     }
 }

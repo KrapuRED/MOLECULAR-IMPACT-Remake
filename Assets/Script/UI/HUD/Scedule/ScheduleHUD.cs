@@ -1,14 +1,14 @@
 using UnityEngine;
 
-public class SceduleHUD : HUD
+public class ScheduleHUD : HUD
 {
     public override void ShowPanel(bool isOpen)
     {
         gameObject.SetActive(isOpen);
     }
 
-    public override void HidePanel(bool isOpen)
+    public override void HidePanel()
     {
-        gameObject.SetActive(isOpen);
+        gameObject.SetActive(false);
     }
 }

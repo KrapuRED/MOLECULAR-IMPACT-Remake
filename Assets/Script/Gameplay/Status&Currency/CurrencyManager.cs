@@ -10,6 +10,7 @@ public class CurrencyManager : MonoBehaviour
 
     [Header("Events")]
     [SerializeField] private UpdateStatusCurrencyEventSO _updateStatusCurrencyUI;
+    [SerializeField] private RefreshStatusUIEventSO _refreshStatusUI;
 
     private void Awake()
     {
@@ -41,5 +42,15 @@ public class CurrencyManager : MonoBehaviour
     public void UpdateUI()
     {
         _updateStatusCurrencyUI.OnRiase(_statusCurrency);
+    }
+
+    private void OnEnable()
+    {
+        _refreshStatusUI.Register(UpdateUI);
+    }
+
+    private void OnDisable()
+    {
+        _refreshStatusUI.Unregister(UpdateUI);
     }
 }
