@@ -92,22 +92,31 @@ public class PerkManager : MonoBehaviour
      */
     private void InitiliazePerk()
     {
-        // assign PerkStatus from perkDataSO
+        //Clear existing data
         _perkStatusDictionary.Clear();
         _perkStatus.Clear();
 
+        if (perkDatas == null || perkDatas.Length == 0)
+        {
+            Debug.LogWarning("Perk Data array is empty or null. No perks will be initialized.");
+            return;
+        }
+
         foreach (var perk in perkDatas)
         {
-            if  (perk.perkData == null)
+            if  (perk == null || perk.perkData == null)
             {
                 Debug.LogWarning("There are NULL in perk Data");
                 continue;
             }
 
-            PerkStatus newPerkStatus = new PerkStatus();
-            newPerkStatus.perkName = perk.perkData.perkName + " Status";
-            newPerkStatus.perkID = perk.perkData.perkID;
-            newPerkStatus.perkPoint = 0;
+            var newPerkStatus = new PerkStatus
+            {
+                perkName = perk.perkData.perkName,
+                perkID = perk.perkData.perkID,
+                perkPoint = 0
+            };
+            
             _perkStatus.Add(newPerkStatus);
         }
 
@@ -119,6 +128,7 @@ public class PerkManager : MonoBehaviour
                 _perkStatusDictionary.Add(perk.perkID, perk);
             }
         }
+
     }
 
     #region Perk System
@@ -165,7 +175,11 @@ public class PerkManager : MonoBehaviour
      */
     private void CheckPerkRequirement(string PerkID, int perkPoint)
     {
-        Debug.Log($"Check Requirement of {PerkID} with {perkPoint}");
+        Debug.Log($"Check Requirement of {PerkID} with {perkPoint} points");
+
+        if (!_perkStatusDictionary.TryGetValue(PerkID, out var pd) || pd == null)
+            return;
+
         for (int i = 0; i < perkDatas.Length; i++)
         {
             //Debug.Log($"{perkDatas[i].perkDataSO.PerkID} : {perkDatas[i].perkDataSO.perkRequirement}");
@@ -200,7 +214,7 @@ public class PerkManager : MonoBehaviour
     public void CheckDurationTemporaryPerk()
     {
         //Check indivudual Duration and indivudual temporary have diffrent start and end
-        Debug.Log("total _activePerkTemporaryDatas : " + _activePerkTemporaryDatas.Count);
+        //Debug.Log("total _activePerkTemporaryDatas : " + _activePerkTemporaryDatas.Count);
         for (int i = _activePerkTemporaryDatas.Count - 1; i >= 0; i--)
         {
             if (_activePerkTemporaryDatas[i] == null)
@@ -308,9 +322,34 @@ public class PerkManager : MonoBehaviour
         return totalModify;
     }
 
-    private void TestDictionary()
+    public void UpdeteUI()
     {
-        foreach (var perk in _perkStatusDictionary)
-            Debug.Log($"{perk.Key} : {perk.Value.perkPoint}");
+        List<PerkSO> pd = new List<PerkSO>();
+
+        foreach (var perk in _activePerkTemporaryDatas)
+        {
+            if (perk.perkData == null || !perk.isActive)
+            {
+                continue;
+            }
+            pd.Add(perk.perkData);
+        }
+
+        foreach(var perk in _activePerkPermanentDatas)
+        {
+            if (perk.perkData == null || !perk.isActive)
+            {
+                continue;
+            }
+            pd.Add(perk.perkData);
+        }
+
+        TestDictionary(pd);
+    }
+
+    private void TestDictionary(List<PerkSO> perkData)
+    {
+        foreach (var perk in perkData)
+            Debug.Log($"{perk.perkName}");
     }
 }

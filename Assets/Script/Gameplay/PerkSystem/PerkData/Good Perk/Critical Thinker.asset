@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perkID: perk_critical _thinker
   perkName: Critical Thinker
-  perkDescription: 
+  perkDescription: "\u201CYou question impulses and weigh consequences before acting.\u201D"
   perkRequirement: 10
   perkType: 1
   perkDuration: 2
+  longDuration: 0
   perkEffect: []

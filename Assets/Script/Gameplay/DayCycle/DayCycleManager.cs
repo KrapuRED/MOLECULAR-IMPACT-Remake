@@ -65,6 +65,8 @@ public class DayCycleManager : MonoBehaviour
         
         CheckWeekType();
 
+        //call event to contineue the activity
+
         UpdateUI();
         //StartCoroutine(TestDayCycle());
     }
