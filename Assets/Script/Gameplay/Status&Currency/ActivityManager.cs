@@ -18,7 +18,6 @@ public class ActivityManager : MonoBehaviour
 
     private void Start()
     {
-        ActiveActivity();
     }
 
     public void ActiveActivity()
@@ -43,5 +42,19 @@ public class ActivityManager : MonoBehaviour
         StatusManager.instance.CalculatBenefitToStatus(_activities[_indexActivity]);
         PerkManager.instance.UpdatePerk(_activities[_indexActivity]);
         _indexActivity++;
+    }
+
+    public void AddActivity(List<ActivitySO> activityDatas)
+    {
+        if (activityDatas == null || activityDatas.Count <= 0)
+        {
+            Debug.LogWarning("Trying to add null activity on ActivityManager");
+            return;
+        }
+
+        _activities.Clear();  
+
+        foreach (var activityData in activityDatas)
+            _activities.Add(activityData);
     }
 }

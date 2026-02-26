@@ -1056,11 +1056,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _activityData: {fileID: 0}
   containerBenefitUI: {fileID: 3731129109037634083}
-  _benefits: []
-  _isSelected: 0
+  _benefits:
+  - {fileID: 3212784819860620414}
+  - {fileID: 5765052667247837926}
+  - {fileID: 3263095165114221466}
+  - {fileID: 3365921734607949586}
   nameActivityText: {fileID: 7177513139351859132}
   iconActivityImg: {fileID: 8160786478599686145}
-  cancelSelectedActivityEvent: {fileID: 11400000, guid: 5eddd2042a6a0354cb4948c827154e64, type: 2}
 --- !u!114 &5684494666743904854
 MonoBehaviour:
   m_ObjectHideFlags: 0

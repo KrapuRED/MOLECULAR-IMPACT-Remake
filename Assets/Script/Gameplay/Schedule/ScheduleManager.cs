@@ -82,7 +82,10 @@ public class ScheduleManager : MonoBehaviour
         }
     }
 
-
+    public void ReadyActivity()
+    {
+        ActivityManager.instance.AddActivity(_selectedActivityDatas);
+    }
 
     public void ScheduleManagerUpdateUI()
     {

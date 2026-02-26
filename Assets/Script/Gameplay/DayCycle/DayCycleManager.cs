@@ -51,8 +51,10 @@ public class DayCycleManager : MonoBehaviour
         _dayCount = 0;
         _weekCount = 0;
 
-        //get the _startDay by day count
-        _currentDay = _startDay = (Days)_dayCount;
+        CheckWeekType();
+
+        //get the _currentDay by _startDay
+        _currentDay = _startDay;
         UpdateUI();
         //StartCoroutine(TestDayCycle());
     }
@@ -60,6 +62,15 @@ public class DayCycleManager : MonoBehaviour
     public void NextDay()
     {
         _dayCount++;
+        
+        CheckWeekType();
+
+        UpdateUI();
+        //StartCoroutine(TestDayCycle());
+    }
+
+    private void CheckWeekType()
+    {
         int indexDay = _dayCount % (int)Days.COUNT;
         _currentDay = (Days)indexDay;
 
@@ -75,11 +86,6 @@ public class DayCycleManager : MonoBehaviour
             _weekCount++;
             PerkManager.instance.CheckDurationTemporaryPerk();
         }
-
-        ActivityManager.instance.ActiveActivity();
-
-        UpdateUI();
-        //StartCoroutine(TestDayCycle());
     }
 
     private IEnumerator TestDayCycle()
