@@ -68,6 +68,8 @@ public class DayCycleManager : MonoBehaviour
         //call event to contineue the activity
 
         UpdateUI();
+
+        CheckEnding(); // Buat Pindah ke Ending Scene
         //StartCoroutine(TestDayCycle());
     }
 
@@ -109,5 +111,13 @@ public class DayCycleManager : MonoBehaviour
     private void OnDisable()
     {
         _refreshStatusUI.Unregister(UpdateUI);
+    }
+
+    private void CheckEnding()
+    {
+        if(_weekCount <= 10) return;
+
+        Debug.Log("Ending Time");
+        SceneController.instance.EndingScene();
     }
 }
