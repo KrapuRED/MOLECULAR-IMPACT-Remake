@@ -45,7 +45,7 @@ public class DialogueManager : MonoBehaviour
         DisplayNextDialogue();
     }
 
-    private void DisplayNextDialogue()
+    public void DisplayNextDialogue()
     {
         if (lines.Count == 0)
         {
