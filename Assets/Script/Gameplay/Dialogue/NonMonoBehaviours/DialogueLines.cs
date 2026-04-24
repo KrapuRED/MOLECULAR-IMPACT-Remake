@@ -1,9 +1,9 @@
 using UnityEngine;
 
 [System.Serializable]
-public class DialougeLines
+public class DialogueLines
 {
-    public DialougeCharacter character;
+    public DialogueCharacter character;
     [TextArea(3, 10)]
     public string line;
 }

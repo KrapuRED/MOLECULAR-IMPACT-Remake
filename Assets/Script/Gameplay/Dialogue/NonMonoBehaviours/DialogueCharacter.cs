@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class DialougeCharacter
+public class DialogueCharacter
 {
     public string name;
     public Sprite icon;
