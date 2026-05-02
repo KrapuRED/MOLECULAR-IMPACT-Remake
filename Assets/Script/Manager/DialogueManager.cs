@@ -8,7 +8,8 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
-    [SerializeField] private Image charImage;
+    [SerializeField] private Image charImageLeft;
+    [SerializeField] private Image charImageRight;
     [SerializeField] private TMP_Text charName;
     [SerializeField] private TMP_Text textBoxDialogueArea;
     private Queue<DialogueLines> lines;
@@ -53,8 +54,16 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         DialogueLines currLines = lines.Dequeue();
-        charImage.sprite = currLines.character.icon;
-        charName.text = currLines.character.name;
+        if (currLines.onTheRight)
+        {
+            charImageRight.sprite = currLines.character.icon;
+        }
+        else
+        {
+            charImageLeft.sprite = currLines.character.icon;
+        }
+
+            charName.text = currLines.character.name;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currLines));
     }

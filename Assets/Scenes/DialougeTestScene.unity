@@ -148,7 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 109e414d7a9da76498038f6c052b90c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charImage: {fileID: 954009660}
+  charImageLeft: {fileID: 954009660}
+  charImageRight: {fileID: 1184465428}
   charName: {fileID: 1276728839}
   textBoxDialogueArea: {fileID: 1380913512}
   isDialogueActive: 0
@@ -1058,7 +1059,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 171.1, y: -25}
+  m_AnchoredPosition: {x: 171.09998, y: -24.999985}
   m_SizeDelta: {x: 342.19, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1276728839
@@ -1194,7 +1195,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 835, y: -160.08}
+  m_AnchoredPosition: {x: 835, y: -160.08002}
   m_SizeDelta: {x: 1670, y: 320.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1380913512
@@ -1535,16 +1536,19 @@ MonoBehaviour:
     - character:
         name: a
         icon: {fileID: 9128663351278669249, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
+      onTheRight: 1
       line: 'fasafawsd
 
 '
     - character:
         name: toni
         icon: {fileID: 4759345129729240941, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
+      onTheRight: 1
       line: reymond kontol
     - character:
         name: reymond
         icon: {fileID: 8867323351179957721, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
+      onTheRight: 0
       line: djembut memmeg memeg djembut memeg
 --- !u!114 &1636053540
 MonoBehaviour:
