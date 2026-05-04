@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9780490a24f1442b95ae6bb67dfcab, type: 3}
+  m_Name: Dialogue1
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: Raymond
+        icon: {fileID: 8867323351179957721, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
+      onTheRight: 0
+      line: aefsfa
+    - character:
+        name: Toni
+        icon: {fileID: 9128663351278669249, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
+      onTheRight: 1
+      line: sdsfsfsf
+    - character:
+        name: Raymkmon
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      onTheRight: 1
+      line: kontolodon

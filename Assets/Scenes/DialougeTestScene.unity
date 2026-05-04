@@ -204,8 +204,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -619.99994, y: 190}
-  m_SizeDelta: {x: -1361.72, y: -266.96}
+  m_AnchoredPosition: {x: -553.7, y: 190}
+  m_SizeDelta: {x: -1229.12, y: -266.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &265226039
 MonoBehaviour:
@@ -932,7 +932,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 6418103459969735896, guid: b7e6471ca1cf73c46826338180371778, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1059,8 +1059,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 171.09998, y: -24.999985}
-  m_SizeDelta: {x: 342.19, y: 50}
+  m_AnchoredPosition: {x: 245.44003, y: -51.603}
+  m_SizeDelta: {x: 490.88, y: 103.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1276728839
 MonoBehaviour:
@@ -1491,7 +1491,7 @@ GameObject:
   - component: {fileID: 1636053542}
   - component: {fileID: 1636053541}
   - component: {fileID: 1636053540}
-  - component: {fileID: 1636053539}
+  - component: {fileID: 1636053543}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1519,37 +1519,6 @@ RectTransform:
   m_AnchoredPosition: {x: 40.0855, y: 274}
   m_SizeDelta: {x: 240.171, y: 86.8955}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1636053539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1636053537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb9780490a24f1442b95ae6bb67dfcab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    dialogueLines:
-    - character:
-        name: a
-        icon: {fileID: 9128663351278669249, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
-      onTheRight: 1
-      line: 'fasafawsd
-
-'
-    - character:
-        name: toni
-        icon: {fileID: 4759345129729240941, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
-      onTheRight: 1
-      line: reymond kontol
-    - character:
-        name: reymond
-        icon: {fileID: 8867323351179957721, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
-      onTheRight: 0
-      line: djembut memmeg memeg djembut memeg
 --- !u!114 &1636053540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1594,9 +1563,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1636053539}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
+      - m_Target: {fileID: 1636053543}
+        m_TargetAssemblyTypeName: ListOfDialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogueList
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1644,6 +1613,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636053537}
   m_CullTransparentMesh: 1
+--- !u!114 &1636053543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636053537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 866ddd3543d1cca4d84af26dbd45e40f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueTriggers:
+  - {fileID: 11400000, guid: 81365e07b546a704c8aedf43ac536540, type: 2}
+  - {fileID: 11400000, guid: a085ec2c472dc5d459a91cd068fdd61c, type: 2}
 --- !u!1 &1643206662
 GameObject:
   m_ObjectHideFlags: 0

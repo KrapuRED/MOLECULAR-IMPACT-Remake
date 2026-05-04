@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class DialogueTrigger : MonoBehaviour
+[CreateAssetMenu(fileName = "NewDialogue", menuName = "Dialogue")]
+public class DialogueTrigger : ScriptableObject
 {
     public Dialogue dialogue;
 

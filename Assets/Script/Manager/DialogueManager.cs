@@ -56,11 +56,17 @@ public class DialogueManager : MonoBehaviour
         DialogueLines currLines = lines.Dequeue();
         if (currLines.onTheRight)
         {
+            ShowChar(charImageRight);
+            charImageRight.transform.localScale = new Vector2(-1, 1);
             charImageRight.sprite = currLines.character.icon;
+            DimImage(charImageLeft);
         }
         else
         {
+            ShowChar(charImageLeft);
+            charImageLeft.transform.localScale = new Vector2(1, 1);
             charImageLeft.sprite = currLines.character.icon;
+            DimImage(charImageRight);
         }
 
             charName.text = currLines.character.name;
@@ -84,5 +90,19 @@ public class DialogueManager : MonoBehaviour
         isDialogueActive = false;
         //animator.Play("hide");
         Debug.Log("Dialogue ends");
+    }
+
+    private void DimImage(Image image)
+    {
+        Color c = image.color;
+        c.a = 0.5f;
+        image.color = c;
+    }
+
+    private void ShowChar(Image image)
+    {
+        Color c = image.color;
+        c.a = 1f;
+        image.color = c;
     }
 }
