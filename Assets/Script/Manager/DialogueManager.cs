@@ -8,13 +8,17 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
+    [SerializeField] private Transform choiceButtonParent;
+    [SerializeField] private Button choiceButtonPrefab;
     [SerializeField] private Image charImageLeft;
     [SerializeField] private Image charImageRight;
     [SerializeField] private TMP_Text charName;
     [SerializeField] private TMP_Text textBoxDialogueArea;
     private Queue<DialogueLines> lines;
+    private List<DialogueTrigger> choices;
     [SerializeField] bool isDialogueActive = false;
     [SerializeField] float typingSpeed;
+
     //[SerializeField] Animator animator;
     private void Awake()
     {
@@ -31,9 +35,10 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         lines = new Queue<DialogueLines>();
+        choices = null;
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, List<DialogueTrigger> dialogueChoices)
     {
         Debug.Log("Dialogue Start");
         isDialogueActive = true;
@@ -43,6 +48,7 @@ public class DialogueManager : MonoBehaviour
         {
             lines.Enqueue(dialogueLines);
         }
+        choices = dialogueChoices;
         DisplayNextDialogue();
     }
 
@@ -85,11 +91,40 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+
+
     private void EndDialogue()
     {
         isDialogueActive = false;
         //animator.Play("hide");
+        ShowChoices();
         Debug.Log("Dialogue ends");
+    }
+
+    private void ShowChoices()
+    {
+        foreach (Transform child in choiceButtonParent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        foreach (DialogueTrigger choice in choices)
+        {
+            Button button =
+                Instantiate(choiceButtonPrefab, choiceButtonParent);
+
+            button.GetComponentInChildren<TMP_Text>().text =
+                choice.name;
+
+            button.onClick.AddListener(() =>
+            {
+                foreach (Transform child in choiceButtonParent)
+                {
+                    Destroy(child.gameObject);
+                }
+                choice.TriggerDialogue();
+            });
+        }
     }
 
     private void DimImage(Image image)

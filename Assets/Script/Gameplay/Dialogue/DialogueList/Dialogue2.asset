@@ -29,3 +29,6 @@ MonoBehaviour:
         icon: {fileID: 6418103459969735896, guid: b7e6471ca1cf73c46826338180371778, type: 3}
       onTheRight: 0
       line: Let's Larp
+  dialogueChoices:
+  - {fileID: 11400000, guid: 8b9451309ec1cd844b34f8cd090a3df5, type: 2}
+  - {fileID: 11400000, guid: e4547901bb6a3d84db557f341aa659cd, type: 2}
