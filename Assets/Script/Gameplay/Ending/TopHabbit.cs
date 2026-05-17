@@ -3,20 +3,19 @@ using UnityEngine.UI;
 using TMPro;
 public class TopHabbit : MonoBehaviour
 {
-    public ActivitySO activitySO;
+    [SerializeField] private Image icon;
+    [SerializeField] private TMP_Text topHabbit;
+    [SerializeField] private TMP_Text nameHabbit;
+    [SerializeField] private TMP_Text countText;
 
-    public Image icon;
-    public TMP_Text topHabbit;
-    public TMP_Text nameHabbit;
-    void Start()
+    public void SetUp(int top, EndingActivityData data)
     {
+        icon.sprite = data.activitySO.activityIcon;
 
-    }
+        topHabbit.text = "#" + top.ToString();
 
-    public void SetUp(int top)
-    {
-        icon.sprite = activitySO.activityIcon;
-        topHabbit.text = top.ToString();
-        nameHabbit.text = activitySO.activityName.ToString();
+        nameHabbit.text = data.activitySO.activityName;
+
+        countText.text = data.activityCount.ToString();
     }
 }
