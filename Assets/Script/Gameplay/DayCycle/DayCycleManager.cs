@@ -9,8 +9,7 @@ public enum Days
     Thursday ,
     Friday ,
     Saturday,
-    Sunday,
-    COUNT
+    Sunday
 }
 
 public enum WeekType
@@ -53,29 +52,26 @@ public class DayCycleManager : MonoBehaviour
 
         CheckWeekType();
 
-        //get the _currentDay by _startDay
         _currentDay = _startDay;
         UpdateUI();
-        //StartCoroutine(TestDayCycle());
+
     }
 
     public void NextDay()
     {
+        CheckWeekType();
+        
         _dayCount++;
         
-        CheckWeekType();
-
-        //call event to contineue the activity
-
         UpdateUI();
 
         CheckEnding(); // Buat Pindah ke Ending Scene
-        //StartCoroutine(TestDayCycle());
     }
 
     private void CheckWeekType()
     {
-        int indexDay = _dayCount % (int)Days.COUNT;
+        int totalDay = (int)Days.Sunday + 1;
+        int indexDay = _dayCount % totalDay ;
         _currentDay = (Days)indexDay;
 
         //To Change WeekType
@@ -90,12 +86,6 @@ public class DayCycleManager : MonoBehaviour
             _weekCount++;
             PerkManager.instance.CheckDurationTemporaryPerk();
         }
-    }
-
-    private IEnumerator TestDayCycle()
-    {
-        yield return new WaitForSeconds(2.5f);
-        NextDay();
     }
 
     public void UpdateUI()

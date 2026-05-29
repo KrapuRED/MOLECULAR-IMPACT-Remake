@@ -34,6 +34,48 @@ public class StatusManager : MonoBehaviour
         UpdateUI();
     }
 
+    private void OnEnable()
+    {
+        _refreshStatusUI.Register(UpdateUI);
+        GlobalEvent.OnApplyRandomDayEvent.Addistener(CalculateStatusAfterRandomEffent);
+    }
+
+    private void OnDisable()
+    {
+        RemoveListeners();
+    }
+
+    private void OnDestroy()
+    {
+        RemoveListeners();
+    }
+
+    private void RemoveListeners()
+    {
+        _refreshStatusUI.Unregister(UpdateUI);
+        GlobalEvent.OnApplyRandomDayEvent.Removeistener(CalculateStatusAfterRandomEffent);
+    }
+
+    public void UpdateUI()
+    {
+        foreach (var status in _status)
+        {
+            _updateStatusNonCurrencyUI.OnRaise(status.statusData, status.statusValue);
+        }
+    }
+    private bool CheckStatusPlayer(string statusID)
+    {
+        foreach (var status in _status)
+        {
+            if (status.statusData.statusID == statusID)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     //TO CALCULATE EFFECTS FOR STATUS AND CURRENCY
     public void CalculatBenefitToStatus(ActivitySO activity)
     {
@@ -55,21 +97,25 @@ public class StatusManager : MonoBehaviour
         }
     }
 
-    public void UpdateUI()
+    public void CalculateStatusAfterRandomEffent(string statusID, float impactValue)
     {
-        foreach (var status in _status)
+        if (this == null) return;
+
+        if (!CheckStatusPlayer(statusID))
         {
-            _updateStatusNonCurrencyUI.OnRaise(status.statusData, status.statusValue);
+            Debug.LogWarning($"Status with ID {statusID} not found in player status list.");
+            return;
         }
-    }
 
-    private void OnEnable()
-    {
-        _refreshStatusUI.Register(UpdateUI);
-    }
+        var status = _status.Find(s => s.statusData.statusID == statusID);
 
-    private void OnDisable()
-    {
-        _refreshStatusUI.Unregister(UpdateUI);
+        if (status == null)
+        {
+            Debug.LogError($"Cannot Find StatusSO in in player status list!");
+            return;
+        }
+
+        status.statusValue += impactValue;
+        UpdateUI();
     }
 }

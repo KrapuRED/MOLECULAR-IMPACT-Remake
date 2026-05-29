@@ -5,5 +5,6 @@ public class BedButton : MonoBehaviour
     public void OnClick()
     {
         DayCycleManager.instance.NextDay();
+        //GameManager.instance.ContinuePart();
     }
 }

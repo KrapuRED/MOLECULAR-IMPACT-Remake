@@ -72,8 +72,6 @@ public class PerkManager : MonoBehaviour
     //save tempory perk
     [SerializeField] private List<PerkDataTemporary> _activePerkTemporaryDatas =  new List<PerkDataTemporary>();
 
-    
-
     private void Awake()
     {
         if (instance == null)

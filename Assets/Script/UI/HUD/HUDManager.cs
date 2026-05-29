@@ -61,11 +61,31 @@ public class HUDManager : MonoBehaviour
         RefreshUI();
     }
 
+    public void ClosePanelByID(string panelID)
+    {
+        //if puase panel active, then deactived the puasePanel first then click close panel
+        if (!panels.Contains(panels.Find(p => p.hudPanel.panelID == panelID)))
+        {
+            return;
+        }
+
+        for (int i = 0; i < panels.Count; i++)
+        {
+            if (panels[i].hudPanel.panelID == panelID)
+            {
+                _isPanelOpened = true;
+                panels[i].isPanelActive = false;
+                panels[i].hudPanel.HidePanel();
+                break;
+            }
+        }
+
+        _isPanelOpened = false;
+    }
+
     public void ClosePanel()
     {
         //if puase panel active, then deactived the puasePanel first then click close panel
-
-
         _isPanelOpened = false;
         foreach (Panel panel in panels)
         {

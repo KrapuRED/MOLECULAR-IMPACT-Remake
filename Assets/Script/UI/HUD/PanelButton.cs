@@ -8,4 +8,9 @@ public class PanelButton : MonoBehaviour
     {
         HUDManager.instance.OpenPanel(panelID);
     }
+
+    public void OnClickCloseButton()
+    {
+        HUDManager.instance.ClosePanelByID(panelID);
+    }
 }
