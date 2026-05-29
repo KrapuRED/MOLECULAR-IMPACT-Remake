@@ -25,22 +25,6 @@ public class GameManager : MonoBehaviour
 
     public void NextGamePlay()
     {
-        switch (_dayCycleManager.CurrenDay)
-        {
-            case Days.Saturday:
-                Debug.Log("TOUCH SOME GRASS!");
-                break;
-
-            case Days.Sunday:
-                Debug.Log("AMIR AMIR!");
-                SceneController.instance.GameplayScene();
-
-                break;
-
-            default:
-                Debug.Log("WORK WORK WORK!");
-                SceneController.instance.WorkDayScene();
-                break;
-        }
+        SceneController.instance.WorkDayScene();
     }
 }

@@ -4,6 +4,8 @@ public class SceneController : MonoBehaviour
 {
     public static SceneController instance;
 
+    private Scene _currentScene;
+
     private void Awake()
     {
         if (instance == null)
@@ -23,6 +25,12 @@ public class SceneController : MonoBehaviour
 
     public void WorkDayScene()
     {
+        if (_currentScene.name == "WorkDay")
+        {
+            Debug.LogWarning("Already on WorkDay scene");
+            return;
+        }
+        _currentScene = SceneManager.GetActiveScene();  
         SceneManager.LoadScene("WorkDay");
     }
 

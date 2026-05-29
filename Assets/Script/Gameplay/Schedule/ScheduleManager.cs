@@ -84,7 +84,7 @@ public class ScheduleManager : MonoBehaviour
 
     public void ReadyActivity()
     {
-        ActivityManager.instance.AddActivity(_selectedActivityDatas);
+        GameStateManager.instance.SetActivityGameState(_selectedActivityDatas);
     }
 
     public void ScheduleManagerUpdateUI()

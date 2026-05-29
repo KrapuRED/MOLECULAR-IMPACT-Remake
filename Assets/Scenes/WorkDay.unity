@@ -119,6 +119,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &117456660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 117456661}
+  - component: {fileID: 117456662}
+  m_Layer: 0
+  m_Name: Manager - Work Day
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &117456661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117456660}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1022514503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &117456662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117456660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55830beaf596a342bc32b3312acdc96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isSideActivityDone: 0
+  _isWorkDayDone: 0
 --- !u!1001 &360455357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -197,8 +243,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 408469443}
+  - component: {fileID: 408469444}
   m_Layer: 5
-  m_Name: Work Day - Envirioment
+  m_Name: Week Day - Envirioment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -225,6 +272,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0.0000038146973, y: 15.97}
   m_SizeDelta: {x: 1758.05, y: 1025.96}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &408469444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408469442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2acb3bde0a612fc48aaf99315fecc5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  illustrastionImg: {fileID: 1258063591}
 --- !u!1 &478548812
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +296,7 @@ GameObject:
   - component: {fileID: 478548813}
   - component: {fileID: 478548814}
   m_Layer: 5
-  m_Name: 'Work Day - Envirioment Day '
+  m_Name: 'Week Day - Envirioment Day '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -504,10 +564,10 @@ RectTransform:
   - {fileID: 1258063590}
   m_Father: {fileID: 853766236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 157}
-  m_SizeDelta: {x: 1630.33, y: 474.03}
+  m_AnchorMin: {x: 0.010470588, y: 0.3971826}
+  m_AnchorMax: {x: 0.98941183, y: 0.9871826}
+  m_AnchoredPosition: {x: 1.1099854, y: -0.30999756}
+  m_SizeDelta: {x: -1.25, y: 0.5100002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &853766235
 GameObject:
@@ -519,7 +579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 853766236}
   m_Layer: 5
-  m_Name: Work Day - Envirioment Content
+  m_Name: Week Day - Envirioment Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -713,6 +773,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 117456661}
   - {fileID: 1142870253}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -869,18 +930,22 @@ MonoBehaviour:
   randomDayEvents:
   - EventName: Late at Work
     EventStatusEffected: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
+    illustrastionImg: {fileID: -1981711178113112253, guid: 41ceacd263fda4e4eb8d0b3f122bc25e, type: 3}
     EffectValue: -10
     percentageChance: 20
   - EventName: Normal at Work
     EventStatusEffected: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
+    illustrastionImg: {fileID: 7783123108577308525, guid: 6c0b68a15bde26d48930f84f74664793, type: 3}
     EffectValue: -5
     percentageChance: 35
   - EventName: Busy at work
     EventStatusEffected: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
+    illustrastionImg: {fileID: -7229063679609938981, guid: 58c20237826861a4eac036d9ed7460c7, type: 3}
     EffectValue: -15
     percentageChance: 30
   - EventName: Smooth at Work
     EventStatusEffected: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
+    illustrastionImg: {fileID: -8577951145411897643, guid: 5db231336746e8f468f4bdbb843df000, type: 3}
     EffectValue: 0
     percentageChance: 15
 --- !u!1 &1258063589
@@ -1418,7 +1483,7 @@ GameObject:
   - component: {fileID: 1836335339}
   - component: {fileID: 1836335338}
   m_Layer: 5
-  m_Name: Next Button Day
+  m_Name: ' Next Activity Button'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1501,8 +1566,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1836335338}
-        m_TargetAssemblyTypeName: NextDayButton, Assembly-CSharp
-        m_MethodName: OnNextDayButtonClicked
+        m_TargetAssemblyTypeName: NextActivityButton, Assembly-CSharp
+        m_MethodName: NextActivityButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1655,10 +1720,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 853766236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -211.72}
-  m_SizeDelta: {x: 1630.3, y: 232.28}
+  m_AnchorMin: {x: 0.010470588, y: 0.10845227}
+  m_AnchorMax: {x: 0.98941183, y: 0.38645226}
+  m_AnchoredPosition: {x: 0.75231934, y: 1.2799988}
+  m_SizeDelta: {x: -1.504601, y: -4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &4816923690933939118
 PrefabInstance:

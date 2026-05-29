@@ -4,7 +4,7 @@ public class BedButton : MonoBehaviour
 {
     public void OnClick()
     {
-        DayCycleManager.instance.NextDay();
+        GlobalEvent.OnNextDay.Invoke();
         GameManager.instance.NextGamePlay();
     }
 }

@@ -6,6 +6,7 @@ public class RandomDayEvent
 {
     public string EventName;
     public StatusSO EventStatusEffected;
+    public Sprite illustrastionImg;
     public float EffectValue;
     [Range(0, 100)]
     public int percentageChance;
@@ -30,29 +31,16 @@ public class RandomDayEventManager : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        GlobalEvent.OnNextDayWorkDay.Addistener(ResetEventTrigger);
-    }
-
-    private void OnDisable()
-    {
-        RemoveListeners();
-    }
-
     private void OnDestroy()
     {
         RemoveListeners();
     }
 
-    private void Start()
-    {
-        GetRandomDayEvent();
-    }
-
     private void RemoveListeners()
     {
-        GlobalEvent.OnNextDayWorkDay.Removeistener(ResetEventTrigger);
+        GlobalEvent.OnResetManager.Removeistener(ResetEventTrigger);
+        GlobalEvent.OnNextDay.Removeistener(GetRandomDayEvent);
+
     }
 
     public void GetRandomDayEvent()
@@ -72,7 +60,9 @@ public class RandomDayEventManager : MonoBehaviour
                 if (isEventTriggered) return;// Double-check to prevent multiple triggers in case of overlapping chances
 
                 //Debug.Log($"Random Event Triggered: {randomEvent.EventName} affecting {randomEvent.EventStatusEffected.name} by {randomEvent.EffectValue}");
+                GlobalEvent.OnShowIllustrastionWorkDay.Invoke(randomEvent.illustrastionImg);
                 GlobalEvent.OnApplyRandomDayEvent.Invoke(randomEvent.EventStatusEffected.statusID, randomEvent.EffectValue);
+
                 isEventTriggered = true;
             }
         }
@@ -82,7 +72,7 @@ public class RandomDayEventManager : MonoBehaviour
     {
         if (this == null) return; // Check if the instance is still valid
 
-        Debug.Log("Resetting Random Day Event Trigger for the new day.");
+        //Debug.Log("Resetting Random Day Event Trigger for the new day.");
         isEventTriggered = false;
     }
 }

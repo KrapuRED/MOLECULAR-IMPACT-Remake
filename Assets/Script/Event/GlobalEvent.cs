@@ -79,7 +79,11 @@ public class CustomEvent<T1,T2,T3>
 
 public class GlobalEvent
 {
+    public static readonly CustomEvent OnResetManager = new();
+
     // ======================= EVENTS WORK DAY ======================= 
     public static readonly CustomEvent<string, float> OnApplyRandomDayEvent = new ();
-    public static readonly CustomEvent OnNextDayWorkDay = new();
+    public static readonly CustomEvent<Sprite> OnShowIllustrastionWorkDay = new();
+    public static readonly CustomEvent OnNextActivity = new();
+    public static readonly CustomEvent OnNextDay = new();
 }
