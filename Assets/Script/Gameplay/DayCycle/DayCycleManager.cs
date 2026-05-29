@@ -29,9 +29,9 @@ public class DayCycleManager : MonoBehaviour
     [SerializeField] private int _dayCount;
     [SerializeField] private int _weekCount;
 
-    public WeekType weekType => _weekType;
-    public Days currenData => _currentDay;
-    public int weekCount => _weekCount;
+    public WeekType WeekType => _weekType;
+    public Days CurrenDay => _currentDay;
+    public int WeekCount => _weekCount;
 
     [Header("Events")]
     public UpdateWeekCountEventSO updateWeekCountEvent;
@@ -45,7 +45,28 @@ public class DayCycleManager : MonoBehaviour
             Destroy(gameObject);
     }
 
+    private void OnEnable()
+    {
+        _refreshStatusUI.Register(UpdateUI);
+        GlobalEvent.OnNextDayWorkDay.Addistener(NextDay);
+    }
+
+    private void OnDisable()
+    {
+        RemoveListeners();
+    }
+
+    private void OnDestroy()
+    {
+        RemoveListeners();
+    }
+ 
     private void Start()
+    {
+        InitializedDay();
+    }
+
+    private void InitializedDay()
     {
         _dayCount = 0;
         _weekCount = 0;
@@ -54,13 +75,18 @@ public class DayCycleManager : MonoBehaviour
 
         _currentDay = _startDay;
         UpdateUI();
+    }
 
+    private void RemoveListeners()
+    {
+        GlobalEvent.OnNextDayWorkDay.Removeistener(NextDay);
+        _refreshStatusUI.Unregister(UpdateUI);
     }
 
     public void NextDay()
     {
         CheckWeekType();
-        
+
         _dayCount++;
         
         UpdateUI();
@@ -91,16 +117,6 @@ public class DayCycleManager : MonoBehaviour
     public void UpdateUI()
     {
         updateWeekCountEvent.RaiseEvent(_weekCount);
-    }
-
-    private void OnEnable()
-    {
-        _refreshStatusUI.Register(UpdateUI);
-    }
-
-    private void OnDisable()
-    {
-        _refreshStatusUI.Unregister(UpdateUI);
     }
 
     private void CheckEnding()

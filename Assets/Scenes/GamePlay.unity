@@ -1747,7 +1747,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.00844203, y: 0.07126739}
   m_AnchorMax: {x: 1, y: 0.92873263}
-  m_AnchoredPosition: {x: 0, y: -2.499998}
+  m_AnchoredPosition: {x: 0, y: -2.4999986}
   m_SizeDelta: {x: 0, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &323238550
@@ -6052,7 +6052,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 303.815, y: -565.71}
+  m_AnchoredPosition: {x: 303.815, y: -565.7101}
   m_SizeDelta: {x: 607.63, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1035288545
@@ -11645,6 +11645,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 275971128438081277, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
+      propertyPath: _status.Array.data[0].statusValue
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 275971128438081277, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
+      propertyPath: _status.Array.data[1].statusValue
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 275971128438081277, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
+      propertyPath: _status.Array.data[2].statusValue
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 275971128438081277, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
+      propertyPath: _status.Array.data[3].statusValue
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 275971128438081277, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
+      propertyPath: _status.Array.data[4].statusValue
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 3783009131041652140, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
       propertyPath: m_Name
       value: DDOL - GameManager

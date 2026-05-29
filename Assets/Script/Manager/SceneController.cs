@@ -21,6 +21,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("GamePlay");
     }
 
+    public void WorkDayScene()
+    {
+        SceneManager.LoadScene("WorkDay");
+    }
+
     public void EndingScene()
     {
         SceneManager.LoadScene("EndingScene");

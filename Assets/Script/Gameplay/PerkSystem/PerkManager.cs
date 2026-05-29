@@ -218,7 +218,7 @@ public class PerkManager : MonoBehaviour
             if (_activePerkTemporaryDatas[i] == null)
                 continue;
 
-            if (DayCycleManager.instance.weekCount >= _activePerkTemporaryDatas[i].expireWeek)
+            if (DayCycleManager.instance.WeekCount >= _activePerkTemporaryDatas[i].expireWeek)
             {
                 //deactive in PerkData
                 DeactivedTemporaryPerk(_activePerkTemporaryDatas[i].perkData);
@@ -259,8 +259,8 @@ public class PerkManager : MonoBehaviour
         PerkDataTemporary newPerkDataTemporary = new PerkDataTemporary();
 
         newPerkDataTemporary.perkData = perkDataSO.perkData;
-        newPerkDataTemporary.activatedWeek = DayCycleManager.instance.weekCount;
-        newPerkDataTemporary.expireWeek = perkDataSO.perkData.longDuration + DayCycleManager.instance.weekCount;
+        newPerkDataTemporary.activatedWeek = DayCycleManager.instance.WeekCount;
+        newPerkDataTemporary.expireWeek = perkDataSO.perkData.longDuration + DayCycleManager.instance.WeekCount;
         newPerkDataTemporary.isActive = perkDataSO.isActive;
 
         UpdatePerkModify(perkDataSO);
