@@ -27,13 +27,12 @@ public class GameStateManager : MonoBehaviour
 
     public void SetActivityGameState(List<ActivitySO> activityDatas)
     {
+
         if (activityDatas.Count <= 0)
         {
             Debug.LogWarning("Trying to add null activity to GameStateManager");
             return;
         }
-
-        _gameState.SelectedActivities.Clear();
 
         _gameState.SelectedActivities = activityDatas;
     }

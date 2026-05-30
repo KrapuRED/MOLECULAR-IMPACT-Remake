@@ -140,7 +140,7 @@ public class DayCycleManager : MonoBehaviour
         switch (_currentDay)
         {
             case Days.Saturday:
-                Debug.Log("[DayCycleManager] Weekend! Touch some grass.");
+                SceneController.instance.OutDoorScene();
                 break;
             case Days.Sunday:
                 SceneController.instance.GameplayScene();

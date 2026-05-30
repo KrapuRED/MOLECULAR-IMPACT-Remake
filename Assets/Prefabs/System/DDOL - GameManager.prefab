@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 3215893589411889657}
   - component: {fileID: 2132117679288430491}
   m_Layer: 0
-  m_Name: GamePlay -  Game State
+  m_Name: GamePlay - Game State Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 3228538885887352648}
   - component: {fileID: 6351559974551117813}
   m_Layer: 0
-  m_Name: GamePlay -  Currency Manager
+  m_Name: GamePlay - Currency Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

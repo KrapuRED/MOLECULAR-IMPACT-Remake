@@ -27,10 +27,7 @@ public class StatusManager : MonoBehaviour
             instance = this;
         else
             Destroy(gameObject);
-    }
 
-    private void OnEnable()
-    {
         _refreshStatusUI.Register(UpdateUI);
 
         GlobalEvent.OnRefreshUI.Addistener(UpdateUI);
@@ -58,7 +55,6 @@ public class StatusManager : MonoBehaviour
 
     public void UpdateUI()
     {
-
         foreach (var status in _status)
         {
             _updateStatusNonCurrencyUI.OnRaise(status.statusData, status.statusValue);

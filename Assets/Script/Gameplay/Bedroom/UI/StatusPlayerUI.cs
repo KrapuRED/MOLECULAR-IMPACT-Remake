@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class StatusBedRoomUI : StatusUI
+public class StatusPlayerUI : StatusUI
 {
     [SerializeField] private string _statusID;
     [SerializeField] private TextMeshProUGUI valueStatusText;

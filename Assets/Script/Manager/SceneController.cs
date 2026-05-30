@@ -23,6 +23,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("GamePlay");
     }
 
+    public void OutDoorScene()
+    {
+        SceneManager.LoadScene("OutDoor");
+    }
+
     public void WorkDayScene()
     {
         if (_currentScene.name == "WorkDay")
