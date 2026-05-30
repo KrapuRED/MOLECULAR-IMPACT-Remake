@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class RandomDayEvent
 {
     public string EventName;
+    public string dialogueWorkDay;
     public StatusSO EventStatusEffected;
     public Sprite illustrastionImg;
     public float EffectValue;
@@ -59,8 +60,7 @@ public class RandomDayEventManager : MonoBehaviour
             {
                 if (isEventTriggered) return;// Double-check to prevent multiple triggers in case of overlapping chances
 
-                //Debug.Log($"Random Event Triggered: {randomEvent.EventName} affecting {randomEvent.EventStatusEffected.name} by {randomEvent.EffectValue}");
-                GlobalEvent.OnShowIllustrastionWorkDay.Invoke(randomEvent.illustrastionImg);
+                GlobalEvent.OnShowIllustrastionWorkDay.Invoke(randomEvent.illustrastionImg, randomEvent.dialogueWorkDay);
                 GlobalEvent.OnApplyRandomDayEvent.Invoke(randomEvent.EventStatusEffected.statusID, randomEvent.EffectValue);
 
                 isEventTriggered = true;

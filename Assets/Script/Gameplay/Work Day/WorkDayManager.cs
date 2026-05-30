@@ -43,6 +43,8 @@ public class WorkDayManager : MonoBehaviour
 
     public void ActiveWorkDay()
     {
+        GlobalEvent.OnUpdateVisualizeDay.Invoke(DayCycleManager.instance.CurrentDay);
+
         if (_isSideActivityDone && _isWorkDayDone)
         {
             GlobalEvent.OnNextDay.Invoke();

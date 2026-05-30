@@ -25,6 +25,7 @@ public class ActivityManager : MonoBehaviour
         if (_indexActivity >= _activities.Count)
         {
             Debug.Log($"Done with all activities!");
+            _indexActivity = 0;
             return;
         }
         if (_activities[_indexActivity] == null)
@@ -32,6 +33,8 @@ public class ActivityManager : MonoBehaviour
             Debug.Log($"There are no activity on {_indexActivity}");
             return;
         }
+
+        GlobalEvent.OnShowIllustrastionWorkDay.Invoke(_activities[_indexActivity].activityIcon, _activities[_indexActivity].dialogueWorkDay);
 
         StatusManager.instance.CalculatBenefitToStatus(_activities[_indexActivity]);
         PerkManager.instance.UpdatePerk(_activities[_indexActivity]);

@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statusID: status_social
   statusName: Social
-  statusIcon: {fileID: 0}
+  statusType: 0
+  maxStatus: 0
+  statusIcon: {fileID: 1544218709657482346, guid: bee08af477a756c468797da7d5d7a708, type: 3}

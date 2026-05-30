@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activityID: activity_light_exercise
   activityName: Light Exercise at the Gym
-  activityIcon: {fileID: 0}
+  activityIcon: {fileID: 4682389241246632526, guid: 8769613c2419cf14cb3276c33f9f76bb, type: 3}
   activityType: 1
+  dialogueWorkDay: "You push through the last set as sweat drips to the floor. Muscles
+    burn, lungs ache\u2014but beneath the strain, something steadier forms. Each
+    repetition is a promise kept to yourself. It\u2019s exhausting, but honest. Tonight,
+    progress is measured not in comfort, but in effort."
   benefits:
   - statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
     valueBenefit: 5

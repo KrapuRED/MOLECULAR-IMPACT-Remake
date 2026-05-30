@@ -18,6 +18,8 @@ public class ActivitySO : ScriptableObject
 
     public ActivityType activityType;
 
+    public string dialogueWorkDay;
+
     [System.Serializable]
     public class Benefit
     {

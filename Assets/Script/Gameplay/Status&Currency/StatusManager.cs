@@ -29,14 +29,11 @@ public class StatusManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    private void Start()
-    {
-        UpdateUI();
-    }
-
     private void OnEnable()
     {
         _refreshStatusUI.Register(UpdateUI);
+
+        GlobalEvent.OnRefreshUI.Addistener(UpdateUI);
         GlobalEvent.OnApplyRandomDayEvent.Addistener(CalculateStatusAfterRandomEffent);
     }
 
@@ -53,16 +50,21 @@ public class StatusManager : MonoBehaviour
     private void RemoveListeners()
     {
         _refreshStatusUI.Unregister(UpdateUI);
+
+        GlobalEvent.OnRefreshUI.Removeistener(UpdateUI);
+
         GlobalEvent.OnApplyRandomDayEvent.Removeistener(CalculateStatusAfterRandomEffent);
     }
 
     public void UpdateUI()
     {
+
         foreach (var status in _status)
         {
             _updateStatusNonCurrencyUI.OnRaise(status.statusData, status.statusValue);
         }
     }
+
     private bool CheckStatusPlayer(string statusID)
     {
         foreach (var status in _status)

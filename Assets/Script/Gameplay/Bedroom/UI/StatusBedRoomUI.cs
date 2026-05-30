@@ -12,7 +12,14 @@ public class StatusBedRoomUI : StatusUI
     {
         if (statusData.statusID == _statusID)
         {
-            valueStatusText.text = $"{valueStatus}";
+            iconStatusText.sprite = statusData.statusIcon;
+
+            if (valueStatus < 0)
+            {
+                valueStatusText.text = $"{0}";
+            }
+            else
+                valueStatusText.text = $"{valueStatus}";
         }
     }
 }

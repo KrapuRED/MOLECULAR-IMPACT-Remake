@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activityID: activity_play_video_games
   activityName: Play Video Games
-  activityIcon: {fileID: 0}
+  activityIcon: {fileID: 4056734643690074831, guid: 6b4a22b1afc878f4cb8f61450e523eed, type: 3}
   activityType: 1
+  dialogueWorkDay: "You sink into the screen as the world quiets down. Levels pass,
+    colors flash, and for a while, your thoughts stop racing. The stress doesn\u2019t
+    disappear\u2014it waits\u2014but right now, this small escape feels enough."
   benefits:
   - statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
     valueBenefit: 15

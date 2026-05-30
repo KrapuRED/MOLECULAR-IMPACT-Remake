@@ -81,9 +81,15 @@ public class GlobalEvent
 {
     public static readonly CustomEvent OnResetManager = new();
 
+    // ======================= EVENTS BED ROOM =======================
+    public static readonly CustomEvent OnRefreshUI = new();
+
     // ======================= EVENTS WORK DAY ======================= 
     public static readonly CustomEvent<string, float> OnApplyRandomDayEvent = new ();
-    public static readonly CustomEvent<Sprite> OnShowIllustrastionWorkDay = new();
+    
+    public static readonly CustomEvent<Sprite, string> OnShowIllustrastionWorkDay = new();
+    public static readonly CustomEvent<Days> OnUpdateVisualizeDay = new();
+
     public static readonly CustomEvent OnNextActivity = new();
     public static readonly CustomEvent OnNextDay = new();
 }

@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activityID: activity_hang_out
   activityName: Hang Out
-  activityIcon: {fileID: 0}
+  activityIcon: {fileID: 439642002, guid: 998b59cd842e2cc44bb99d35f70c4602, type: 3}
   activityType: 1
+  dialogueWorkDay: "You spend some time with others, sharing laughs, stories, and
+    silence when words aren\u2019t needed. For a while, life feels lighter. It doesn\u2019t
+    solve everything\u2014but you return feeling a bit more connected and less weighed
+    down."
   benefits:
   - statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
     valueBenefit: 10

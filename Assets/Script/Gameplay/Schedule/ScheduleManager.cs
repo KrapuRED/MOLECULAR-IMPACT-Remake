@@ -29,6 +29,8 @@ public class ScheduleManager : MonoBehaviour
 
     private void Start()
     {
+        StatusManager.instance.UpdateUI();
+
         GenerateActvitiesByData();
     }
 

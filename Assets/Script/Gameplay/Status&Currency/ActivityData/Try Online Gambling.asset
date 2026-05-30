@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activityID: activity_try_online_gambling
   activityName: Try Online Gambling
-  activityIcon: {fileID: 0}
+  activityIcon: {fileID: -1792037614403111671, guid: abab49f546028fe4fae258a7ec2cfe68, type: 3}
   activityType: 2
+  dialogueWorkDay: "You stare at the numbers in disbelief. Just one more round\u2014that\u2019s
+    what you told yourself. The table doesn\u2019t answer, it only takes. Coins slip
+    away faster than your excuses, and the thrill you chased leaves behind a familiar
+    hollow weight. You walk away lighter in pocket, heavier in regret."
   benefits:
   - statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
     valueBenefit: 20

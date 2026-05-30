@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ActivitySO
   activityID: activity_Light_Book_Reading
   activityName: Light Book Reading
-  activityIcon: {fileID: 9128663351278669249, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
+  activityIcon: {fileID: -1601504973, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
   activityType: 1
+  dialogueWorkDay: "You sit in the quiet of your room, the world slowing down as
+    you turn each page. Words begin to connect, ideas forming where there was once
+    noise. It isn\u2019t dramatic. It isn\u2019t fast. But with every chapter, your
+    thoughts grow sharper, more ordered. Tonight, you choose patience over distraction\u2014and
+    it shows."
   benefits:
   - statusData: {fileID: 11400000, guid: a2aa9485e610cba45a1e678ec3631661, type: 2}
     valueBenefit: 40

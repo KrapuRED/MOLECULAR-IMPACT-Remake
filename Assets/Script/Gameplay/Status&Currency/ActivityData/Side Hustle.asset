@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activityID: activity_side_hustle
   activityName: Side Hustle
-  activityIcon: {fileID: 0}
+  activityIcon: {fileID: 2258985699058641813, guid: 3d16ad6aeb692a042bae8d96fd5b8f65, type: 3}
   activityType: 1
+  dialogueWorkDay: "You spend the evening stacking shelves, checking labels, and
+    keeping the aisles neat. The work is repetitive, sometimes exhausting, but honest.
+    Each shift adds a little to your income\u2014and reminds you that progress often
+    comes from showing up, even when it\u2019s not glamorous."
   benefits:
   - statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
     valueBenefit: -15

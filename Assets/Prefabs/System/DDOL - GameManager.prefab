@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 1513593927376839181}
   - component: {fileID: 6086835977107213111}
   m_Layer: 0
-  m_Name: GamePlay - PerkManager
+  m_Name: GamePlay - Perk Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 7350060290749744544}
   - component: {fileID: 7395844623338967400}
   m_Layer: 0
-  m_Name: GamePlay - ActivityManager
+  m_Name: GamePlay - Activity Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 3228538885887352648}
   - component: {fileID: 6351559974551117813}
   m_Layer: 0
-  m_Name: GamePlay -  CurrencyManager
+  m_Name: GamePlay -  Currency Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 5101035314484300919}
   - component: {fileID: 275971128438081277}
   m_Layer: 0
-  m_Name: GamePlay - StatusManager
+  m_Name: GamePlay - Status Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -349,9 +349,9 @@ MonoBehaviour:
     statusValue: 30
   - statusData: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
     statusValue: 30
-  - statusData: {fileID: 11400000, guid: 1c1cd316b8501f6448aedb0a0c80f19c, type: 2}
-    statusValue: 30
   - statusData: {fileID: 11400000, guid: a2aa9485e610cba45a1e678ec3631661, type: 2}
+    statusValue: 30
+  - statusData: {fileID: 11400000, guid: 1c1cd316b8501f6448aedb0a0c80f19c, type: 2}
     statusValue: 30
   - statusData: {fileID: 11400000, guid: 94e09528bf5b5224ea6ee321b0edbae0, type: 2}
     statusValue: 30
@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 2600436875335697685}
   - component: {fileID: 6369897853173463623}
   m_Layer: 0
-  m_Name: GamePlay - DayCycleManager
+  m_Name: GamePlay - Day Cycle Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

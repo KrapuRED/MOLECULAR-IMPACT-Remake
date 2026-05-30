@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 80b6583555c083b49bdfdadc3d45291a
+guid: 998b59cd842e2cc44bb99d35f70c4602
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8867323351179957721
-    second: 4072217_0
+      213: 4419741269378673610
+    second: icon_activity_hang_out_pl_0
   - first:
-      213: -7704475784054214576
-    second: 4072217_1
+      213: 2170939962216305069
+    second: icon_activity_hang_out_pl_1
   - first:
-      213: 4759345129729240941
-    second: 4072217_2
+      213: 5495741319214497147
+    second: icon_activity_hang_out_pl_2
   - first:
-      213: 6760659969750482145
-    second: 4072217_3
+      213: -9201210402512831621
+    second: icon_activity_hang_out_pl_3
   - first:
-      213: 9128663351278669249
-    second: 4072217_4
+      213: -4786700717111200733
+    second: icon_activity_hang_out_pl_4
+  - first:
+      213: -5853899388095315140
+    second: icon_activity_hang_out_pl_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlaceHolder_Icon_Light_Reading_0
+      name: icon_activity_hang_out_pl_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 123
         width: 512
-        height: 512
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddb9baae324dfe04586145ed8d617662
-      internalID: -1601504973
+      spriteID: a9945ec3ed5ee5448913afa76a40cf2f
+      internalID: 439642002
       vertices: []
       indices: 
       edges: []
@@ -150,7 +153,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6652fbc176296d649bf3bd1c39ecba58
+    spriteID: 5483dd5b29a8f2b4ebb026e1552fd35f
     internalID: 0
     vertices: []
     indices: 
@@ -160,12 +163,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      4072217_0: 8867323351179957721
-      4072217_1: -7704475784054214576
-      4072217_2: 4759345129729240941
-      4072217_3: 6760659969750482145
-      4072217_4: 9128663351278669249
-      PlaceHolder_Icon_Light_Reading_0: -1601504973
+      icon_activity_hang_out_pl_0: 4419741269378673610
+      icon_activity_hang_out_pl_1: 2170939962216305069
+      icon_activity_hang_out_pl_10: -32019995
+      icon_activity_hang_out_pl_11: 1398291013
+      icon_activity_hang_out_pl_12: -547946739
+      icon_activity_hang_out_pl_13: 299126321
+      icon_activity_hang_out_pl_14: -185608156
+      icon_activity_hang_out_pl_2: 5495741319214497147
+      icon_activity_hang_out_pl_3: -9201210402512831621
+      icon_activity_hang_out_pl_4: -4786700717111200733
+      icon_activity_hang_out_pl_5: -5853899388095315140
+      icon_activity_hang_out_pl_6: 439642002
+      icon_activity_hang_out_pl_7: -2038842900
+      icon_activity_hang_out_pl_8: -180091391
+      icon_activity_hang_out_pl_9: -885998758
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

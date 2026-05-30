@@ -16,4 +16,4 @@ MonoBehaviour:
   statusName: Fitness
   statusType: 0
   maxStatus: 0
-  statusIcon: {fileID: 0}
+  statusIcon: {fileID: -1377087732840293091, guid: 9af3a3d8347809945abac902d5d52f6e, type: 3}

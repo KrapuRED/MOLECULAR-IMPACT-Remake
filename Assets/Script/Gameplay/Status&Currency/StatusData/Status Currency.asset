@@ -16,4 +16,4 @@ MonoBehaviour:
   statusName: Currency
   statusType: 1
   maxStatus: 0
-  statusIcon: {fileID: 0}
+  statusIcon: {fileID: -3502794963950644617, guid: 83b2d585bcafb2e47868e1ac7c6294e4, type: 3}

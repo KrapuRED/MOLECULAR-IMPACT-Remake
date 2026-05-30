@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activityID: activity_light_drinking
   activityName: Light Drinking at a Bar
-  activityIcon: {fileID: 0}
+  activityIcon: {fileID: 5367593557265859102, guid: 978bc51795c053341913225d8eef2d24, type: 3}
   activityType: 2
+  dialogueWorkDay: You sit beneath dim lights as glasses clink around you. The noise
+    fades with each drink, worries dissolving into laughter that feels easier than
+    thinking. For a moment, everything feels lighter. But the night stretches longer
+    than planned, and tomorrow quietly grows heavier.
   benefits:
   - statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
     valueBenefit: 30

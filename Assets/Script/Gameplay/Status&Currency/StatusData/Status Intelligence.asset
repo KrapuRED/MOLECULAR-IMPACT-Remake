@@ -16,4 +16,4 @@ MonoBehaviour:
   statusName: Intelligence
   statusType: 0
   maxStatus: 0
-  statusIcon: {fileID: 0}
+  statusIcon: {fileID: -5258038478539085210, guid: e3fb1b5950b329f478658dc697bb26b5, type: 3}

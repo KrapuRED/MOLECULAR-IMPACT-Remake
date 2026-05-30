@@ -1,9 +1,11 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class WeekDayEnviroment : MonoBehaviour
 {
     public Image illustrastionImg;
+    public TextMeshProUGUI dialogueWorkDay;
 
     private void OnEnable()
     {
@@ -26,11 +28,12 @@ public class WeekDayEnviroment : MonoBehaviour
 
     }
 
-    public void SetIllustration(Sprite sprite)
+    public void SetIllustration(Sprite sprite, string dilaogueWork)
     {
         if (this == null) return;
         if (illustrastionImg == null) return;
 
         illustrastionImg.sprite = sprite;
+        dialogueWorkDay.text = dilaogueWork;
     }
 }
