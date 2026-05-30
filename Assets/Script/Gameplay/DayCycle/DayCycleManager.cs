@@ -51,9 +51,6 @@ public class DayCycleManager : MonoBehaviour
         }
 
         instance = this;
-        transform.SetParent(null);
-
-        DontDestroyOnLoad(gameObject);
         InitializedDay();
 
         _refreshStatusUI.Register(UpdateUI);
@@ -85,7 +82,7 @@ public class DayCycleManager : MonoBehaviour
 
     public void NextDay()
     {
-        if (this == null) return; // Check if the instance is still valid
+        if (this == null) return;
 
         if (_isProcessingDay)
         {
@@ -120,6 +117,7 @@ public class DayCycleManager : MonoBehaviour
         CheckEnding();
 
         _isProcessingDay = false;
+        GlobalEvent.OnResetManager.Invoke();
     }
 
     private WeekType GetWeekType(Days day)

@@ -45,16 +45,13 @@ public class WorkDayManager : MonoBehaviour
     {
         if (_isSideActivityDone && _isWorkDayDone)
         {
-            GlobalEvent.OnResetManager.Invoke();
             GlobalEvent.OnNextDay.Invoke();
-            
             return;
         }
 
         if (!_isWorkDayDone)
         {
             _isWorkDayDone = true;
-            _isSideActivityDone = true;
             RandomDayEventManager.Instance.GetRandomDayEvent();
             return;
         }
@@ -70,5 +67,5 @@ public class WorkDayManager : MonoBehaviour
     {
         _isSideActivityDone = false;
         _isWorkDayDone = false;
-}
+    }
 }

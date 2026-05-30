@@ -4,6 +4,6 @@ public class NextActivityButton : MonoBehaviour
 {
     public void NextActivityButtonClicked()
     {
-        GlobalEvent.OnNextActivity.Invoke();
+        WorkDayManager.instance.ActiveWorkDay();
     }
 }
