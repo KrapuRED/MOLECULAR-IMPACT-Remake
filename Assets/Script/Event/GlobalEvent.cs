@@ -92,4 +92,7 @@ public class GlobalEvent
 
     public static readonly CustomEvent OnNextActivity = new();
     public static readonly CustomEvent OnNextDay = new();
+
+    // ======================= EVENTS OUT DOOR =======================
+    public static readonly CustomEvent<string, object> OnShowPanelInteraction = new();
 }

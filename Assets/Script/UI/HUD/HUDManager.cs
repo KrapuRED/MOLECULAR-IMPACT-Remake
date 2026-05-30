@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 
 [System.Serializable]
-public class Panel
+public class PanelData
 {
     public HUD hudPanel;
     public bool isPanelActive;
@@ -14,7 +14,7 @@ public class HUDManager : MonoBehaviour
 {
     public static HUDManager instance;
 
-    [SerializeField] private List<Panel> panels = new List<Panel>();
+    [SerializeField] private List<PanelData> panels = new List<PanelData>();
 
     [SerializeField] private bool _isPanelOpened;
 
@@ -87,7 +87,7 @@ public class HUDManager : MonoBehaviour
     {
         //if puase panel active, then deactived the puasePanel first then click close panel
         _isPanelOpened = false;
-        foreach (Panel panel in panels)
+        foreach (PanelData panel in panels)
         {
             if (!panel.isPanelActive)
                 continue;

@@ -13,5 +13,9 @@ public enum CharacterType
 public class CharacterDataSO : ScriptableObject
 {
     public string characterName;
+    public string characterID;
+    public Sprite characterSprite;
     public CharacterType characterType;
+
+    public bool isProgessAble;
 }

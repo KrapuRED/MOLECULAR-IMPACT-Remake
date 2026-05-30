@@ -2,9 +2,19 @@ using UnityEngine;
 using System.Collections.Generic;
 
 [System.Serializable]
+
+public class InteractionCharacter
+{
+    public string characterName;
+    public string characterID;
+    public int interactionCount;
+}
+
+[System.Serializable]
 public class GameState
 {
-    public List<ActivitySO> SelectedActivities = new List<ActivitySO>();
+    public List<ActivitySO> SelectedActivities = new ();
+    public List<InteractionCharacter> InteractionCharacters = new ();
 }
 public class GameStateManager : MonoBehaviour
 {
@@ -25,6 +35,11 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
+    public bool IsInteractionCharacterExist(string characterID)
+    {
+        return _gameState.InteractionCharacters.Exists(character => character.characterID == characterID);
+    }
+
     public void SetActivityGameState(List<ActivitySO> activityDatas)
     {
 
@@ -35,5 +50,29 @@ public class GameStateManager : MonoBehaviour
         }
 
         _gameState.SelectedActivities = activityDatas;
+    }
+
+    public void SetInteractionDataGameState(string charName, string charID)
+    {
+        if (IsInteractionCharacterExist(charID))
+        {
+            // If the character already exists, increment the interaction count
+            var character = _gameState.InteractionCharacters.Find(character => character.characterID == charID);
+
+            if (character != null)
+            {
+                character.interactionCount++;
+            }
+        }
+        else
+        {
+            // If the character does not exist, add a new entry to the list
+            _gameState.InteractionCharacters.Add(new InteractionCharacter
+            {
+                characterName = charName,
+                characterID = charID,
+                interactionCount = 1
+            });
+        }
     }
 }

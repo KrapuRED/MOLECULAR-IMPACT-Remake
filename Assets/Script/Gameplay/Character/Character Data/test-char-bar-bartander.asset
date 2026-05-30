@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: test-char-bar-bartander
   m_EditorClassIdentifier: 
   characterName: Bartander
+  characterID: char_bar_00
+  characterSprite: {fileID: 0}
   characterType: 1

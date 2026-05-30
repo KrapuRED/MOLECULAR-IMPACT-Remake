@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: test-char -bar-Girl
   m_EditorClassIdentifier: 
   characterName: Mila
+  characterID: char_bar_01
+  characterSprite: {fileID: 0}
   characterType: 2
+  isProgessAble: 1

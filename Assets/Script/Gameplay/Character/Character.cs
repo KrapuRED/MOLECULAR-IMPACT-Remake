@@ -3,7 +3,9 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     [Header("Characeter Data")]
-    [SerializeField] private CharacterDataSO characterData;
+    [SerializeField] protected CharacterDataSO characterData;
+
+    public CharacterDataSO CharacterData => characterData;
 
     public virtual void OnInteract()
     {
