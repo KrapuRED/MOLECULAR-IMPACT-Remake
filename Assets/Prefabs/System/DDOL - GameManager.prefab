@@ -35,6 +35,7 @@ Transform:
   - {fileID: 5101035314484300919}
   - {fileID: 3228538885887352648}
   - {fileID: 3215893589411889657}
+  - {fileID: 5218896708322424396}
   m_Father: {fileID: 8413129366532532226}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3783009131041652140
@@ -361,6 +362,56 @@ MonoBehaviour:
     statusValue: 30
   _updateStatusNonCurrencyUI: {fileID: 11400000, guid: c4a41cf78091a784994c825109c1d206, type: 2}
   _refreshStatusUI: {fileID: 11400000, guid: b787d981ad8b9fe41a2c924d52d54d22, type: 2}
+--- !u!1 &7776474658722692508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5218896708322424396}
+  - component: {fileID: 8425011398163916518}
+  m_Layer: 0
+  m_Name: GamePlay - Commitment Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5218896708322424396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7776474658722692508}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5779801921992548849}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8425011398163916518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7776474658722692508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 374d02ad0d9364a43ad0f3aaa6e1cb34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commitments:
+  - commitmentName: 
+    characterID: 
+    minimumInteraction: 3
+    requirmentPerks: []
+    changeActivitys: []
 --- !u!1 &8879559914935373813
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startDay: 6
+  maxWeek: 10
   _currentDay: 0
   _weekType: 0
   _dayCount: 0

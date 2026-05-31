@@ -40,6 +40,12 @@ public class GameStateManager : MonoBehaviour
         return _gameState.InteractionCharacters.Exists(character => character.characterID == characterID);
     }
 
+    public int GetInteractionCount(string characterID)
+    {
+        var character = _gameState.InteractionCharacters.Find(character => character.characterID == characterID);
+        return character != null ? character.interactionCount : 0;
+    }
+
     public void SetActivityGameState(List<ActivitySO> activityDatas)
     {
 

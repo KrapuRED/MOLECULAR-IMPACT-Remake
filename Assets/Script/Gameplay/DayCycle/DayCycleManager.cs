@@ -24,6 +24,7 @@ public class DayCycleManager : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField] private Days _startDay = Days.Sunday;
+    [SerializeField] private int maxWeek = 10;
 
     [Header("Runtime State - ReadOnly")]
     [SerializeField] private Days _currentDay;
@@ -176,11 +177,12 @@ public class DayCycleManager : MonoBehaviour
     public void UpdateUI()
     {
         updateWeekCountEvent.RaiseEvent(_weekCount);
+        GlobalEvent.OnUpdateWeekCounertUI.Invoke(_weekCount, maxWeek);
     }
 
     private void CheckEnding()
     {
-        if(_weekCount <= 10) return;
+        if(_weekCount <= maxWeek) return;
 
         Debug.Log("Ending Time");
         SceneController.instance.EndingScene();

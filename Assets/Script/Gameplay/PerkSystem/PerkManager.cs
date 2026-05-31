@@ -129,6 +129,23 @@ public class PerkManager : MonoBehaviour
 
     }
 
+    public bool IsPerkActive(string perkID)
+    {
+        foreach (var perk in _activePerkPermanentDatas)
+        {
+            if (perk.isActive && perk.perkData.perkID == perkID)
+                return true;
+        }
+
+        foreach (var perk in _activePerkTemporaryDatas)
+        {
+            if (perk.isActive && perk.perkData.perkID == perkID)
+                return true;
+        }
+
+        return false;
+    }
+
     #region Perk System
     /* Summary UpdatePerk
      * Updates perk points based on ActivitySO rewards.

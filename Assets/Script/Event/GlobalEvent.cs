@@ -81,10 +81,13 @@ public class GlobalEvent
 {
     public static readonly CustomEvent OnResetManager = new();
 
+
+
     // ======================= EVENTS BED ROOM =======================
     public static readonly CustomEvent OnRefreshUI = new();
     public static readonly CustomEvent<int> OnUpdateMoneyUI = new();
     public static readonly CustomEvent<int> OnUpdateEnergyUI = new();
+    public static readonly CustomEvent<int, int> OnUpdateWeekCounertUI = new();
 
     // ======================= EVENTS WORK DAY ======================= 
     public static readonly CustomEvent<string, float> OnApplyRandomDayEvent = new ();

@@ -1668,6 +1668,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
+      propertyPath: commitments.Array.data[0].requirmentPerks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2208,6 +2212,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3158023187871074893, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3158023187871074893, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3158023187871074893, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3158023187871074893, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3646188200229623819, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2307,6 +2327,22 @@ PrefabInstance:
     - target: {fileID: 4575077182178534902, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
       propertyPath: m_Name
       value: Panel - Interaction Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625589249890065257, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625589249890065257, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625589249890065257, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625589249890065257, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4895456140656551962, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
       propertyPath: m_AnchorMax.y
