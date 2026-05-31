@@ -11,6 +11,7 @@ public class PanelInteraction : Panel
     private void OnEnable()
     {
         GlobalEvent.OnShowPanelInteraction.Addistener(Show);
+        GlobalEvent.OnHidePanelInteraction.Addistener(Hide);
     }
 
     private void OnDisable()
@@ -25,7 +26,7 @@ public class PanelInteraction : Panel
     private void RemoveListener()
     {
         GlobalEvent.OnShowPanelInteraction.Removeistener(Show);
-
+        GlobalEvent.OnHidePanelInteraction.Removeistener(Hide);
     }
 
     public override void Show(string charID, object args2 = null)

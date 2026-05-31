@@ -2,13 +2,22 @@ using UnityEngine;
 
 public class ScheduleHUD : HUD
 {
-    public override void ShowPanel(bool isOpen)
+    public CanvasGroup canvasGroup;
+
+    public override void ShowHUD(bool isOpen)
     {
-        gameObject.SetActive(isOpen);
+        if (canvasGroup == null) 
+            canvasGroup = GetComponent<CanvasGroup>();
+        
+        canvasGroup.alpha = isOpen ? 1 : 0;
+        canvasGroup.interactable = isOpen;
+        canvasGroup.blocksRaycasts = isOpen;
     }
 
-    public override void HidePanel()
+    public override void HideHUD()
     {
-        gameObject.SetActive(false);
+        canvasGroup.alpha = 0;
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
     }
 }

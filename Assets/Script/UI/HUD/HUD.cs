@@ -4,12 +4,12 @@ public class HUD : MonoBehaviour
 {
     public string panelID;
 
-    public virtual void ShowPanel(bool isOpen)
+    public virtual void ShowHUD(bool isOpen)
     {
 
     }
 
-    public virtual void HidePanel()
+    public virtual void HideHUD()
     {
         gameObject.SetActive(false);
     }

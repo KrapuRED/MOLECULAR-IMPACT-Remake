@@ -83,6 +83,8 @@ public class GlobalEvent
 
     // ======================= EVENTS BED ROOM =======================
     public static readonly CustomEvent OnRefreshUI = new();
+    public static readonly CustomEvent<int> OnUpdateMoneyUI = new();
+    public static readonly CustomEvent<int> OnUpdateEnergyUI = new();
 
     // ======================= EVENTS WORK DAY ======================= 
     public static readonly CustomEvent<string, float> OnApplyRandomDayEvent = new ();
@@ -94,5 +96,6 @@ public class GlobalEvent
     public static readonly CustomEvent OnNextDay = new();
 
     // ======================= EVENTS OUT DOOR =======================
+    public static readonly CustomEvent OnHidePanelInteraction = new();
     public static readonly CustomEvent<string, object> OnShowPanelInteraction = new();
 }

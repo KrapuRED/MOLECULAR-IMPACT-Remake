@@ -207,6 +207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameState:
     SelectedActivities: []
+    InteractionCharacters: []
 --- !u!1 &4789843409158463291
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,9 +298,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currecnyStatusData: {fileID: 11400000, guid: 94e09528bf5b5224ea6ee321b0edbae0, type: 2}
-  _statusCurrency: 100
-  _updateStatusCurrencyUI: {fileID: 11400000, guid: 2fabba20c6f97c348ada194558ee17f3, type: 2}
-  _refreshStatusUI: {fileID: 11400000, guid: b787d981ad8b9fe41a2c924d52d54d22, type: 2}
+  startingMoneyCurrency: 100
+  moneyEarnedPerWeek: 300
+  moneyBoosterPercentage: 1
+  _currentMoneyCurrency: 0
+  _maxEnergy: 3
+  _currentEnergy: 0
 --- !u!1 &7439628308986850565
 GameObject:
   m_ObjectHideFlags: 0

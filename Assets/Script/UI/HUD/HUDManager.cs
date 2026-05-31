@@ -40,7 +40,7 @@ public class HUDManager : MonoBehaviour
         if (panels[0].hudPanel.panelID == panelID)
         {
             panels[0].isPanelActive = true;
-            panels[0].hudPanel.ShowPanel(panels[0].isPanelActive);
+            panels[0].hudPanel.ShowHUD(panels[0].isPanelActive);
             return;
         }
 
@@ -53,12 +53,12 @@ public class HUDManager : MonoBehaviour
             {
                 _isPanelOpened = true;
                 panels[i].isPanelActive = true;
-                panels[i].hudPanel.ShowPanel(_isPanelOpened);
+                panels[i].hudPanel.ShowHUD(_isPanelOpened);
                 break;
             }
         }
 
-        RefreshUI();
+        //RefreshUI();
     }
 
     public void ClosePanelByID(string panelID)
@@ -75,7 +75,7 @@ public class HUDManager : MonoBehaviour
             {
                 _isPanelOpened = true;
                 panels[i].isPanelActive = false;
-                panels[i].hudPanel.HidePanel();
+                panels[i].hudPanel.HideHUD();
                 break;
             }
         }
@@ -93,7 +93,7 @@ public class HUDManager : MonoBehaviour
                 continue;
 
             panel.isPanelActive = false;
-            panel.hudPanel.HidePanel();
+            panel.hudPanel.HideHUD();
         }
     }
 

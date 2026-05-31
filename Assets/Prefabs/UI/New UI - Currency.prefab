@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5579633709037523625}
-  - component: {fileID: 2251979750840054957}
+  - component: {fileID: 2907871633117126973}
   m_Layer: 5
   m_Name: New UI - Currency
   m_TagString: Untagged
@@ -38,7 +38,7 @@ RectTransform:
   m_AnchoredPosition: {x: 407, y: 480}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2251979750840054957
+--- !u!114 &2907871633117126973
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,11 +47,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1286821875452690555}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 626098e6b13dc6244ad989d80c02bade, type: 3}
+  m_Script: {fileID: 11500000, guid: b02fbdefef382a747b8f5625a8692e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currencyValueText: {fileID: 8354055129493808908}
-  updateStatusCurrency: {fileID: 11400000, guid: 2fabba20c6f97c348ada194558ee17f3, type: 2}
 --- !u!1 &3056694503204070140
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -3502794963950644617, guid: 83b2d585bcafb2e47868e1ac7c6294e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

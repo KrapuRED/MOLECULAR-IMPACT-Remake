@@ -3,21 +3,16 @@ using UnityEngine;
 
 public class CurrencyUI : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI currencyValueText;
-    public UpdateStatusCurrencyEventSO updateStatusCurrency;
+    [SerializeField] protected TextMeshProUGUI currencyValueText;
 
-    public void UpdateCurrencyUI(float statusCurrency)
+    public virtual void UpdateCurrencyUI(int statusCurrency)
     {
-        currencyValueText.text = $"{statusCurrency}";
     }
 
-    private void OnEnable()
+
+    public virtual void RemoveListener()
     {
-        updateStatusCurrency.Register(UpdateCurrencyUI);
+
     }
 
-    private void OnDisable()
-    {
-        updateStatusCurrency.Unregister(UpdateCurrencyUI);
-    }
 }

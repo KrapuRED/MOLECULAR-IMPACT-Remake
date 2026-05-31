@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class PauseHUD : HUD
 {
-    public override void ShowPanel(bool isOpen)
+    public override void ShowHUD(bool isOpen)
     {
         gameObject.SetActive(isOpen);
     }
 
-    public override void HidePanel()
+    public override void HideHUD()
     {
         gameObject.SetActive(false);
     }

@@ -30,6 +30,7 @@ public class ScheduleManager : MonoBehaviour
     private void Start()
     {
         StatusManager.instance.UpdateUI();
+        CurrencyManager.instance.UpdateUI();
 
         GenerateActvitiesByData();
     }

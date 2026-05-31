@@ -129,6 +129,8 @@ public class DayCycleManager : MonoBehaviour
 
     private void OnNewWeek()
     {
+        CurrencyManager.instance.RefershCurrency();
+
         PerkManager.instance.CheckDurationTemporaryPerk();
         Debug.Log($"[DayCycleManager] New week started -> Week {_weekCount}");
     }
@@ -168,7 +170,6 @@ public class DayCycleManager : MonoBehaviour
         if (indexDay == 0)
         {
             _weekCount++;
-            PerkManager.instance.CheckDurationTemporaryPerk();
         }
     }
 

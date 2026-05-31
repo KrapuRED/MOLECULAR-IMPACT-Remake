@@ -86,7 +86,7 @@ public class StatusManager : MonoBehaviour
                 if (benefit.statusData.statusType == StatusType.Non_Currency)
                     statusBenefit.statusValue += benefit.valueBenefit;
                 else
-                    CurrencyManager.instance.UpdateCurrency(benefit.valueBenefit);
+                    CurrencyManager.instance.UpdateMoneyBoosterCurrency(benefit.valueBenefit);
             }
             else
             {
