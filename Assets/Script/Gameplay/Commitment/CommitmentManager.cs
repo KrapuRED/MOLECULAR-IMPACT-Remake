@@ -80,4 +80,24 @@ public class CommitmentManager : MonoBehaviour
 
         return true;
     }
+
+    public void OnHasCommitment(string charID)
+    {
+        // Player has met the requirements for a commitment, so we can add it to the active list and apply its effects
+        Debug.Log("[CommitmentManager] Player has met commitment requirements. Applying effects...");
+
+        CommitmentData commitment = commitments.Find(c => c.characterID == charID);
+
+        if (commitment.changeActivitys.Count <= 0)
+        {
+            Debug.LogWarning($"[CommitmentManager] No effects to apply for charID: {charID}");
+            return;
+        }
+        
+        Debug.Log($"[CommitmentManager] Applying {commitment.changeActivitys.Count} activity changes for commitment: {commitment.commitmentName}");
+        foreach (var effect in commitment.changeActivitys)
+        {
+            Debug.Log($"[CommitmentManager] Applying effect of activity: {effect.activityName}");
+        }
+    }
 }

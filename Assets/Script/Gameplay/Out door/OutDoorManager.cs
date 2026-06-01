@@ -4,7 +4,6 @@ public class OutDoorManager : MonoBehaviour
 {
     public static OutDoorManager Instance { get; private set; }
 
-    private bool _uiBeenRefreshed = false;
 
     private void Awake()
     {
@@ -18,10 +17,9 @@ public class OutDoorManager : MonoBehaviour
 
     private void Start()
     {
-        if (!_uiBeenRefreshed)
-        {
-            StatusManager.instance.UpdateUI();
-        }
+        StatusManager.instance.UpdateUI();
+        CurrencyManager.instance.UpdateUI();
+        DayCycleManager.instance.UpdateUI();
     }
 
     public void OnPointOfInterestButtonClicked(PointOfInterestType type)
@@ -40,6 +38,7 @@ public class OutDoorManager : MonoBehaviour
             case PointOfInterestType.Bar:
                 // Handle Bar button click
                 Debug.Log("Bar button clicked");
+                SceneController.instance.BarScene();
                 break;
             case PointOfInterestType.Gym:
                 // Handle Gym button click

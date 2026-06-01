@@ -137,12 +137,6 @@ public class PerkManager : MonoBehaviour
                 return true;
         }
 
-        foreach (var perk in _activePerkTemporaryDatas)
-        {
-            if (perk.isActive && perk.perkData.perkID == perkID)
-                return true;
-        }
-
         return false;
     }
 

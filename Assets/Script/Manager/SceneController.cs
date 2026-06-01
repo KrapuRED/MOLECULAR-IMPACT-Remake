@@ -14,6 +14,7 @@ public class SceneController : MonoBehaviour
             Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
     }
+
     public void MainMenuScene()
     {
         SceneManager.LoadScene("MainMenu");
@@ -26,6 +27,11 @@ public class SceneController : MonoBehaviour
     public void OutDoorScene()
     {
         SceneManager.LoadScene("OutDoor");
+    }
+
+    public void BarScene()
+    {
+        SceneManager.LoadScene("Bar");
     }
 
     public void WorkDayScene()

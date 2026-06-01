@@ -407,11 +407,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   commitments:
-  - commitmentName: 
-    characterID: 
+  - commitmentName: Part Girl
+    characterID: char_bar_01
     minimumInteraction: 3
-    requirmentPerks: []
+    requirmentPerks:
+    - {fileID: 11400000, guid: 999b0814005f8154f9d153624cd09c25, type: 2}
     changeActivitys: []
+  activeCommitments: []
 --- !u!1 &8879559914935373813
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,13 +2,18 @@ using UnityEngine;
 
 public class InteractionButton : MonoBehaviour
 {
+    [SerializeField] private int consume;
+
     [SerializeField] private Character interactAbleChar;
 
     public void OnInteractionButtonClicked()
     {
         if (interactAbleChar != null)
         {
-            InteractionManager.instance.ConfiremedInteraction(interactAbleChar.CharacterData.characterName , interactAbleChar.CharacterData.characterID);
+            InteractionManager.instance.ConfiremedInteraction(interactAbleChar.CharacterData.characterName , interactAbleChar.CharacterData.characterID, consume);
+
+            GlobalEvent.OnHidePanelInteraction.Invoke();
+
         }
         else
         {

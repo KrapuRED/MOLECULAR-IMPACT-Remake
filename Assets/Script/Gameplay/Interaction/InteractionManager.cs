@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 [System.Serializable]
 public class InteractionData
@@ -56,8 +57,11 @@ public class InteractionManager : MonoBehaviour
         panelInteraction.Show(characterID, data);
     }
 
-    public void ConfiremedInteraction(string charName, string charID)
+    public void ConfiremedInteraction(string charName, string charID, int consume)
     {
+        // Consume Energy
+        CurrencyManager.instance.ConsumeEnergy(consume);
+
         GameStateManager.instance.SetInteractionDataGameState(charName, charID);
     }
 }

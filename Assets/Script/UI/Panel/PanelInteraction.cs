@@ -56,5 +56,8 @@ public class PanelInteraction : Panel
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
+
+        //Clear or Hide text and botton
+        GlobalEvent.OnHideCommitmentBotton.Invoke();
     }
 }

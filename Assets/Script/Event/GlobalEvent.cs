@@ -101,4 +101,6 @@ public class GlobalEvent
     // ======================= EVENTS OUT DOOR =======================
     public static readonly CustomEvent OnHidePanelInteraction = new();
     public static readonly CustomEvent<string, object> OnShowPanelInteraction = new();
+    public static readonly CustomEvent OnShowCommitmentBotton = new();
+    public static readonly CustomEvent OnHideCommitmentBotton = new();
 }

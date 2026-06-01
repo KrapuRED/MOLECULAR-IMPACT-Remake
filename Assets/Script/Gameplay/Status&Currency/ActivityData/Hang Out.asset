@@ -36,7 +36,7 @@ MonoBehaviour:
     perkPoint: 1
   - perkName: Circle
     perkID: perk_circle
-    perkPoint: 0
+    perkPoint: 1
   - perkName: Stressed
     perkID: perk_stressed
     perkPoint: -1

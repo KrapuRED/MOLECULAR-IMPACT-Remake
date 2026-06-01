@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OutDoor.unity
     guid: a150275610783224a8a917518e18de03
+  - enabled: 1
+    path: Assets/Scenes/Bar.unity
+    guid: 18a191fce0226d742aa6c4d9dc0ad3cd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -8,7 +8,12 @@ public class CharacterBar : Character
         base.OnInteract();
 
         if (characterData.isProgessAble)
+        {
             InteractionManager.instance.InteactionWithAnotherCharacter(characterData.characterID);
+
+            GlobalEvent.OnShowCommitmentBotton.Invoke();
+        }
+        
         else
             {
             // Show panel with character name and description
