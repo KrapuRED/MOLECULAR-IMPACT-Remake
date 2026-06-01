@@ -705,6 +705,7 @@ GameObject:
   - component: {fileID: 491599752}
   - component: {fileID: 491599754}
   - component: {fileID: 491599753}
+  - component: {fileID: 491599755}
   m_Layer: 5
   m_Name: HabbitStatistic
   m_TagString: Untagged
@@ -770,6 +771,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491599751}
   m_CullTransparentMesh: 1
+--- !u!114 &491599755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491599751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e169fbe3c106d9845a5c2afd7ff430cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  habbitPrefab: {fileID: 0}
+  spawner: {fileID: 491599752}
 --- !u!1 &627141282
 GameObject:
   m_ObjectHideFlags: 0
