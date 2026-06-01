@@ -27,4 +27,19 @@ public class ListOfDialogueTrigger : MonoBehaviour
         }
            
     }
+
+    public void TriggerEndingDialogueList(int index)
+    {
+        Debug.Log($"currDialogueTrigger = {currDialogueTrigger}");
+        dialogueTriggers[index].TriggerDialogue();
+        //if (currDialogueTrigger >= maxDialogueTrigger - 1)
+        //{
+        //    currDialogueTrigger = maxDialogueTrigger - 1;
+        //}
+        //else
+        //{
+        //    currDialogueTrigger++;
+        //}
+
+    }
 }
