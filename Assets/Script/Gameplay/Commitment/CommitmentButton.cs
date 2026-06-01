@@ -80,8 +80,6 @@ public class CommitmentButton : MonoBehaviour
     public void OnCommitmentButtonClick()
     {
         // Consume Energy
-        CurrencyManager.instance.ConsumeEnergy(consume);
-
-        _commitmentManager.OnHasCommitment(charData.characterID);
+        _commitmentManager.OnHasCommitment(charData.characterID, consume);
     }
 }

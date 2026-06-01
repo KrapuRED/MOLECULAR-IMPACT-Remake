@@ -99,8 +99,15 @@ public class GlobalEvent
     public static readonly CustomEvent OnNextDay = new();
 
     // ======================= EVENTS OUT DOOR =======================
+    public static readonly CustomEvent OnHidePanelInteractionAnother = new();
+    public static readonly CustomEvent<string, object> OnShowPanelInteractionAnother = new();
+
     public static readonly CustomEvent OnHidePanelInteraction = new();
     public static readonly CustomEvent<string, object> OnShowPanelInteraction = new();
+
+    public static readonly CustomEvent<string, object> OnShowPanelNoMeetRequirment = new();
+    public static readonly CustomEvent OnHidePanelNoMeetRequirment = new();
+
     public static readonly CustomEvent OnShowCommitmentBotton = new();
     public static readonly CustomEvent OnHideCommitmentBotton = new();
 }

@@ -29,6 +29,13 @@ public class InteractionManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        StatusManager.instance.UpdateUI();
+        CurrencyManager.instance.UpdateUI();
+        DayCycleManager.instance.UpdateUI();
+    }
+
     public void InteactionWithAnotherCharacter(string characterID)
     {
         /*

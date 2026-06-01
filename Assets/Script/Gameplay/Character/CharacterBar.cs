@@ -17,7 +17,7 @@ public class CharacterBar : Character
         else
             {
             // Show panel with character name and description
-            GlobalEvent.OnShowPanelInteraction.Invoke(characterData.characterID, null);
+            GlobalEvent.OnShowPanelInteractionAnother.Invoke(characterData.characterID, null);
         }
     }
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 [System.Serializable]
 public class CommitmentData
@@ -29,36 +30,30 @@ public class CommitmentManager : MonoBehaviour
     public bool CommitmentCharacterByCharID(string charID)
     {
         // 1) Find the matching CommitmentData for this character
-        CommitmentData commitment = commitments.Find(c => c.characterID == charID);
+        CommitmentData commitmentData = commitments.Find(c => c.characterID == charID);
 
-        if (commitment == null)
+        if (commitmentData == null)
         {
-            Debug.LogWarning($"[CommitmentManager] No commitment data found for charID: {charID}");
+            Debug.LogWarning($"[CommitmentManager] No commitmentData data found for charID: {charID}");
             return false;
         }
 
         // 2) Check interaction count via GameStateManager
         int interactionCount = GameStateManager.instance.GetInteractionCount(charID);
 
-        if (interactionCount < commitment.minimumInteraction)
+        if (interactionCount < commitmentData.minimumInteraction)
         {
-            Debug.Log($"[CommitmentManager] '{commitment.commitmentName}' failed: " +
-                      $"needs {commitment.minimumInteraction} interactions, has {interactionCount}.");
+            Debug.Log($"[CommitmentManager] '{commitmentData.commitmentName}' failed: " +
+                      $"needs {commitmentData.minimumInteraction} interactions, has {interactionCount}.");
             return false;
         }
 
-        // 3) Check all required perks are active via PerkManager
-        if (!HasAllRequiredPerks(commitment))
-        {
-            return false;
-        }
-
-        Debug.Log($"[CommitmentManager] '{commitment.commitmentName}' commitment unlocked for {charID}!");
+        Debug.Log($"[CommitmentManager] '{commitmentData.commitmentName}' commitmentData unlocked for {charID}!");
         return true;
     }
 
     /// <summary>
-    /// Checks whether the player has all perks required for this commitment.
+    /// Checks whether the player has all perks required for this commitmentData.
     /// </summary>
     private bool HasAllRequiredPerks(CommitmentData commitment)
     {
@@ -81,20 +76,33 @@ public class CommitmentManager : MonoBehaviour
         return true;
     }
 
-    public void OnHasCommitment(string charID)
+    public void OnHasCommitment(string charID, int energyConsume)
     {
-        // Player has met the requirements for a commitment, so we can add it to the active list and apply its effects
-        Debug.Log("[CommitmentManager] Player has met commitment requirements. Applying effects...");
+        // Player has met the requirements for a commitmentData, so we can add it to the active list and apply its effects
 
+        // 1) Find the matching CommitmentData for this character
         CommitmentData commitment = commitments.Find(c => c.characterID == charID);
 
+        // 2) Check all required perks are active via PerkManager
+        if (commitment == null)
+            return;
+
+        if (!HasAllRequiredPerks(commitment))
+        {
+            GlobalEvent.OnShowPanelNoMeetRequirment.Invoke(charID, commitment);
+            return;
+        }
+
+        CurrencyManager.instance.ConsumeEnergy(energyConsume);
+
+        Debug.Log("[CommitmentManager] Player has met commitmentData requirements. Applying effects...");
         if (commitment.changeActivitys.Count <= 0)
         {
             Debug.LogWarning($"[CommitmentManager] No effects to apply for charID: {charID}");
             return;
         }
         
-        Debug.Log($"[CommitmentManager] Applying {commitment.changeActivitys.Count} activity changes for commitment: {commitment.commitmentName}");
+        Debug.Log($"[CommitmentManager] Applying {commitment.changeActivitys.Count} activity changes for commitmentData: {commitment.commitmentName}");
         foreach (var effect in commitment.changeActivitys)
         {
             Debug.Log($"[CommitmentManager] Applying effect of activity: {effect.activityName}");
