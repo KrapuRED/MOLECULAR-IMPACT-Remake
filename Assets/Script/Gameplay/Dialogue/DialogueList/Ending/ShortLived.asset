@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9780490a24f1442b95ae6bb67dfcab, type: 3}
+  m_Name: ShortLived
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: Short Lived
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: Ten years have passed. You lie on a hospital bed, your body failing faster
+        than time ever should. Years of late nights, heavy drinking, and neglected
+        health quietly took their toll. Each choice felt small in the moment. Together,
+        they became irreversible.
+    - character:
+        name: Short Lived
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: "Machines surround you, measuring what little strength remains. The old
+        watch sits beside you, still counting time you no longer have. There is no
+        sudden tragedy\u2014only the slow result of habits repeated without care."
+    - character:
+        name: Short Lived
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: "The monitor lets out a long, steady tone.\L The line goes flat."
+  dialogueChoices: []

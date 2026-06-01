@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9780490a24f1442b95ae6bb67dfcab, type: 3}
+  m_Name: CEO
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: CEO
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: Ten years have passed. You stand at the top floor of a glass tower, the
+        city stretching beneath you. This life was not built overnight. Long evenings
+        of focused work, steady learning, and disciplined routines slowly compounded
+        into something real. You chose growth when shortcuts were easier.
+    - character:
+        name: CEO
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: Surrounded by people who valued knowledge and ambition, you sharpened
+        your thinking and invested in yourself. Money followed effort. Opportunity
+        followed preparation.
+    - character:
+        name: CEO
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: "The old watch rests in your pocket, still ticking\u2014no longer a symbol
+        of regret, but of patience.\nTen years ago, you were given a chance to change
+        your life.\nYou built it."
+  dialogueChoices: []

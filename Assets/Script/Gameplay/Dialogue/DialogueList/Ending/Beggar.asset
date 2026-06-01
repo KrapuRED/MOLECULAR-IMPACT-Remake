@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9780490a24f1442b95ae6bb67dfcab, type: 3}
+  m_Name: Beggar
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: Beggar
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: "Ten years have passed. You sit alone on a cracked stairway, counting
+        loose coins in your palm. The city moves around you, indifferent. Expensive
+        nights, endless parties, and the need to keep up appearances slowly drained
+        everything you earned. Money came in\u2014but it never stayed."
+    - character:
+        name: Beggar
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: You ignored the warnings. Debt replaced savings. Pleasure replaced planning.
+        By the time you noticed, there was nothing left to recover.
+    - character:
+        name: Beggar
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: "The old watch hangs from your fingers, still ticking.\L Ten years ago,
+        you were given a chance to change your life.\L You spent it."
+  dialogueChoices: []

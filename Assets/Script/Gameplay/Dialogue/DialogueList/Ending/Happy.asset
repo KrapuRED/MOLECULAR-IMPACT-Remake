@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9780490a24f1442b95ae6bb67dfcab, type: 3}
+  m_Name: Happy
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: Happy
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: "Ten years have passed. You stand in an open field as the sun sinks low,
+        painting the sky in warm colors. Silhouettes move beside you\u2014people
+        whose presence you earned through time, care, and consistency. Nothing here
+        was rushed. Nothing was taken for granted."
+    - character:
+        name: Happy
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: "Your body feels steady. Your mind feels at peace. The life before you
+        was shaped by the habits you chose when no one was watching\u2014small, quiet
+        decisions that slowly became a good life."
+    - character:
+        name: Happy
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: "The old watch rests in your pocket, still ticking, but no longer heavy.\L
+        This time, the future feels right."
+  dialogueChoices: []

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9780490a24f1442b95ae6bb67dfcab, type: 3}
+  m_Name: Athlete
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: Athlete
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: "Ten years have passed. You stand on the world\u2019s biggest stage,
+        the roar of the crowd washing over you. This path began quietly\u2014early
+        mornings at the gym, aching muscles, and the discipline to show up every
+        day. With the support of those who shared your drive, you chose to leave
+        the safety of an office behind and commit fully to your body\u2019s potential."
+    - character:
+        name: Athlete
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: 'Training replaced routine. Effort replaced excuses. What once felt impossible
+        became inevitable through repetition.
+
+        The gold medal rests heavy
+        against your chest.'
+    - character:
+        name: Athlete
+        icon: {fileID: 0}
+      onTheRight: 0
+      line: "The old watch stays in your locker, still ticking\u2014measuring the
+        years it took to become who you are now.\L Ten years ago, you were given
+        a chance to change your life.\L You trained for it."
+  dialogueChoices: []

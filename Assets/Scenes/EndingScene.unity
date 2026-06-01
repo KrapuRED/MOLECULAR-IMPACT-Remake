@@ -680,8 +680,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueTriggers:
   - {fileID: 11400000, guid: 0abb41c0a542ba143b83bc37ee91d58d, type: 2}
-  - {fileID: 11400000, guid: 0abb41c0a542ba143b83bc37ee91d58d, type: 2}
-  - {fileID: 11400000, guid: 0abb41c0a542ba143b83bc37ee91d58d, type: 2}
+  - {fileID: 11400000, guid: 8d346c01e0ac1a349b850f8c4280fb78, type: 2}
+  - {fileID: 11400000, guid: 83f135902ed8d524d9b6c8634c3c291f, type: 2}
+  - {fileID: 11400000, guid: 81e58a7d0dccbf046a8fde9332887e78, type: 2}
+  - {fileID: 11400000, guid: 5ce896d098a83e54e94c1b940b36c9e0, type: 2}
+  - {fileID: 11400000, guid: 84701eba4b3ebd14394bf8342383aca4, type: 2}
+  - {fileID: 11400000, guid: 9754bc2141a8de8498d47087450df0f6, type: 2}
 --- !u!1 &481341790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1859,7 +1863,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 92192676353286968, guid: 80a600bc85d252048883c57b2581ca6e, type: 3}
       propertyPath: m_text
-      value: See
+      value: Next
       objectReference: {fileID: 0}
     - target: {fileID: 200070123390921839, guid: 80a600bc85d252048883c57b2581ca6e, type: 3}
       propertyPath: m_Name
@@ -2000,6 +2004,22 @@ PrefabInstance:
     - target: {fileID: 5249750328000125811, guid: 80a600bc85d252048883c57b2581ca6e, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657270412424271311, guid: 80a600bc85d252048883c57b2581ca6e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1683.9312
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657270412424271311, guid: 80a600bc85d252048883c57b2581ca6e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 524.3636
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657270412424271311, guid: 80a600bc85d252048883c57b2581ca6e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.4792
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657270412424271311, guid: 80a600bc85d252048883c57b2581ca6e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 229.9144
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
