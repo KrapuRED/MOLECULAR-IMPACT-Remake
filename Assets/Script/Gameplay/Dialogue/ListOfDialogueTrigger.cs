@@ -30,7 +30,7 @@ public class ListOfDialogueTrigger : MonoBehaviour
 
     public void TriggerEndingDialogueList(int index)
     {
-        Debug.Log($"currDialogueTrigger = {currDialogueTrigger}");
+        Debug.Log($"currDialogueTrigger = {index}");
         dialogueTriggers[index].TriggerDialogue();
         //if (currDialogueTrigger >= maxDialogueTrigger - 1)
         //{

@@ -16,7 +16,8 @@ MonoBehaviour:
     dialogueLines:
     - character:
         name: Beggar
-        icon: {fileID: 0}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: "Ten years have passed. You sit alone on a cracked stairway, counting
         loose coins in your palm. The city moves around you, indifferent. Expensive
@@ -24,13 +25,15 @@ MonoBehaviour:
         everything you earned. Money came in\u2014but it never stayed."
     - character:
         name: Beggar
-        icon: {fileID: 0}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: You ignored the warnings. Debt replaced savings. Pleasure replaced planning.
         By the time you noticed, there was nothing left to recover.
     - character:
         name: Beggar
-        icon: {fileID: 0}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: "The old watch hangs from your fingers, still ticking.\L Ten years ago,
         you were given a chance to change your life.\L You spent it."

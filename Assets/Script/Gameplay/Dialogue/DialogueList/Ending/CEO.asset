@@ -16,7 +16,8 @@ MonoBehaviour:
     dialogueLines:
     - character:
         name: CEO
-        icon: {fileID: 0}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: Ten years have passed. You stand at the top floor of a glass tower, the
         city stretching beneath you. This life was not built overnight. Long evenings
@@ -24,14 +25,16 @@ MonoBehaviour:
         into something real. You chose growth when shortcuts were easier.
     - character:
         name: CEO
-        icon: {fileID: 0}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: Surrounded by people who valued knowledge and ambition, you sharpened
         your thinking and invested in yourself. Money followed effort. Opportunity
         followed preparation.
     - character:
         name: CEO
-        icon: {fileID: 0}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: "The old watch rests in your pocket, still ticking\u2014no longer a symbol
         of regret, but of patience.\nTen years ago, you were given a chance to change

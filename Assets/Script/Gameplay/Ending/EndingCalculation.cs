@@ -27,7 +27,7 @@ public class EndingCalculation : MonoBehaviour
 
     private void Start()
     {
-        _status = StatusManager.instance.PlayerStatuses;
+        //_status = StatusManager.instance.PlayerStatuses;
     }
 
     //public int CheckEnding()

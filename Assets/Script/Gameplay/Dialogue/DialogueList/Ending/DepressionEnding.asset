@@ -16,7 +16,8 @@ MonoBehaviour:
     dialogueLines:
     - character:
         name: Deppresion Ending
-        icon: {fileID: -7229063679609938981, guid: 58c20237826861a4eac036d9ed7460c7, type: 3}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: "Ten years have passed. You stand once again at the edge of the same
         skyscraper. The city below glows just as it did before\u2014but the weight
@@ -25,14 +26,16 @@ MonoBehaviour:
         led you back here."
     - character:
         name: Deppresion Ending
-        icon: {fileID: -7229063679609938981, guid: 58c20237826861a4eac036d9ed7460c7, type: 3}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: "The old watch rests in your palm, cold and unmoving. The chance you
         were given was real. So were your decisions. In the end, nothing forced you
         to fail\u2014you simply became what your habits shaped. "
     - character:
         name: Deppresion Ending
-        icon: {fileID: -7229063679609938981, guid: 58c20237826861a4eac036d9ed7460c7, type: 3}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: "Time gave you a second chance\u2026 but it was never time that needed
         to change."

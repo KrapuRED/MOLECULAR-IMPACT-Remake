@@ -81,7 +81,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(typingSpeed);
+        //Debug.Log(typingSpeed);
         if (Input.GetKey(KeyCode.Space) && isDialogueActive)
         {
             typingSpeed = typingSpeedFast;

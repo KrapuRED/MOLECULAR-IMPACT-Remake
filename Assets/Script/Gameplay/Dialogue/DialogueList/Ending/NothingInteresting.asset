@@ -16,7 +16,8 @@ MonoBehaviour:
     dialogueLines:
     - character:
         name: Nothing Interesting
-        icon: {fileID: 0}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: "Ten years have passed. You sit at the same office desk, under the same
         white lights, surrounded by the quiet hum of routine. The work gets done.
@@ -24,14 +25,16 @@ MonoBehaviour:
         feels meaningful either."
     - character:
         name: Nothing Interesting
-        icon: {fileID: 0}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: The watch rests in your drawer, ticking softly between stacks of paperwork.
         You made safe choices. You avoided disaster. But safety alone never led you
         anywhere new.
     - character:
         name: Nothing Interesting
-        icon: {fileID: 0}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: Ten years ago, you were given a chance to change your life. In the end,
         you simply learned how to endure it.

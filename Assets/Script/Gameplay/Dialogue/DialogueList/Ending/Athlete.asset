@@ -16,7 +16,8 @@ MonoBehaviour:
     dialogueLines:
     - character:
         name: Athlete
-        icon: {fileID: 0}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: "Ten years have passed. You stand on the world\u2019s biggest stage,
         the roar of the crowd washing over you. This path began quietly\u2014early
@@ -25,7 +26,8 @@ MonoBehaviour:
         the safety of an office behind and commit fully to your body\u2019s potential."
     - character:
         name: Athlete
-        icon: {fileID: 0}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: 'Training replaced routine. Effort replaced excuses. What once felt impossible
         became inevitable through repetition.
@@ -34,7 +36,8 @@ MonoBehaviour:
         against your chest.'
     - character:
         name: Athlete
-        icon: {fileID: 0}
+        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: "The old watch stays in your locker, still ticking\u2014measuring the
         years it took to become who you are now.\L Ten years ago, you were given
