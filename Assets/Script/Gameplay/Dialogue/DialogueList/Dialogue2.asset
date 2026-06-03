@@ -17,16 +17,19 @@ MonoBehaviour:
     - character:
         name: John Derby
         icon: {fileID: 6418103459969735896, guid: b7e6471ca1cf73c46826338180371778, type: 3}
+      BG: {fileID: 1662611443889221041, guid: 886cd21842ff75a4b9c1cafc5c38d362, type: 3}
       onTheRight: 0
       line: Potential Man
     - character:
         name: Potential Man
         icon: {fileID: 6418103459969735896, guid: b7e6471ca1cf73c46826338180371778, type: 3}
+      BG: {fileID: 5212572230922027357, guid: 21391c5715b1be140b58f7d6a78431be, type: 3}
       onTheRight: 1
       line: John Derby
     - character:
         name: Potential Man
         icon: {fileID: 6418103459969735896, guid: b7e6471ca1cf73c46826338180371778, type: 3}
+      BG: {fileID: 0}
       onTheRight: 0
       line: Let's Larp
   dialogueChoices:

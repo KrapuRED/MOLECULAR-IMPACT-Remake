@@ -16,12 +16,14 @@ MonoBehaviour:
     dialogueLines:
     - character:
         name: John Derby
-        icon: {fileID: 4759345129729240941, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
+        icon: {fileID: 6418103459969735896, guid: b7e6471ca1cf73c46826338180371778, type: 3}
+      BG: {fileID: -4116165841148146621, guid: 8576877c9b3b3274592d08f0bcb66cce, type: 3}
       onTheRight: 0
       line: Nah, i'd lose
     - character:
         name: Potential Man
-        icon: {fileID: 8867323351179957721, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
+        icon: {fileID: 314593592736720125, guid: 38c585e7230658143aec1a2bed9a3221, type: 3}
+      BG: {fileID: -9216874066377030937, guid: 8ddd64b2fed473442b4a8d9c617301e0, type: 3}
       onTheRight: 1
       line: Suit Yourself
   dialogueChoices: []

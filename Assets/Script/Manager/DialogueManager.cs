@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -10,6 +11,8 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager instance;
     [SerializeField] private Transform choiceButtonParent;
     [SerializeField] private Button choiceButtonPrefab;
+    [SerializeField] private GameObject choicePanel;
+    [SerializeField] private Image BG;
     [SerializeField] private Image charImageLeft;
     [SerializeField] private Image charImageRight;
     [SerializeField] private TMP_Text charName;
@@ -18,6 +21,10 @@ public class DialogueManager : MonoBehaviour
     private List<DialogueTrigger> choices;
     [SerializeField] bool isDialogueActive = false;
     [SerializeField] float typingSpeed;
+    [SerializeField] float typingSpeedFast;
+    [SerializeField] float typingSpeedNormal;
+    [SerializeField] private GameObject dialogueCanvas;
+
 
     //[SerializeField] Animator animator;
     private void Awake()
@@ -40,8 +47,10 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue, List<DialogueTrigger> dialogueChoices)
     {
+        choicePanel.SetActive(false);
         Debug.Log("Dialogue Start");
         isDialogueActive = true;
+        dialogueCanvas.SetActive(true);
         //animator.Play("show");
         lines.Clear();
         foreach (DialogueLines dialogueLines in dialogue.dialogueLines)
@@ -50,6 +59,19 @@ public class DialogueManager : MonoBehaviour
         }
         choices = dialogueChoices;
         DisplayNextDialogue();
+    }
+
+    private void Update()
+    {
+        Debug.Log(typingSpeed);
+        if (Input.GetKey(KeyCode.Space) && isDialogueActive)
+        {
+            typingSpeed = typingSpeedFast;
+        }
+        else
+        {
+            typingSpeed = typingSpeedNormal;
+        }
     }
 
     public void DisplayNextDialogue()
@@ -74,8 +96,8 @@ public class DialogueManager : MonoBehaviour
             charImageLeft.sprite = currLines.character.icon;
             DimImage(charImageRight);
         }
-
-            charName.text = currLines.character.name;
+        BG.sprite = currLines.BG;
+        charName.text = currLines.character.name;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currLines));
     }
@@ -96,13 +118,20 @@ public class DialogueManager : MonoBehaviour
     private void EndDialogue()
     {
         isDialogueActive = false;
-        //animator.Play("hide");
-        ShowChoices();
+        if (choices != null && choices.Count > 0)
+        {
+            ShowChoices();
+        }
+        else
+        {
+            dialogueCanvas.SetActive(false);
+        }
         Debug.Log("Dialogue ends");
     }
 
     private void ShowChoices()
     {
+        choicePanel.SetActive(true);
         foreach (Transform child in choiceButtonParent)
         {
             Destroy(child.gameObject);

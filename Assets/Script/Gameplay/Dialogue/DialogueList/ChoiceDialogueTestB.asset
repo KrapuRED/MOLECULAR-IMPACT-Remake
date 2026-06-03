@@ -16,12 +16,14 @@ MonoBehaviour:
     dialogueLines:
     - character:
         name: John Derby
-        icon: {fileID: 4759345129729240941, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
+        icon: {fileID: -9216874066377030937, guid: 8ddd64b2fed473442b4a8d9c617301e0, type: 3}
+      BG: {fileID: -8279564993434659805, guid: 21f4f8d01da3c3247ba920cd2aa58378, type: 3}
       onTheRight: 0
       line: Harikiteikou!
     - character:
         name: Potential Man
-        icon: {fileID: 8867323351179957721, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
+        icon: {fileID: -1377087732840293091, guid: 9af3a3d8347809945abac902d5d52f6e, type: 3}
+      BG: {fileID: -7229063679609938981, guid: 58c20237826861a4eac036d9ed7460c7, type: 3}
       onTheRight: 1
       line: MAHORAGA!
   dialogueChoices: []

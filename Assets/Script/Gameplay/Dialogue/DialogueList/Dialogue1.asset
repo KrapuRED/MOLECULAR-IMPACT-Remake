@@ -16,16 +16,20 @@ MonoBehaviour:
     dialogueLines:
     - character:
         name: Raymond
-        icon: {fileID: 8867323351179957721, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
+        icon: {fileID: 5212572230922027357, guid: 21391c5715b1be140b58f7d6a78431be, type: 3}
+      BG: {fileID: -7229063679609938981, guid: 58c20237826861a4eac036d9ed7460c7, type: 3}
       onTheRight: 0
       line: aefsfa
     - character:
         name: Toni
-        icon: {fileID: 9128663351278669249, guid: 80b6583555c083b49bdfdadc3d45291a, type: 3}
+        icon: {fileID: 2954850468968391239, guid: 6638a45dada927f4b9eb8ffca7c88d52, type: 3}
+      BG: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 1
       line: sdsfsfsf
     - character:
         name: Raymkmon
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      BG: {fileID: 0}
       onTheRight: 1
       line: kontolodon
+  dialogueChoices: []
