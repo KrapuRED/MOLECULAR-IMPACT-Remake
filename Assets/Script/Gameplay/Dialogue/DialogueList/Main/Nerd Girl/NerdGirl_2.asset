@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9780490a24f1442b95ae6bb67dfcab, type: 3}
+  m_Name: NerdGirl_2
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: Nerd Girl
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 0
+      line: "This one\u2019s easier to start with."
+    - character:
+        name: Novar
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 0
+      line: You picked it for me?
+    - character:
+        name: Nerd Girl
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 0
+      line: "Y-Yes. Don\u2019t misunderstand, I just thought\u2014"
+    - character:
+        name: Novar
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 1
+      line: I appreciate it.
+    - character:
+        name: Nerd Girl
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 0
+      line: "\u2026Tell me what you think when you\u2019re done.\L"
+  dialogueChoices: []

@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9780490a24f1442b95ae6bb67dfcab, type: 3}
+  m_Name: NerdGirl_1
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: Novar
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 0
+      line: "You\u2019ve been at that table for hours."
+    - character:
+        name: Nerd Girl
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 1
+      line: "Oh\u2014! Please don\u2019t talk so loud\u2026"
+    - character:
+        name: Novar
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 1
+      line: Sorry. What are you reading?
+    - character:
+        name: Nerd Girl
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 1
+      line: "Sci-fi. It\u2019s\u2026 dense. Most people don\u2019t get into it."
+    - character:
+        name: Novar
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 1
+      line: "Maybe I\u2019m not most people."
+    - character:
+        name: Nerd Girl
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 1
+      line: "\u2026Then sit. Just\u2014quietly."
+  dialogueChoices: []

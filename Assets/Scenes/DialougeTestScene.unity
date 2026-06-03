@@ -942,8 +942,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueTriggers:
-  - {fileID: 11400000, guid: 81365e07b546a704c8aedf43ac536540, type: 2}
-  - {fileID: 11400000, guid: a085ec2c472dc5d459a91cd068fdd61c, type: 2}
+  - {fileID: 11400000, guid: f5e1f53379c040d41a9454c637373404, type: 2}
+  - {fileID: 11400000, guid: 9b6a6407258a7bc41967e7abb222c906, type: 2}
 --- !u!1 &1968410107
 GameObject:
   m_ObjectHideFlags: 0
