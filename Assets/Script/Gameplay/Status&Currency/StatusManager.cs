@@ -16,6 +16,7 @@ public class StatusManager : MonoBehaviour
     [Header("Status Config")]
     [SerializeField]
     private List<PlayerStatus> _status = new List<PlayerStatus>();
+    public List<PlayerStatus> PlayerStatuses => _status;
 
     [Header("Events")]
     [SerializeField] private UpdateStatusNonCurrencyEventSO _updateStatusNonCurrencyUI;
@@ -116,4 +117,10 @@ public class StatusManager : MonoBehaviour
         status.statusValue += impactValue;
         UpdateUI();
     }
+
+    //public List<PlayerStatus> ReturnStatusPlayer()
+    //{
+    //    return _status;
+    //}
+
 }
