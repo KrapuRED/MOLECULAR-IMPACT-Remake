@@ -9,21 +9,37 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
+
+    [Header("=== Choice Button ===")]
     [SerializeField] private Transform choiceButtonParent;
     [SerializeField] private Button choiceButtonPrefab;
-    [SerializeField] private GameObject choicePanel;
-    [SerializeField] private Image BG;
+    [SerializeField] private CanvasGroup choicePanel;
+
+    [Header("=== Background Image ===")]
+    [SerializeField] private Image backgroundImage;
+
+    [Header("=== Character ===")]
     [SerializeField] private Image charImageLeft;
     [SerializeField] private Image charImageRight;
     [SerializeField] private TMP_Text charName;
+
+    [Header("Text Box Area")]
     [SerializeField] private TMP_Text textBoxDialogueArea;
     private Queue<DialogueLines> lines;
     private List<DialogueTrigger> choices;
+
+    [Header("=== Typing Speed ===")]
+    private float typingSpeed;
+    [SerializeField] private float typingSpeedFast;
+    [SerializeField] private float typingSpeedNormal;
+
+    [Header("=== Dialogue Panel ===")]
+    [SerializeField] private CanvasGroup dialoguePanel;
+
+    [Header("=== Check Only ===")]
     [SerializeField] bool isDialogueActive = false;
-    [SerializeField] float typingSpeed;
-    [SerializeField] float typingSpeedFast;
-    [SerializeField] float typingSpeedNormal;
-    [SerializeField] private GameObject dialogueCanvas;
+
+    public CanvasGroup canvasGroup;
 
 
     //[SerializeField] Animator animator;
@@ -43,14 +59,16 @@ public class DialogueManager : MonoBehaviour
     {
         lines = new Queue<DialogueLines>();
         choices = null;
+        choicePanel.alpha = 0;
+        dialoguePanel.alpha = 0;
     }
 
     public void StartDialogue(Dialogue dialogue, List<DialogueTrigger> dialogueChoices)
     {
-        choicePanel.SetActive(false);
+        choicePanel.alpha = 0;
         Debug.Log("Dialogue Start");
         isDialogueActive = true;
-        dialogueCanvas.SetActive(true);
+        dialoguePanel.alpha = 1;
         //animator.Play("show");
         lines.Clear();
         foreach (DialogueLines dialogueLines in dialogue.dialogueLines)
@@ -96,7 +114,7 @@ public class DialogueManager : MonoBehaviour
             charImageLeft.sprite = currLines.character.icon;
             DimImage(charImageRight);
         }
-        BG.sprite = currLines.BG;
+        backgroundImage.sprite = currLines.backGroundImage;
         charName.text = currLines.character.name;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currLines));
@@ -124,14 +142,14 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            dialogueCanvas.SetActive(false);
+            dialoguePanel.alpha = 0;
         }
         Debug.Log("Dialogue ends");
     }
 
     private void ShowChoices()
     {
-        choicePanel.SetActive(true);
+        choicePanel.alpha = 1;
         foreach (Transform child in choiceButtonParent)
         {
             Destroy(child.gameObject);

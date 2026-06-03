@@ -4,7 +4,7 @@ using UnityEngine;
 public class DialogueLines
 {
     public DialogueCharacter character;
-    public Sprite BG;
+    public Sprite backGroundImage;
     public bool onTheRight;
     [TextArea(3, 10)]
     public string line;

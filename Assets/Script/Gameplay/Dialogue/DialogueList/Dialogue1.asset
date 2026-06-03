@@ -17,19 +17,19 @@ MonoBehaviour:
     - character:
         name: Raymond
         icon: {fileID: 5212572230922027357, guid: 21391c5715b1be140b58f7d6a78431be, type: 3}
-      BG: {fileID: -7229063679609938981, guid: 58c20237826861a4eac036d9ed7460c7, type: 3}
+      backGroundImage: {fileID: -7229063679609938981, guid: 58c20237826861a4eac036d9ed7460c7, type: 3}
       onTheRight: 0
       line: aefsfa
     - character:
         name: Toni
         icon: {fileID: 2954850468968391239, guid: 6638a45dada927f4b9eb8ffca7c88d52, type: 3}
-      BG: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: 1662611443889221041, guid: 886cd21842ff75a4b9c1cafc5c38d362, type: 3}
       onTheRight: 1
       line: sdsfsfsf
     - character:
         name: Raymkmon
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      BG: {fileID: 0}
+      backGroundImage: {fileID: 0}
       onTheRight: 1
       line: kontolodon
   dialogueChoices: []
