@@ -14,8 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perkID: perk_alcohol_addiction
   perkName: Alcohol Addiction
-  perkDescription: 
+  perkDescription: "\u201CThe bottle has become your escape, but its grip weakens
+    both body and mind.\u201D"
   perkRequirement: 10
   perkType: 2
   perkDuration: 1
-  perkEffect: []
+  longDuration: 0
+  perkEffect:
+  - effectName: Good Activites effects are reduced by 50%.
+    statusData: {fileID: 0}
+    effectValue: 0
+  - effectName: 'Drinking activities are 200% more effective. '
+    statusData: {fileID: 0}
+    effectValue: 0
+  - effectName: Change Activity Name to Heavy Drinking
+    statusData: {fileID: 0}
+    effectValue: 0
+  - effectName: Decrease Happiness by 50% Everyday
+    statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
+    effectValue: 50
+  - effectName: Forced 2 Day Drinking
+    statusData: {fileID: 0}
+    effectValue: 0

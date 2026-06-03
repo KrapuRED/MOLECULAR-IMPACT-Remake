@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perkID: perk_financial_ruin
   perkName: Financial Ruin
-  perkDescription: 
+  perkDescription: "\u201CYou have bad habbit with money, this will end bad\u201D"
   perkRequirement: 0
   perkType: 2
   perkDuration: 2
-  perkEffect: []
+  longDuration: 0
+  perkEffect:
+  - effectName: Affecting Ending
+    statusData: {fileID: 0}
+    effectValue: 0

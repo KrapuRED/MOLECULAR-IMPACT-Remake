@@ -14,8 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perkID: perl_gambling_addiction
   perkName: Gambling Addiction
-  perkDescription: 
+  perkDescription: "\u201CThe thrill of chance has become your chain. Each risk feels
+    like hope, but drains you instead.\u201D"
   perkRequirement: 10
   perkType: 2
   perkDuration: 1
-  perkEffect: []
+  longDuration: 0
+  perkEffect:
+  - effectName: Good Activities effects are reduced by 50%.
+    statusData: {fileID: 0}
+    effectValue: 0
+  - effectName: 'Gambling activities are 200% more effective. '
+    statusData: {fileID: 0}
+    effectValue: 0
+  - effectName: Change Activity Name to Must Gambling.
+    statusData: {fileID: 0}
+    effectValue: 0
+  - effectName: Decrease Happiness by 50% Everyday.
+    statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
+    effectValue: 50
+  - effectName: Forced 2 Day Gambling
+    statusData: {fileID: 0}
+    effectValue: 0

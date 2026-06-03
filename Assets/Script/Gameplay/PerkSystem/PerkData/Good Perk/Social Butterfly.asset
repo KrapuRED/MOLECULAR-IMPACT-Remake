@@ -19,4 +19,7 @@ MonoBehaviour:
   perkType: 1
   perkDuration: 2
   longDuration: 0
-  perkEffect: []
+  perkEffect:
+  - effectName: Social activities are 20% more effective.
+    statusData: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
+    effectValue: 20

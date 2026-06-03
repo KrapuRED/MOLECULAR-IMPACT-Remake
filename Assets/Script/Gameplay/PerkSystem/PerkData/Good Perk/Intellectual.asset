@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perkID: perk_intellectual
   perkName: Intellectual
-  perkDescription: 
+  perkDescription: "\u201CSharp thinking and clever reasoning open doors others overlook.\u201D"
   perkRequirement: 25
   perkType: 1
   perkDuration: 1

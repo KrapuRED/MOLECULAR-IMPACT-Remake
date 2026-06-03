@@ -14,8 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perkID: perk_disciplined
   perkName: Disciplined
-  perkDescription: 
+  perkDescription: "\u201CExercise fills you with energy and joy, lifting your spirits
+    beyond the norm.\u201D"
   perkRequirement: 20
   perkType: 1
   perkDuration: 1
-  perkEffect: []
+  longDuration: 0
+  perkEffect:
+  - effectName: All Stat gains are increased by 10%.
+    statusData: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
+    effectValue: 10
+  - effectName: All Stat gains are increased by 10%.
+    statusData: {fileID: 11400000, guid: a2aa9485e610cba45a1e678ec3631661, type: 2}
+    effectValue: 10
+  - effectName: All Stat gains are increased by 10%.
+    statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
+    effectValue: 10
+  - effectName: All Stat gains are increased by 10%.
+    statusData: {fileID: 11400000, guid: 1c1cd316b8501f6448aedb0a0c80f19c, type: 2}
+    effectValue: 10

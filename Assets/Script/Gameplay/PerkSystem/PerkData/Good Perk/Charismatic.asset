@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perkID: perk_charismatic
   perkName: Charismatic
-  perkDescription: 
+  perkDescription: "\u201CYour words carry weight and your presence draws others
+    in.\u201D"
   perkRequirement: 15
   perkType: 1
   perkDuration: 1
   longDuration: 0
   perkEffect:
-  - effectName: 
-    statusData: {fileID: 0}
-    effectValue: 0
+  - effectName: Social gains are increased by 30%.
+    statusData: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
+    effectValue: 30

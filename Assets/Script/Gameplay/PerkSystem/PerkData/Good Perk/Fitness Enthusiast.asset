@@ -14,8 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perkID: perk_fitness_enthusiast
   perkName: Fitness Enthusiast
-  perkDescription: 
+  perkDescription: "\u201CYour passion for fitness pushes you further.\u201D"
   perkRequirement: 20
   perkType: 1
   perkDuration: 1
-  perkEffect: []
+  longDuration: 0
+  perkEffect:
+  - effectName: Exercise activities are 20% more effective.
+    statusData: {fileID: 0}
+    effectValue: 20
+  - effectName: Fitness gains are increased by 20%.
+    statusData: {fileID: 11400000, guid: 1c1cd316b8501f6448aedb0a0c80f19c, type: 2}
+    effectValue: 20

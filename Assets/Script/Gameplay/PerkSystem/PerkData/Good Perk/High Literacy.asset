@@ -14,9 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perkID: perk_high_literacy
   perkName: High Literacy
-  perkDescription: 
+  perkDescription: "\u201CYour grasp of language and ideas is sharper than most.
+    Books reveal more to you than to others.\u201D"
   perkRequirement: 20
   perkType: 1
   perkDuration: 1
   longDuration: 0
-  perkEffect: []
+  perkEffect:
+  - effectName: 'Reading activities are 20% more effective. '
+    statusData: {fileID: 0}
+    effectValue: 20
+  - effectName: Intelligence gains are increased by 20%.
+    statusData: {fileID: 11400000, guid: a2aa9485e610cba45a1e678ec3631661, type: 2}
+    effectValue: 20

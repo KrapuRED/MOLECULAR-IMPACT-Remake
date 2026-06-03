@@ -14,8 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perkID: perk_gambling_compulsive
   perkName: Gambling Compulsive
-  perkDescription: 
+  perkDescription: "\u201CYou can\u2019t resist the urge to play, even when the odds
+    crush you.\u201D"
   perkRequirement: 3
   perkType: 2
   perkDuration: 2
-  perkEffect: []
+  longDuration: 0
+  perkEffect:
+  - effectName: Decrease Happiness by 10 Everyday
+    statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
+    effectValue: 10
+  - effectName: Decrease stats gain by 10%.
+    statusData: {fileID: 11400000, guid: 1c1cd316b8501f6448aedb0a0c80f19c, type: 2}
+    effectValue: 10
+  - effectName: Decrease stats gain by 10%.
+    statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
+    effectValue: 10
+  - effectName: Decrease stats gain by 10%.
+    statusData: {fileID: 11400000, guid: a2aa9485e610cba45a1e678ec3631661, type: 2}
+    effectValue: 10
+  - effectName: Decrease stats gain by 10%.
+    statusData: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
+    effectValue: 10
+  - effectName: 'Gambling activities are 50% more effective. '
+    statusData: {fileID: 0}
+    effectValue: 0

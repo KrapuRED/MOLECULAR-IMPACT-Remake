@@ -14,12 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perkID: perk_stressed
   perkName: Stressed
-  perkDescription: 
+  perkDescription: "\u201CThe weight of daily pressure wears you down, clouding both
+    body and mind.\u201D"
   perkRequirement: 10
   perkType: 2
   perkDuration: 1
   longDuration: 0
   perkEffect:
-  - effectName: 
-    statusData: {fileID: 0}
-    effectValue: 0
+  - effectName: Decrease stats gain by 30%.
+    statusData: {fileID: 11400000, guid: 1c1cd316b8501f6448aedb0a0c80f19c, type: 2}
+    effectValue: 30
+  - effectName: Decrease stats gain by 30%.
+    statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
+    effectValue: 30
+  - effectName: Decrease stats gain by 30%.
+    statusData: {fileID: 11400000, guid: a2aa9485e610cba45a1e678ec3631661, type: 2}
+    effectValue: 30
+  - effectName: Decrease stats gain by 30%.
+    statusData: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
+    effectValue: 30

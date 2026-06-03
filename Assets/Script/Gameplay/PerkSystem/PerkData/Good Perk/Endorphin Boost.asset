@@ -14,9 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perkID: perk_endorphin_boost
   perkName: Endorphin Boost
-  perkDescription: 
+  perkDescription: "\u201CExercise fills you with energy and joy, lifting your spirits
+    beyond the norm.\u201D"
   perkRequirement: 10
   perkType: 1
   perkDuration: 2
   longDuration: 2
-  perkEffect: []
+  perkEffect:
+  - effectName: Happiness gains are increased by 30%.
+    statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
+    effectValue: 30
