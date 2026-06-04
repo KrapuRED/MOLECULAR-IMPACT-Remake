@@ -39,8 +39,6 @@ public class DialogueManager : MonoBehaviour
     [Header("=== Check Only ===")]
     [SerializeField] bool isDialogueActive = false;
 
-    public CanvasGroup canvasGroup;
-
 
     //[SerializeField] Animator animator;
     private void Awake()

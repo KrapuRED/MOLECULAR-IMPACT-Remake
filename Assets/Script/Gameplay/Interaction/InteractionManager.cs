@@ -64,11 +64,12 @@ public class InteractionManager : MonoBehaviour
         panelInteraction.Show(characterID, data);
     }
 
-    public void ConfiremedInteraction(string charName, string charID, int consume)
+    public void ConfiremedInteraction(string charName, string charID, int consume, ListOfDialogueTrigger listOfDialogueTrigger)
     {
         // Consume Energy
         CurrencyManager.instance.ConsumeEnergy(consume);
-
+        listOfDialogueTrigger.TriggerDialogueList(); // trigger dialogue
+        GameStateManager.instance.SetInteractionDataGameState(charName, charID); //interaction count++
         GameStateManager.instance.SetInteractionDataGameState(charName, charID);
     }
 }

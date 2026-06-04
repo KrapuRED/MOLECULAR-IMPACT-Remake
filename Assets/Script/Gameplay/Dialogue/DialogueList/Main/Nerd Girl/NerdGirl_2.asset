@@ -15,6 +15,12 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - character:
+        name: 
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 0
+      line: (Stack of books beside her. She slides one over.)
+    - character:
         name: Nerd Girl
         icon: {fileID: 0}
       backGroundImage: {fileID: 0}
@@ -24,7 +30,7 @@ MonoBehaviour:
         name: Novar
         icon: {fileID: 0}
       backGroundImage: {fileID: 0}
-      onTheRight: 0
+      onTheRight: 1
       line: You picked it for me?
     - character:
         name: Nerd Girl

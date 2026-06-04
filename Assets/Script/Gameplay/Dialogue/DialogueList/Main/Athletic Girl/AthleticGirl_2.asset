@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb9780490a24f1442b95ae6bb67dfcab, type: 3}
-  m_Name: NerdGirl_1
+  m_Name: AthleticGirl_2
   m_EditorClassIdentifier: 
   dialogue:
     dialogueLines:
@@ -19,41 +19,35 @@ MonoBehaviour:
         icon: {fileID: 0}
       backGroundImage: {fileID: 0}
       onTheRight: 0
-      line: (Quiet library. Pages turning, faint footsteps.)
+      line: (She hands him a towel)
     - character:
-        name: Novar
+        name: Athletic Girl
         icon: {fileID: 0}
       backGroundImage: {fileID: 0}
       onTheRight: 0
-      line: "You\u2019ve been at that table for hours."
-    - character:
-        name: Nerd Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
-      onTheRight: 1
-      line: "Oh\u2014! Please don\u2019t talk so loud\u2026"
+      line: "You look like you\u2019re about to pass out."
     - character:
         name: Novar
         icon: {fileID: 0}
       backGroundImage: {fileID: 0}
       onTheRight: 1
-      line: Sorry. What are you reading?
+      line: I might.
     - character:
-        name: Nerd Girl
+        name: Athletic Girl
         icon: {fileID: 0}
       backGroundImage: {fileID: 0}
-      onTheRight: 1
-      line: "Sci-fi. It\u2019s\u2026 dense. Most people don\u2019t get into it."
+      onTheRight: 0
+      line: "You\u2019re improving though."
     - character:
         name: Novar
         icon: {fileID: 0}
       backGroundImage: {fileID: 0}
       onTheRight: 1
-      line: "Maybe I\u2019m not most people."
+      line: That sounded like praise.
     - character:
-        name: Nerd Girl
+        name: Athletic Girl
         icon: {fileID: 0}
       backGroundImage: {fileID: 0}
-      onTheRight: 1
-      line: "\u2026Then sit. Just\u2014quietly."
+      onTheRight: 0
+      line: "Don\u2019t get used to it."
   dialogueChoices: []

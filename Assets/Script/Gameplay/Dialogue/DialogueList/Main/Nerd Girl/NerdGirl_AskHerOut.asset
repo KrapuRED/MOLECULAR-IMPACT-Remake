@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb9780490a24f1442b95ae6bb67dfcab, type: 3}
-  m_Name: NerdGirl_1
+  m_Name: NerdGirl_AskHerOut
   m_EditorClassIdentifier: 
   dialogue:
     dialogueLines:
@@ -19,41 +19,29 @@ MonoBehaviour:
         icon: {fileID: 0}
       backGroundImage: {fileID: 0}
       onTheRight: 0
-      line: (Quiet library. Pages turning, faint footsteps.)
+      line: (At the library exit)
     - character:
         name: Novar
         icon: {fileID: 0}
       backGroundImage: {fileID: 0}
       onTheRight: 0
-      line: "You\u2019ve been at that table for hours."
+      line: Want to check out a bookstore together?
     - character:
         name: Nerd Girl
         icon: {fileID: 0}
       backGroundImage: {fileID: 0}
       onTheRight: 1
-      line: "Oh\u2014! Please don\u2019t talk so loud\u2026"
+      line: "Outside\u2026 together?"
     - character:
         name: Novar
         icon: {fileID: 0}
       backGroundImage: {fileID: 0}
-      onTheRight: 1
-      line: Sorry. What are you reading?
+      onTheRight: 0
+      line: Yeah.
     - character:
         name: Nerd Girl
         icon: {fileID: 0}
       backGroundImage: {fileID: 0}
       onTheRight: 1
-      line: "Sci-fi. It\u2019s\u2026 dense. Most people don\u2019t get into it."
-    - character:
-        name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
-      onTheRight: 1
-      line: "Maybe I\u2019m not most people."
-    - character:
-        name: Nerd Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
-      onTheRight: 1
-      line: "\u2026Then sit. Just\u2014quietly."
+      line: "\u2026I\u2019d like that."
   dialogueChoices: []

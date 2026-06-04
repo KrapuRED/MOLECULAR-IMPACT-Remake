@@ -13,5 +13,41 @@ MonoBehaviour:
   m_Name: NerdGirl_3
   m_EditorClassIdentifier: 
   dialogue:
-    dialogueLines: []
+    dialogueLines:
+    - character:
+        name: 
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 0
+      line: (They sit side by side, whispering over the same book.)
+    - character:
+        name: Novar
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 0
+      line: "I\u2019m stuck here."
+    - character:
+        name: Nerd Girl
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 1
+      line: "You skipped a detail earlier. Look\u2014"
+    - character:
+        name: 
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 0
+      line: (leans closer, pointing at the page)
+    - character:
+        name: Novar
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 0
+      line: "You\u2019re really into this."
+    - character:
+        name: Nerd Girl
+        icon: {fileID: 0}
+      backGroundImage: {fileID: 0}
+      onTheRight: 1
+      line: "Of course. And now\u2026 you are too."
   dialogueChoices: []
