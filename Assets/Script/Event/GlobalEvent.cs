@@ -88,7 +88,10 @@ public class GlobalEvent
     public static readonly CustomEvent<int> OnUpdateMoneyUI = new();
     public static readonly CustomEvent<int> OnUpdateEnergyUI = new();
     public static readonly CustomEvent<int, int> OnUpdateWeekCounertUI = new();
-
+    
+    public static readonly CustomEvent<string, object> OnShowPanelEffect = new();
+    public static readonly CustomEvent OnHidePanelEffect = new();
+    
     // ======================= EVENTS WORK DAY ======================= 
     public static readonly CustomEvent<string, float> OnApplyRandomDayEvent = new ();
     

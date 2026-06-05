@@ -59,7 +59,7 @@ public class DialogueManager : MonoBehaviour
         lines = new Queue<DialogueLines>();
         choices = null;
         choicePanel.alpha = 0;
-        dialoguePanel.alpha = 0;
+        HideDialoguePanel();
     }
 
     public void StartDialogue(Dialogue dialogue, List<DialogueTrigger> dialogueChoices)
@@ -67,7 +67,7 @@ public class DialogueManager : MonoBehaviour
         choicePanel.alpha = 0;
         Debug.Log("Dialogue Start");
         isDialogueActive = true;
-        dialoguePanel.alpha = 1;
+        ShowDialoguePanel();
         //animator.Play("show");
         lines.Clear();
         foreach (DialogueLines dialogueLines in dialogue.dialogueLines)
@@ -185,5 +185,19 @@ public class DialogueManager : MonoBehaviour
         Color c = image.color;
         c.a = 1f;
         image.color = c;
+    }
+    
+    private void HideDialoguePanel()
+    {
+        dialoguePanel.alpha = 0;
+        dialoguePanel.blocksRaycasts = false;
+        dialoguePanel.interactable = false;
+    }
+
+    private void ShowDialoguePanel()
+    {
+        dialoguePanel.alpha = 1;
+        dialoguePanel.blocksRaycasts = true;
+        dialoguePanel.interactable = true;
     }
 }

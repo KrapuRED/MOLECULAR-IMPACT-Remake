@@ -32,6 +32,7 @@ public class PerkSO : ScriptableObject
     [TextArea(10, 15)]
     public string perkDescription;
 
+    public Sprite perkIcon;
     public int perkRequirement;
     public PerkType perkType;
     public PerkDuration perkDuration;
