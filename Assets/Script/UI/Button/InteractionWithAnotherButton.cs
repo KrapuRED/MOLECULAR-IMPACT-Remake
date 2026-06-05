@@ -5,39 +5,45 @@ public class InteractionWithAnotherButton : MonoBehaviour
 {
     public TextMeshProUGUI eventName;
 
+    [Header("Energy UI Config")]
     public GameObject energyBoxArea;
     public TextMeshProUGUI enegryText;
 
-    public GameObject moneyyBoxArea;
+    [Header("Money UI Config")]
+    public GameObject moneyBoxArea;
     public TextMeshProUGUI moneyText;
-    
-    private int _energyCost;
-    private int _moneyCost;
+
+    private EventOutDoor _eventData;
     
     public void InitializedButton(EventOutDoor eventData)
     {
         if (eventData == null) return;
 
+        _eventData = eventData;
         eventName.text = eventData.eventName;
 
         if (eventData.energyCost > 0)
         {
             energyBoxArea.SetActive(true);
             enegryText.text = eventData.energyCost.ToString();
-            _energyCost =  eventData.energyCost;
         }
 
         if (eventData.moneyCost > 0)
         {
-            moneyyBoxArea.SetActive(true);
+            moneyBoxArea.SetActive(true);
             moneyText.text = eventData.moneyCost.ToString();
-            _moneyCost = eventData.moneyCost;
         }
     }
     
     public void OnInteractionButtonClick()
     {
-        CurrencyManager.instance.UseCurrency(_energyCost, _moneyCost);
+        CurrencyManager.instance.UseCurrency(_eventData.energyCost, _eventData.moneyCost);
+
+        foreach (var status in _eventData.statusAffected)
+        {
+            StatusManager.instance.CalculateStatusAfterRandomEffent(status.statusData.statusID, status.statusValue);
+        }
+
         GlobalEvent.OnHidePanelInteractionAnother.Invoke();
     }
 }

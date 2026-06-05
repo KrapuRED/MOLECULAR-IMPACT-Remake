@@ -13,7 +13,7 @@ public class EndingCalculation : MonoBehaviour
             Destroy(gameObject);
     }
 
-    [SerializeField] private List<PlayerStatus> _status = new List<PlayerStatus>();
+    [SerializeField] private List<StatusData> _status = new List<StatusData>();
 
 
     [Header("All Status Value")]
@@ -42,7 +42,7 @@ public class EndingCalculation : MonoBehaviour
 
     public void ReadAllStatusFromList()
     {
-        foreach (PlayerStatus status in _status)
+        foreach (StatusData status in _status)
         {
             // Pastikan statusData tidak null agar tidak error NullReferenceException
             if (status.statusData != null)

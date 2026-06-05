@@ -1,18 +1,20 @@
 using System;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class PanelShowEffects : Panel
 {
     [SerializeField] private GameObject effectButton;
 
     [Header("== Panel Content ==")]
-    [SerializeField] private GameObject preafabEffectContent;
+    [SerializeField] private GameObject prefabEffectContent;
     [SerializeField] private Transform effectContainer;
     
     private void OnEnable()
     {
         GlobalEvent.OnShowPanelEffect.Addistener(Show);
         GlobalEvent.OnHidePanelEffect.Addistener(Hide);
+        GlobalEvent.OnUpdatePerkUI.Addistener(GenerateContent);
     }
 
     private void OnDisable()
@@ -29,6 +31,8 @@ public class PanelShowEffects : Panel
     {
         GlobalEvent.OnShowPanelEffect.Removeistener(Show);
         GlobalEvent.OnHidePanelEffect.Removeistener(Hide);
+
+        GlobalEvent.OnUpdatePerkUI.Removeistener(GenerateContent);
     }
     
     public override void Show(string charID, object args2 = null)
@@ -68,9 +72,22 @@ public class PanelShowEffects : Panel
         effectButton.SetActive(true);
     }
 
-    private void GenerateContent()
+    private void GenerateContent(List<PerkSO> perkDatas)
     {
-        GameObject newContent = Instantiate(effectButton, effectContainer);
-        newContent.name = "Effect Content";
+        for (int i = 0; i < perkDatas.Count; i++)
+        {
+            GameObject newContent = Instantiate(prefabEffectContent, effectContainer);
+            newContent.name = "Effect Content " + perkDatas[i].perkName;
+
+            ShowEffectsContentUI contentUI = newContent.GetComponent<ShowEffectsContentUI>();
+            if (contentUI == null)
+            {
+                Debug.LogWarning("The ShowEffectsContentUI Component is Null");
+                Destroy(newContent);
+                continue;
+            }
+
+            contentUI.IntializeEffects(perkDatas[i]);
+        }
     }
 }

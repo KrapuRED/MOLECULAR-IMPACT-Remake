@@ -32,6 +32,7 @@ public class ScheduleManager : MonoBehaviour
         StatusManager.instance.UpdateUI();
         CurrencyManager.instance.UpdateUI();
         DayCycleManager.instance.UpdateUI();
+        PerkManager.instance.UpdeteUI();
 
         GenerateActvitiesByData();
     }

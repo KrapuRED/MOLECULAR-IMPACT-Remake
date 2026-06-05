@@ -353,7 +353,7 @@ public class PerkManager : MonoBehaviour
             pd.Add(perk.perkData);
         }
 
-        TestDictionary(pd);
+        GlobalEvent.OnUpdatePerkUI.Invoke(pd);
     }
 
     private void TestDictionary(List<PerkSO> perkData)

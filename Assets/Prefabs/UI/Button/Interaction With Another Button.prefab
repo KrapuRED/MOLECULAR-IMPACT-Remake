@@ -533,7 +533,7 @@ MonoBehaviour:
   eventName: {fileID: 6797968429254358382}
   energyBoxArea: {fileID: 3969294662853343790}
   enegryText: {fileID: 340600787330051470}
-  moneyyBoxArea: {fileID: 5657942428182722392}
+  moneyBoxArea: {fileID: 5657942428182722392}
   moneyText: {fileID: 7898344298753874777}
 --- !u!1 &3534686870884915996
 GameObject:

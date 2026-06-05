@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CustomEvent
@@ -88,7 +89,8 @@ public class GlobalEvent
     public static readonly CustomEvent<int> OnUpdateMoneyUI = new();
     public static readonly CustomEvent<int> OnUpdateEnergyUI = new();
     public static readonly CustomEvent<int, int> OnUpdateWeekCounertUI = new();
-    
+    public static readonly CustomEvent<List<PerkSO>> OnUpdatePerkUI = new();
+
     public static readonly CustomEvent<string, object> OnShowPanelEffect = new();
     public static readonly CustomEvent OnHidePanelEffect = new();
     

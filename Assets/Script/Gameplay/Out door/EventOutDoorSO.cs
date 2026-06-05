@@ -10,6 +10,7 @@ public class EventOutDoor
     public int moneyCost;
 
     // Add or Gain more for the status
+    public List<StatusData> statusAffected = new();
 }
 
 

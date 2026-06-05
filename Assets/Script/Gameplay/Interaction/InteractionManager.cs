@@ -38,6 +38,7 @@ public class InteractionManager : MonoBehaviour
         StatusManager.instance.UpdateUI();
         CurrencyManager.instance.UpdateUI();
         DayCycleManager.instance.UpdateUI();
+        PerkManager.instance.UpdeteUI();
     }
 
     public void InteactionWithAnotherCharacter(string characterID)

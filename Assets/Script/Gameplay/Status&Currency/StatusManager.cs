@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 
 [System.Serializable]
-public class PlayerStatus
+public class StatusData
 {
     public StatusSO statusData;
     [Range(0, 100)]
@@ -15,8 +15,8 @@ public class StatusManager : MonoBehaviour
 
     [Header("Status Config")]
     [SerializeField]
-    private List<PlayerStatus> _status = new List<PlayerStatus>();
-    public List<PlayerStatus> PlayerStatuses => _status;
+    private List<StatusData> _status = new List<StatusData>();
+    public List<StatusData> PlayerStatuses => _status;
 
     [Header("Events")]
     [SerializeField] private UpdateStatusNonCurrencyEventSO _updateStatusNonCurrencyUI;
@@ -118,7 +118,7 @@ public class StatusManager : MonoBehaviour
         UpdateUI();
     }
 
-    //public List<PlayerStatus> ReturnStatusPlayer()
+    //public List<StatusData> ReturnStatusPlayer()
     //{
     //    return _status;
     //}

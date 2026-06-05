@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 390150e6de5ae604ab736e43cef4ff3d, type: 3}
-  m_Name: EventOutDoor-Bar
+  m_Name: EventOutDoorSO-GYM
   m_EditorClassIdentifier: 
   eventOutDoorList:
-  - eventName: Buy A Drink
-    eventID: EOD_Bar_00
+  - eventName: Start Intense Work
+    eventID: EOD_Gym_00
     energyCost: 1
-    moneyCost: 120
+    moneyCost: 0
     statusAffected:
-    - statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
+    - statusData: {fileID: 11400000, guid: 1c1cd316b8501f6448aedb0a0c80f19c, type: 2}
       statusValue: 40
-    - statusData: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
-      statusValue: 20
