@@ -89,11 +89,15 @@ public class ScheduleManager : MonoBehaviour
     public void ReadyActivity()
     {
         GameStateManager.instance.SetActivityGameState(_selectedActivityDatas);
-        EndingHabbitDatabase.instance.AddActivity(_selectedActivityDatas);
     }
 
     public void ScheduleManagerUpdateUI()
     {
         _totalActivitiesCountEvent.OnRaise(_selectedActivityDatas.Count, _maxActivities);
+    }
+
+    public void SubmitActivityIntoEndingManager()
+    {
+        EndingHabbitDatabase.instance.AddActivity(_selectedActivityDatas);
     }
 }

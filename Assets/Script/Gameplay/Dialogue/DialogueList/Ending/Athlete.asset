@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - character:
-        name: Athlete
+        name: Athlete Life
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
         day. With the support of those who shared your drive, you chose to leave
         the safety of an office behind and commit fully to your body\u2019s potential."
     - character:
-        name: Athlete
+        name: Athlete Life
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
@@ -35,7 +35,7 @@ MonoBehaviour:
         The gold medal rests heavy
         against your chest.'
     - character:
-        name: Athlete
+        name: Athlete Life
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0

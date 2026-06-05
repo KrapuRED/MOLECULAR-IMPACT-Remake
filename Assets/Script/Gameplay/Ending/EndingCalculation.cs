@@ -16,6 +16,14 @@ public class EndingCalculation : MonoBehaviour
     [SerializeField] private List<PlayerStatus> _status = new List<PlayerStatus>();
 
 
+    [Header("All Status Value")]
+    [SerializeField] private float happinessVal = 0;
+    [SerializeField] private float socialVal = 0;
+    [SerializeField] private float fitnessVal = 0;
+    [SerializeField] private float intelligenceVal = 0;
+    [SerializeField] private float currencyVal = 0;
+
+
     [Header("Happiness")]
     [SerializeField] private float happinessHigh;
     [SerializeField] private float happinessLow;
@@ -27,33 +35,69 @@ public class EndingCalculation : MonoBehaviour
 
     private void Start()
     {
-        //_status = StatusManager.instance.PlayerStatuses;
+        if(StatusManager.instance != null)
+            _status = StatusManager.instance.PlayerStatuses;
+        ReadAllStatusFromList();
     }
+
+    public void ReadAllStatusFromList()
+    {
+        foreach (PlayerStatus status in _status)
+        {
+            // Pastikan statusData tidak null agar tidak error NullReferenceException
+            if (status.statusData != null)
+            {
+                // Cek berdasarkan statusID atau statusName yang kamu atur di Inspector
+                if (status.statusData.statusID == "status_happiness")
+                {
+                    happinessVal = status.statusValue;
+                }
+                else if (status.statusData.statusID == "status_social")
+                {
+                    socialVal = status.statusValue;
+                }
+                else if (status.statusData.statusID == "status_fitness")
+                {
+                    fitnessVal = status.statusValue;
+                }
+                else if (status.statusData.statusID == "status_intelligence")
+                {
+                    intelligenceVal = status.statusValue;
+                }
+                // Kamu juga bisa cek berdasarkan enum statusType jika tipenya Currency
+                else if (status.statusData.statusType == StatusType.Currency)
+                {
+                    currencyVal = status.statusValue;
+                }
+            }
+        }
+    }
+
 
     //public int CheckEnding()
     //{
     //    Debug.Log("Check Ending");
-    //    if (GameManager.instance.financialRuin)
+    //    if (currencyVal < 0)
     //    {
-    //        if (_status. < happinessHigh)
+    //        if (happinessVal < happinessHigh)
     //            return 1; //Depression Ending
 
-    //        if (happiness >= happinessHigh && GameManager.instance.gamblingAddiction)
+    //        if (happinessVal >= happinessHigh && GameManager.instance.gamblingAddiction)
     //            return 2; //Beggar Ending
     //    }
-    //    if (GameManager.instance.alcoholAddiction && fitness < fitnessLow)
+    //    if (GameManager.instance.alcoholAddiction && fitnessVal < statusLow)
     //    {
     //        return 3; //Short Lived Ending
     //    }
     //    if (GameManager.instance.gymRatsCircle || GameManager.instance.heavyExcercise || GameManager.instance.scholarCircle || GameManager.instance.dedicatedBookReading)
     //    {
-    //        if (happiness >= happinessHigh)
+    //        if (happinessVal >= happinessHigh)
     //        {
-    //            if (GameManager.instance.heavyExcercise && GameManager.instance.gymRatsCircle && fitness >= statHigh)
+    //            if (GameManager.instance.heavyExcercise && GameManager.instance.gymRatsCircle && fitnessVal >= statusHigh)
     //            {
     //                return 4; //Athlete Life Ending
     //            }
-    //            else if (GameManager.instance.dedicatedBookReading && GameManager.instance.scholarCircle && intelligence >= statHigh)
+    //            else if (GameManager.instance.dedicatedBookReading && GameManager.instance.scholarCircle && intelligenceVal >= statusHigh)
     //            {
     //                return 5; //CEO Ending
     //            }
