@@ -38,6 +38,7 @@ public class DialogueManager : MonoBehaviour
 
     [Header("=== Check Only ===")]
     [SerializeField] bool isDialogueActive = false;
+    public bool IsDialogueActive =>  isDialogueActive;
 
 
     //[SerializeField] Animator animator;

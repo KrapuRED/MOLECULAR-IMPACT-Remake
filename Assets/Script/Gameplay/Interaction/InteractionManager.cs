@@ -5,9 +5,11 @@ using System;
 [System.Serializable]
 public class InteractionData
 {
-    public int minInteractionCount;
     public string titleInteraction;
+    public string characterID;
+    public int minInteractionCount;
     public string descriptionInteraction;
+    public DialogueTrigger  dialogueTrigger;
 }
 
 public class InteractionManager : MonoBehaviour
@@ -16,6 +18,8 @@ public class InteractionManager : MonoBehaviour
 
     [SerializeField] private List<InteractionData> interactionDataList = new();
     [SerializeField] private PanelInteraction panelInteraction;
+
+    public bool isPanelInteractionActive { get; private set; }
 
     private void Awake()
     {
@@ -38,12 +42,6 @@ public class InteractionManager : MonoBehaviour
 
     public void InteactionWithAnotherCharacter(string characterID)
     {
-        /*
-         TO DO:
-        1) Check if the character is already in the game state, if not add it to the game state with interaction count 1, if yes increment the interaction count by 1
-        2) Show the interaction result panel with the character name
-         */
-
         InteractionData intrectionData = null;
 
         if (GameStateManager.instance.IsInteractionCharacterExist(characterID))
@@ -59,17 +57,31 @@ public class InteractionManager : MonoBehaviour
         ShowInteractionResultPanel(intrectionData, characterID);
     }
 
+    public void ConfiremedInteraction(string charName, string charID, int consume)
+    {
+        // Consume Energy
+        CurrencyManager.instance.ConsumeEnergy(consume);
+        
+        GameStateManager.instance.SetInteractionDataGameState(charName, charID); //interaction count++
+        int interactionCount =  GameStateManager.instance.GetInteractionCharacterByID(charID);
+        
+        var interactionData = interactionDataList.Find(interactionData => interactionData.characterID == charID);
+
+        interactionData.dialogueTrigger.TriggerDialogue();
+        //GameStateManager.instance.SetInteractionDataGameState(charName, charID);
+    }
+    
     private void ShowInteractionResultPanel(InteractionData data, string characterID)
     {
         panelInteraction.Show(characterID, data);
     }
 
-    public void ConfiremedInteraction(string charName, string charID, int consume, ListOfDialogueTrigger listOfDialogueTrigger)
+    public void SetInteractionPanel()
     {
-        // Consume Energy
-        CurrencyManager.instance.ConsumeEnergy(consume);
-        listOfDialogueTrigger.TriggerDialogueList(); // trigger dialogue
-        GameStateManager.instance.SetInteractionDataGameState(charName, charID); //interaction count++
-        GameStateManager.instance.SetInteractionDataGameState(charName, charID);
+        Debug.Log($"SetInteractionPanel : {isPanelInteractionActive}" );
+       if (isPanelInteractionActive)
+           isPanelInteractionActive = false;
+       else
+           isPanelInteractionActive = true;
     }
 }

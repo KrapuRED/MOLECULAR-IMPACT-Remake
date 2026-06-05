@@ -3,16 +3,14 @@ using UnityEngine;
 public class InteractionButton : MonoBehaviour
 {
     [SerializeField] private int consume;
-
     [SerializeField] private Character interactAbleChar;
-
-    [SerializeField] private ListOfDialogueTrigger listOfDialogueTrigger;
+    
 
     public void OnInteractionButtonClicked()
     {
         if (interactAbleChar != null)
         {
-            InteractionManager.instance.ConfiremedInteraction(interactAbleChar.CharacterData.characterName, interactAbleChar.CharacterData.characterID, consume, listOfDialogueTrigger);
+            InteractionManager.instance.ConfiremedInteraction(interactAbleChar.CharacterData.characterName, interactAbleChar.CharacterData.characterID, consume);
 
             GlobalEvent.OnHidePanelInteraction.Invoke();
 

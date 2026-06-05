@@ -47,6 +47,8 @@ public class PanelInteraction : Panel
             titleText.text       = ((InteractionData)args2).titleInteraction;
             descriptionText.text = ((InteractionData)args2).descriptionInteraction;
         }
+        
+        InteractionManager.instance.SetInteractionPanel();
     }
 
     public override void Hide()
@@ -59,5 +61,7 @@ public class PanelInteraction : Panel
 
         //Clear or Hide text and botton
         GlobalEvent.OnHideCommitmentBotton.Invoke();
+        InteractionManager.instance.SetInteractionPanel();
+        
     }
 }

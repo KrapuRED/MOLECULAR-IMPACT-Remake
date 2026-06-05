@@ -5,8 +5,9 @@ public class CharacterBar : Character
 {
     public override void OnInteract()
     {
-        base.OnInteract();
-
+        if (DialogueManager.instance.IsDialogueActive || InteractionManager.instance.isPanelInteractionActive)
+            return;
+        
         if (characterData.isProgessAble)
         {
             InteractionManager.instance.InteactionWithAnotherCharacter(characterData.characterID);
@@ -14,8 +15,8 @@ public class CharacterBar : Character
             GlobalEvent.OnShowCommitmentBotton.Invoke();
         }
         
-        else
-            {
+        else 
+        {
             // Show panel with character name and description
             GlobalEvent.OnShowPanelInteractionAnother.Invoke(characterData.characterID, null);
         }

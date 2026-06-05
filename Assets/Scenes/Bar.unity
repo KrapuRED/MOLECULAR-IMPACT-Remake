@@ -1623,6 +1623,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
+      propertyPath: commitments.Array.data[0].commitmentName
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2185,7 +2189,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912178579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 866ddd3543d1cca4d84af26dbd45e40f, type: 3}
   m_Name: 
@@ -2239,9 +2243,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionDataList:
-  - minInteractionCount: 0
-    titleInteraction: First TIme Meet
+  - titleInteraction: First TIme Meet
+    characterID: char_bar_01
+    minInteractionCount: 1
     descriptionInteraction: 
+    dialogueTrigger: {fileID: 11400000, guid: f1b03abffcf573645be8e5a08e0645c9, type: 2}
+  - titleInteraction: Second TIme Meet
+    characterID: char_bar_01
+    minInteractionCount: 2
+    descriptionInteraction: 
+    dialogueTrigger: {fileID: 11400000, guid: d778b66c96409eb45a4e79adc7055001, type: 2}
+  - titleInteraction: Third TIme Meet
+    characterID: char_bar_01
+    minInteractionCount: 3
+    descriptionInteraction: 
+    dialogueTrigger: {fileID: 11400000, guid: bf866bbb55357c84882018ff19fe5379, type: 2}
   panelInteraction: {fileID: 1929278182921885520}
 --- !u!224 &1987679006 stripped
 RectTransform:

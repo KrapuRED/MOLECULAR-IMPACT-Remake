@@ -81,4 +81,11 @@ public class GameStateManager : MonoBehaviour
             });
         }
     }
+
+    public int GetInteractionCharacterByID(string charID)
+    {
+        var character = _gameState.InteractionCharacters.Find(character => character.characterID == charID);
+        
+        return character.interactionCount;
+    }
 }

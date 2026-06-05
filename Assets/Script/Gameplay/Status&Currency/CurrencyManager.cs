@@ -44,6 +44,12 @@ public class CurrencyManager : MonoBehaviour
         RefershEnergy();
     }
 
+    public void UseCurrency(int energyCost, int moneyCost)
+    {
+        ConsumeMoney(moneyCost);
+        ConsumeEnergy(energyCost);
+    }
+
     // ======================= MONEY SYSTEM =======================
     public void RefershMoney()
     {
@@ -51,6 +57,17 @@ public class CurrencyManager : MonoBehaviour
         Debug.Log("RefershMoney Get called");
         _currentMoneyCurrency += moneyEarnedPerWeek;
 
+        UpdateUI();
+    }
+
+    public void ConsumeMoney(int amount)
+    {
+        _currentMoneyCurrency -= amount;
+        
+        if (_currentMoneyCurrency < 0)
+            _currentMoneyCurrency = 0;
+
+        // Update energy UI here if needed
         UpdateUI();
     }
 

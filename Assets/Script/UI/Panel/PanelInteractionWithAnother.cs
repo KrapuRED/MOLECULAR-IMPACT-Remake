@@ -66,6 +66,8 @@ public class PanelInteractionWithAnother : Panel
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
+        
+        InteractionManager.instance.SetInteractionPanel();
     }
 
     private void GenerateButton(EventOutDoor eventData)
@@ -90,5 +92,6 @@ public class PanelInteractionWithAnother : Panel
 
         //Clear or Hide text and botton
         GlobalEvent.OnHideCommitmentBotton.Invoke();
+        InteractionManager.instance.SetInteractionPanel();
     }
 }
