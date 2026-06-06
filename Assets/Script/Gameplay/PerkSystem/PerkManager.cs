@@ -139,6 +139,26 @@ public class PerkManager : MonoBehaviour
         return false;
     }
 
+    public bool IsThereAnyBadTag()
+    {
+        // 1. Cek di list perk permanen
+        foreach (var perk in _activePerkPermanentDatas)
+        {
+            if (perk.isActive && perk.perkData != null && perk.perkData.perkType == PerkType.bad)
+                return true;
+        }
+
+        // 2. Cek di list perk temporary (Tambahan agar akurat)
+        foreach (var perk in _activePerkTemporaryDatas)
+        {
+            if (perk.isActive && perk.perkData != null && perk.perkData.perkType == PerkType.bad)
+                return true;
+        }
+
+        return false;
+    }
+
+
     #region Perk System
     /* Summary UpdatePerkByActivity
      * Updates perk points based on ActivitySO rewards.

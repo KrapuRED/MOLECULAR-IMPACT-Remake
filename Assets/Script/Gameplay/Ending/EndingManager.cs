@@ -4,8 +4,19 @@ using UnityEngine;
 public class EndingManager : MonoBehaviour
 {
 
-    [SerializeField] private ListOfDialogueTrigger listOfDialogueTrigger;
+    public static EndingManager instance;
 
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
+
+
+    [SerializeField] private ListOfDialogueTrigger listOfDialogueTrigger;
+    [SerializeField] private GameObject summaryPanel;
 
     private void Start()
     {
@@ -22,6 +33,12 @@ public class EndingManager : MonoBehaviour
     {
         yield return null;
         EndingCutsceneTrigger();
+    }
+
+    public void OpenSummaryButton()
+    {
+        if (summaryPanel.activeSelf) return;
+        summaryPanel.SetActive(true);
     }
 
 }

@@ -32,6 +32,13 @@ public class EndingCalculation : MonoBehaviour
     [SerializeField] private float statusHigh;
     [SerializeField] private float statusLow;
 
+    [Header("All Perk ID")]
+    [SerializeField] private string gamblingAddictionID;
+    [SerializeField] private string alcoholAddictionID;
+    [SerializeField] private string gymRatsCircleID;
+    [SerializeField] private string heavyExcerciseID;
+    [SerializeField] private string scholarCircleID;
+    [SerializeField] private string dedicatedBookReadingID;
 
     private void Start()
     {
@@ -74,43 +81,43 @@ public class EndingCalculation : MonoBehaviour
     }
 
 
-    //public int CheckEnding()
-    //{
-    //    Debug.Log("Check Ending");
-    //    if (currencyVal < 0)
-    //    {
-    //        if (happinessVal < happinessHigh)
-    //            return 1; //Depression Ending
+    public int CheckEnding()
+    {
+        Debug.Log("Check Ending");
+        if (currencyVal < 0)
+        {
+            if (happinessVal < happinessHigh)
+                return 1; //Depression Ending
 
-    //        if (happinessVal >= happinessHigh && GameManager.instance.gamblingAddiction)
-    //            return 2; //Beggar Ending
-    //    }
-    //    if (GameManager.instance.alcoholAddiction && fitnessVal < statusLow)
-    //    {
-    //        return 3; //Short Lived Ending
-    //    }
-    //    if (GameManager.instance.gymRatsCircle || GameManager.instance.heavyExcercise || GameManager.instance.scholarCircle || GameManager.instance.dedicatedBookReading)
-    //    {
-    //        if (happinessVal >= happinessHigh)
-    //        {
-    //            if (GameManager.instance.heavyExcercise && GameManager.instance.gymRatsCircle && fitnessVal >= statusHigh)
-    //            {
-    //                return 4; //Athlete Life Ending
-    //            }
-    //            else if (GameManager.instance.dedicatedBookReading && GameManager.instance.scholarCircle && intelligenceVal >= statusHigh)
-    //            {
-    //                return 5; //CEO Ending
-    //            }
+            if (happinessVal >= happinessHigh && PerkManager.instance.IsPerkActive(gamblingAddictionID))
+                return 2; //Beggar Ending
+        }
+        if (PerkManager.instance.IsPerkActive(alcoholAddictionID) && fitnessVal < statusLow)
+        {
+            return 3; //Short Lived Ending
+        }
+        if (PerkManager.instance.IsPerkActive(gymRatsCircleID) || PerkManager.instance.IsPerkActive(heavyExcerciseID) || PerkManager.instance.IsPerkActive(scholarCircleID) || PerkManager.instance.IsPerkActive(dedicatedBookReadingID))
+        {
+            if (happinessVal >= happinessHigh)
+            {
+                if (PerkManager.instance.IsPerkActive(heavyExcerciseID) && PerkManager.instance.IsPerkActive(gymRatsCircleID) && fitnessVal >= statusHigh)
+                {
+                    return 4; //Athlete Life Ending
+                }
+                else if (PerkManager.instance.IsPerkActive(dedicatedBookReadingID) && PerkManager.instance.IsPerkActive(scholarCircleID) && intelligenceVal >= statusHigh)
+                {
+                    return 5; //CEO Ending
+                }
 
-    //        }
+            }
 
-    //    }
+        }
 
-    //    if (GameManager.instance.badTagCount == 0)
-    //    {
-    //        return 6; //Happy Life Ending
-    //    }
-    //    //Nothing Interesting Ending Factor
-    //    return 0;
-    //}
+        if (!PerkManager.instance.IsThereAnyBadTag())
+        {
+            return 6; //Happy Life Ending
+        }
+        //Nothing Interesting Ending Factor
+        return 0;
+    }
 }
