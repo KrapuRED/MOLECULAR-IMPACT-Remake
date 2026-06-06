@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class NotificationUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void SetUpNotification(PerkSO perkData)
     {
-        
+        // Set up the notification UI based on the perk data
+        // For example, you can set the text, image, etc. based on the perkData
+        Debug.Log("NotificationUI SetUpNotification called with perk: " + perkData.perkName);
     }
 }
