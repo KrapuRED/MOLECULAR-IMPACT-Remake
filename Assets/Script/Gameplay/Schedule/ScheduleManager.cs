@@ -19,6 +19,8 @@ public class ScheduleManager : MonoBehaviour
     [Header("Events")]
     [SerializeField] private TotalActivitiesCountEventSO _totalActivitiesCountEvent;
 
+    private bool _isGeneratingUI = false;
+
     private void Awake()
     {
         if (instance == null)
@@ -29,6 +31,8 @@ public class ScheduleManager : MonoBehaviour
 
     private void Start()
     {
+        CommitmentManager.Instance.RegisterScheduleManager(this);
+
         StatusManager.instance.UpdateUI();
         CurrencyManager.instance.UpdateUI();
         DayCycleManager.instance.UpdateUI();
@@ -40,6 +44,11 @@ public class ScheduleManager : MonoBehaviour
     //Fill ActivitiesUI with the activityDatas
     private void GenerateActvitiesByData()
     {
+        if (_isGeneratingUI)
+            return;
+
+        _isGeneratingUI = true;
+
         foreach (var activityData in _activityDatas)
         {
             _generateActivityCardUI.GenerateActivityCard(activityData, _containerActivities);
@@ -85,6 +94,63 @@ public class ScheduleManager : MonoBehaviour
                 break;
             }
         }
+    }
+
+    public void ApplyCommitmentActivities(List<ChangeActivity> newActivities)
+    {
+        foreach (var newActivity in newActivities)
+        {
+            // Try to find an existing activity with the same ID and replace it
+            bool replaced = false;
+            for (int i = 0; i < _activityDatas.Length; i++)
+            {
+                if (_activityDatas[i].activityID == newActivity.RemoveActivity.activityID)
+                {
+                    _activityDatas[i] = newActivity.ReplaceActivity;
+                    replaced = true;
+                    Debug.Log($"[ScheduleManager] Replaced activity: {newActivity.RemoveActivity.activityName}");
+                    break;
+                }
+            }
+
+            if (!replaced)
+            {
+                bool alreadyExists = false;
+                for (int i = 0; i < _activityDatas.Length; i++)
+                {
+                    if (_activityDatas[i].activityID == newActivity.ReplaceActivity.activityID)
+                    {
+                        alreadyExists = true;
+                        break;
+                    }
+                }
+
+                if (!alreadyExists)
+                {
+                    var list = new List<ActivitySO>(_activityDatas);
+                    list.Add(newActivity.ReplaceActivity);
+                    _activityDatas = list.ToArray();
+                    Debug.Log($"[ScheduleManager] Added new activity: {newActivity.ReplaceActivity.activityName}");
+                }
+                else
+                {
+                    Debug.Log($"[ScheduleManager] Activity '{newActivity.ReplaceActivity.activityName}' already exists, skipping.");
+                }
+            }
+        }
+
+        // Regenerate the activity card UI to reflect changes
+        RegenerateActivityUI();
+    }
+
+    private void RegenerateActivityUI()
+    {
+        // Clear old cards first
+        foreach (Transform child in _containerActivities)
+            Destroy(child.gameObject);
+
+        _isGeneratingUI = false;
+        GenerateActvitiesByData();
     }
 
     public void ReadyActivity()

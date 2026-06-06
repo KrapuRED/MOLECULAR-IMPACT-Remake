@@ -16,7 +16,9 @@ public class ActivitySO : ScriptableObject
     public string activityName;
     public Sprite activityIcon;
 
+    [Header("Activty Enum Config")]
     public ActivityType activityType;
+    public ActivityCategory activityCategory;
 
     public string dialogueWorkDay;
 
@@ -27,6 +29,7 @@ public class ActivitySO : ScriptableObject
         public float valueBenefit;
     }
 
+    [Header("Activty Benefit Config")]
     public Benefit[] benefits;
 
     [Header("Perks")]

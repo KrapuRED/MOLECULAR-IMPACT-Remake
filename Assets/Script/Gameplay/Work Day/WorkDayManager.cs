@@ -60,7 +60,7 @@ public class WorkDayManager : MonoBehaviour
 
         if (!_isSideActivityDone)
         {
-            ActivityManager.instance.ActiveActivity();
+            ActivityManager.instance.OnDoingActivity();
             _isSideActivityDone = true;
             return;
         }

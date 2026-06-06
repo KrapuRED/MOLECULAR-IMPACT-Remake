@@ -20,9 +20,8 @@ public class PerkEffect
 {
     public string effectName;
     public StatusSO statusData;
-    public int effectValue;
+    public float effectValue;
 }
-
 
 [CreateAssetMenu(fileName = "PerkData", menuName = "Game Data/PerkSO")]
 public class PerkSO : ScriptableObject

@@ -67,8 +67,7 @@ public class PerkManager : MonoBehaviour
     [SerializeField] private PerkData[] perkDatas;
     //save permanet perk
     [SerializeField] private List<PerkData> _activePerkPermanentDatas = new List<PerkData>();
-    //save commitment perk
-    [SerializeField] private List<PerkData> _activePerkCommitmentDatas = new List<PerkData>();
+
     //save tempory perk
     [SerializeField] private List<PerkDataTemporary> _activePerkTemporaryDatas =  new List<PerkDataTemporary>();
 
@@ -223,7 +222,6 @@ public class PerkManager : MonoBehaviour
     public void CheckDurationTemporaryPerk()
     {
         //Check indivudual Duration and indivudual temporary have diffrent start and end
-        //Debug.Log("total _activePerkTemporaryDatas : " + _activePerkTemporaryDatas.Count);
         for (int i = _activePerkTemporaryDatas.Count - 1; i >= 0; i--)
         {
             if (_activePerkTemporaryDatas[i] == null)
