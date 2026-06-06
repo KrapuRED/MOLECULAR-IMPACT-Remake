@@ -7642,45 +7642,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: DDOL - GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 7395844623338967400, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: _activityMultipliers.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7395844623338967400, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: _activityMultipliers.Array.data[0].activityType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7395844623338967400, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: _activityMultipliers.Array.data[1].activityType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7395844623338967400, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: _activityMultipliers.Array.data[2].activityType
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7395844623338967400, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: _activityMultipliers.Array.data[0].multiplierValue
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7395844623338967400, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: _activityMultipliers.Array.data[1].multiplierValue
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7395844623338967400, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: _activityMultipliers.Array.data[2].multiplierValue
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7395844623338967400, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: _activityMultipliers.Array.data[0].activityCategory
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7395844623338967400, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: _activityMultipliers.Array.data[1].activityCategory
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7395844623338967400, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: _activityMultipliers.Array.data[2].activityCategory
-      value: 3
+    - target: {fileID: 6351559974551117813, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
+      propertyPath: FinancialRuinID
+      value: perk_financial_ruin
       objectReference: {fileID: 0}
     - target: {fileID: 8413129366532532226, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7723,116 +7687,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: testCharID
-      value: char_bar_01
+      propertyPath: commitments.Array.data[0].characterID
+      value: ' '
       objectReference: {fileID: 0}
     - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: testCommitment
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[1].characterID
-      value: char_bar_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[1].commitmentName
-      value: Part Girl
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[1].minimumInteraction
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].changeActivitys.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[1].requirmentPerks.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].statusMultipliers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[1].statusMultipliers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: 'commitments.Array.data[1].requirmentPerks.Array.data[0]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 999b0814005f8154f9d153624cd09c25, type: 2}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].activityMultipliers.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[1].activityMultipliers.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].statusMultipliers.Array.data[0].statusData
-      value: 
-      objectReference: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].statusMultipliers.Array.data[1].statusData
-      value: 
-      objectReference: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].statusMultipliers.Array.data[2].statusData
-      value: 
-      objectReference: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[1].statusMultipliers.Array.data[0].statusData
-      value: 
-      objectReference: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[1].statusMultipliers.Array.data[1].statusData
-      value: 
-      objectReference: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].changeActivitys.Array.data[0].RemoveActivity
-      value: 
-      objectReference: {fileID: 11400000, guid: 8586080790763994e88bd815811d79ec, type: 2}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].changeActivitys.Array.data[0].ReplaceActivity
-      value: 
-      objectReference: {fileID: 11400000, guid: 825bec5ed97f81448ab12ae3043217ae, type: 2}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].activityMultipliers.Array.data[0].activityType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].statusMultipliers.Array.data[0].multiplierValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].statusMultipliers.Array.data[1].multiplierValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].statusMultipliers.Array.data[2].multiplierValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[1].statusMultipliers.Array.data[0].multiplierValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[1].statusMultipliers.Array.data[1].multiplierValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].activityMultipliers.Array.data[0].multiplierValue
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
-      propertyPath: commitments.Array.data[0].activityMultipliers.Array.data[0].activityCategory
-      value: 1
+      propertyPath: commitments.Array.data[0].commitmentName
+      value: Part Girlfriend
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -16,6 +16,7 @@ MonoBehaviour:
   activityName: Light Exercise at the Gym
   activityIcon: {fileID: 4682389241246632526, guid: 8769613c2419cf14cb3276c33f9f76bb, type: 3}
   activityType: 1
+  activityCategory: 2
   dialogueWorkDay: "You push through the last set as sweat drips to the floor. Muscles
     burn, lungs ache\u2014but beneath the strain, something steadier forms. Each
     repetition is a promise kept to yourself. It\u2019s exhausting, but honest. Tonight,
@@ -36,4 +37,7 @@ MonoBehaviour:
     perkPoint: 1
   - perkName: Endorphin Boost
     perkID: perk_endorphin_boost
+    perkPoint: 1
+  - perkName: Disciplined
+    perkID: perk_disciplined
     perkPoint: 1

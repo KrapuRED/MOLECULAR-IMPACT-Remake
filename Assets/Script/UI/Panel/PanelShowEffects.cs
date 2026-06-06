@@ -37,6 +37,9 @@ public class PanelShowEffects : Panel
     
     public override void Show(string charID, object args2 = null)
     {
+        if (this == null)
+            return;
+
         if (canvasGroup == null)
             canvasGroup = GetComponent<CanvasGroup>();
         

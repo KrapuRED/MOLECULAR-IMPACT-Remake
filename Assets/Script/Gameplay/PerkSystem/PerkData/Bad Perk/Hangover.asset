@@ -16,6 +16,7 @@ MonoBehaviour:
   perkName: Hangover
   perkDescription: "\u201CYour body aches and your mind is foggy after a night of
     excess.\u201D"
+  perkIcon: {fileID: 0}
   perkRequirement: 3
   perkType: 2
   perkDuration: 2
@@ -23,19 +24,19 @@ MonoBehaviour:
   perkEffect:
   - effectName: Decrease stats gain by 10%.
     statusData: {fileID: 11400000, guid: 1c1cd316b8501f6448aedb0a0c80f19c, type: 2}
-    effectValue: 10
+    effectValue: -10
   - effectName: Decrease stats gain by 10%.
     statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
-    effectValue: 10
+    effectValue: -10
   - effectName: Decrease stats gain by 10%.
     statusData: {fileID: 11400000, guid: a2aa9485e610cba45a1e678ec3631661, type: 2}
-    effectValue: 10
+    effectValue: -10
   - effectName: Decrease stats gain by 10%.
     statusData: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
-    effectValue: 10
+    effectValue: -10
   - effectName: Decrease Happiness by 10 Every Day
     statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
-    effectValue: 10
+    effectValue: -10
   - effectName: 'Gambling activities are 50% more effective. '
     statusData: {fileID: 0}
     effectValue: 50

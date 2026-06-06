@@ -140,7 +140,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            dialoguePanel.alpha = 0;
+            HideDialoguePanel();
         }
         Debug.Log("Dialogue ends");
     }

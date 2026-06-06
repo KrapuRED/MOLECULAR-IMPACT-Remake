@@ -23,9 +23,12 @@ public class ShowEffectsContentUI : MonoBehaviour
         durationEffectText.text = perkData.perkDuration.ToString();
         descriptionEffectText.text = perkData.perkDescription;
 
-        foreach (var perkEffect in  perkData.perkEffect)
+        effectsText.text = "";
+
+        for (int i = 0; i < perkData.perkEffect.Length; i++)
         {
-            
+            PerkEffect effect = perkData.perkEffect[i];
+            effectsText.text += $"{effect.effectName}\n";
         }
     }
 }

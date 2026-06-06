@@ -16,6 +16,7 @@ MonoBehaviour:
   perkName: Gambling Addiction
   perkDescription: "\u201CThe thrill of chance has become your chain. Each risk feels
     like hope, but drains you instead.\u201D"
+  perkIcon: {fileID: 0}
   perkRequirement: 10
   perkType: 2
   perkDuration: 1
@@ -32,7 +33,7 @@ MonoBehaviour:
     effectValue: 0
   - effectName: Decrease Happiness by 50% Everyday.
     statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
-    effectValue: 50
+    effectValue: -50
   - effectName: Forced 2 Day Gambling
     statusData: {fileID: 0}
     effectValue: 0

@@ -52,7 +52,7 @@ public class ActivityManager : MonoBehaviour
 
 
         StatusManager.instance.CalculatBenefitToStatus(_activities[_indexActivity], multiplierValue);
-        PerkManager.instance.UpdatePerk(_activities[_indexActivity]);
+        PerkManager.instance.UpdatePerkByActivity(_activities[_indexActivity]);
 
         _indexActivity++;
     }

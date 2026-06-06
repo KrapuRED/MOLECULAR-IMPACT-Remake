@@ -151,12 +151,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3458572522791329245, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
+      propertyPath: m_text
+      value: Effect Status
+      objectReference: {fileID: 0}
+    - target: {fileID: 3458572522791329245, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
       propertyPath: m_fontSize
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3458572522791329245, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
       propertyPath: m_fontSizeBase
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4480962396816998821, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
       propertyPath: m_fontSize
@@ -173,6 +177,10 @@ PrefabInstance:
     - target: {fileID: 4767383352251049800, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206007242633158981, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
+      propertyPath: m_text
+      value: Perk Description
       objectReference: {fileID: 0}
     - target: {fileID: 5206007242633158981, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
       propertyPath: m_fontSize

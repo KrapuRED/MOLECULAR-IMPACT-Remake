@@ -15,7 +15,8 @@ MonoBehaviour:
   perkID: perk_financial_ruin
   perkName: Financial Ruin
   perkDescription: "\u201CYou have bad habbit with money, this will end bad\u201D"
-  perkRequirement: 0
+  perkIcon: {fileID: 0}
+  perkRequirement: 1
   perkType: 2
   perkDuration: 2
   longDuration: 0

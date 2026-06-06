@@ -161,7 +161,6 @@ MonoBehaviour:
   - perkData: {fileID: 11400000, guid: a2a74bcd557242a4a8fcc5248667dd40, type: 2}
     isActive: 0
   _activePerkPermanentDatas: []
-  _activePerkCommitmentDatas: []
   _activePerkTemporaryDatas: []
 --- !u!1 &4337184774875080839
 GameObject:
@@ -254,6 +253,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41bb0857d60151c428a1edac03a6bff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _activityMultipliers:
+  - activityCategory: 1
+    multiplierValue: 1
+  - activityCategory: 2
+    multiplierValue: 1
+  - activityCategory: 3
+    multiplierValue: 1
   _indexActivity: 0
 --- !u!1 &7218173493717241482
 GameObject:
@@ -418,8 +424,20 @@ MonoBehaviour:
     minimumInteraction: 3
     requirmentPerks:
     - {fileID: 11400000, guid: 999b0814005f8154f9d153624cd09c25, type: 2}
-    changeActivitys: []
+    statusMultipliers:
+    - statusData: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
+      multiplierValue: 100
+    - statusData: {fileID: 11400000, guid: 935711f83c0a08d47b3fc1181353bfca, type: 2}
+      multiplierValue: 50
+    changeActivitys:
+    - RemoveActivity: {fileID: 11400000, guid: 8586080790763994e88bd815811d79ec, type: 2}
+      ReplaceActivity: {fileID: 11400000, guid: 825bec5ed97f81448ab12ae3043217ae, type: 2}
+    activityMultipliers:
+    - activityCategory: 1
+      multiplierValue: 40
   activeCommitments: []
+  testCommitment: 0
+  testCharID: char_bar_01
 --- !u!1 &8879559914935373813
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ public class CurrencyManager : MonoBehaviour
     public static CurrencyManager instance;
 
     [Header("Currency Config")]
+    [SerializeField] private string FinancialRuinID;
     [SerializeField] private StatusSO currecnyStatusData;
     [SerializeField] private float startingMoneyCurrency;
     [SerializeField] private int moneyEarnedPerWeek = 300;
@@ -62,12 +63,11 @@ public class CurrencyManager : MonoBehaviour
 
     public void ConsumeMoney(int amount)
     {
+        float previousMoney = _currentMoneyCurrency;
         _currentMoneyCurrency -= amount;
-        
-        if (_currentMoneyCurrency < 0)
-            _currentMoneyCurrency = 0;
 
-        // Update energy UI here if needed
+        MoneyChecker(previousMoney);
+
         UpdateUI();
     }
 
@@ -79,7 +79,10 @@ public class CurrencyManager : MonoBehaviour
         Debug.Log($"ModifierValue for Currency : {PerkManager.instance.GetModifierValue(currecnyStatusData.statusID)}");
         amount += amount * (PerkManager.instance.GetModifierValue(currecnyStatusData.statusID) / 100);
 
+        float previousMoney = _currentMoneyCurrency;
         _currentMoneyCurrency += amount;
+
+        MoneyChecker(previousMoney);
         UpdateUI();
     }
 
@@ -97,5 +100,16 @@ public class CurrencyManager : MonoBehaviour
 
         // Update energy UI here if needed
         UpdateUI();
+    }
+
+    private void MoneyChecker(float previousMoney)
+    {
+        // Crossed into negative -> activate perk
+        if (_currentMoneyCurrency < 0 && previousMoney >= 0)
+            PerkManager.instance.UpdatePerkByCurrency(FinancialRuinID, true);
+
+        // Recovered back to positive -> deactivate perk
+        if (_currentMoneyCurrency >= 0 && previousMoney < 0)
+            PerkManager.instance.UpdatePerkByCurrency(FinancialRuinID, false);
     }
 }

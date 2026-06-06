@@ -140,11 +140,11 @@ public class PerkManager : MonoBehaviour
     }
 
     #region Perk System
-    /* Summary UpdatePerk
+    /* Summary UpdatePerkByActivity
      * Updates perk points based on ActivitySO rewards.
      * This should be called whenever player completes an activity.
      */
-    public void UpdatePerk(ActivitySO activityData)
+    public void UpdatePerkByActivity(ActivitySO activityData)
     {
         if (activityData == null)
         {
@@ -173,6 +173,30 @@ public class PerkManager : MonoBehaviour
             {
                 Debug.LogError($"There no {activityData.perkStatus[i].perkID} inside of Perk Status Dictionary!");
             }
+        }
+    }
+
+    public void UpdatePerkByCurrency(string perkID, bool activate)
+    {
+        Debug.Log($"UpdatePerkByCurrency called with perkID: {perkID}, activate: {activate}");
+
+        if (!_perkStatusDictionary.ContainsKey(perkID))
+        {
+            Debug.LogError($"PerkID '{perkID}' not found in dictionary!");
+            return;
+        }
+
+        if (activate)
+        {
+            _perkStatusDictionary[perkID].perkPoint += 1;
+            var perk = _perkStatusDictionary[perkID];
+            CheckPerkRequirement(perk.perkID, perk.perkPoint);
+        }
+        else
+        {
+            // Force deactivate by resetting points and deactivating in perkDatas
+            _perkStatusDictionary[perkID].perkPoint = 0;
+            DeactivatePerkByID(perkID);
         }
     }
 
@@ -259,6 +283,39 @@ public class PerkManager : MonoBehaviour
         }
     }
 
+    private void DeactivatePerkByID(string perkID)
+    {
+        // Remove from permanent list
+        for (int i = _activePerkPermanentDatas.Count - 1; i >= 0; i--)
+        {
+            if (_activePerkPermanentDatas[i].perkData.perkID == perkID)
+            {
+                _activePerkPermanentDatas[i].isActive = false;
+                _activePerkPermanentDatas.RemoveAt(i);
+            }
+        }
+
+        // Remove from temporary list
+        for (int i = _activePerkTemporaryDatas.Count - 1; i >= 0; i--)
+        {
+            if (_activePerkTemporaryDatas[i].perkData.perkID == perkID)
+            {
+                _activePerkTemporaryDatas[i].isActive = false;
+                _activePerkTemporaryDatas.RemoveAt(i);
+            }
+        }
+
+        // Reset isActive in perkDatas source array
+        for (int i = 0; i < perkDatas.Length; i++)
+        {
+            if (perkDatas[i].perkData.perkID == perkID)
+                perkDatas[i].isActive = false;
+        }
+
+        Debug.Log($"Perk '{perkID}' deactivated due to money recovery.");
+        UpdeteUI(); // refresh HUD
+    }
+
     /* Summary SetPerkDataTemporary
      * Creates and stores a new temporary perk instance.
      * This stores the activation week and calculated expiration week.
@@ -305,7 +362,7 @@ public class PerkManager : MonoBehaviour
 
             foreach (var effect in TemporyPerk.perkData.perkEffect)
             {
-                if (effect.statusData.statusID == statusID)
+                if (effect.statusData != null && effect.statusData.statusID == statusID)
                 {
                     totalModify += effect.effectValue;
                 }
