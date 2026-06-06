@@ -1,12 +1,33 @@
 using UnityEngine;
+using TMPro;
 
 public class NotificationUI : MonoBehaviour
 {
+    [Header("Upper Part")]
+    [SerializeField] private TMP_Text titleEffectText;
+
+    [Header("Midle Part")]
+    [SerializeField] private TMP_Text descriptionEffectText;
+
+    [Header("Bottom Part")]
+    [SerializeField] private TMP_Text effectsText;
 
     public void SetUpNotification(PerkSO perkData)
     {
-        // Set up the notification UI based on the perk data
-        // For example, you can set the text, image, etc. based on the perkData
-        Debug.Log("NotificationUI SetUpNotification called with perk: " + perkData.perkName);
+        titleEffectText.text = perkData.perkName;
+        descriptionEffectText.text = perkData.perkDescription;
+
+        effectsText.text = "";
+
+        for (int i = 0; i < perkData.perkEffect.Length; i++)
+        {
+            PerkEffect effect = perkData.perkEffect[i];
+            effectsText.text += $"{effect.effectName}\n";
+        }
+    }
+
+    public void OnButtonClick()
+    {
+        Destroy(gameObject);
     }
 }

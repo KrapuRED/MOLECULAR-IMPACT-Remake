@@ -120,7 +120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2056442524549512183}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5273738061412917201}
+        m_TargetAssemblyTypeName: NotificationUI, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4058116132514963361
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,7 +525,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2643246204480274453}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5273738061412917201}
+        m_TargetAssemblyTypeName: NotificationUI, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8753957944057873596
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +549,7 @@ GameObject:
   - component: {fileID: 7015775723366892113}
   - component: {fileID: 8935843509445375947}
   - component: {fileID: 7888725791765569787}
-  - component: {fileID: 8567883271405229357}
+  - component: {fileID: 5273738061412917201}
   m_Layer: 5
   m_Name: New UI - Pop Up Perk
   m_TagString: Untagged
@@ -591,7 +615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
---- !u!114 &8567883271405229357
+--- !u!114 &5273738061412917201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -600,12 +624,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8753957944057873596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 910260a44ae700a468fd376e6c4ad205, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e614b4495f88f34fa717e76050afb83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  perkIcon: {fileID: 0}
   titleEffectText: {fileID: 5007904537822267954}
-  durationEffectText: {fileID: 0}
   descriptionEffectText: {fileID: 8412977123331067615}
   effectsText: {fileID: 1369309228795638343}
 --- !u!1 &8765138042517058628
@@ -716,6 +738,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1427220071081931995, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
+      propertyPath: m_Name
+      value: New UI - Pop Up Information Buff/Debuff Text (TMP)
+      objectReference: {fileID: 0}
     - target: {fileID: 2796237576866193380, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
       propertyPath: m_Name
       value: New UI - Pop Up Perk Information Content
@@ -787,6 +813,10 @@ PrefabInstance:
     - target: {fileID: 5206007242633158981, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
       propertyPath: m_fontSizeBase
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5330998258751279840, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
+      propertyPath: m_Name
+      value: New UI - Pop Up Information Description Text (TMP)
       objectReference: {fileID: 0}
     - target: {fileID: 5487505729423634489, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
       propertyPath: m_Pivot.x
@@ -895,6 +925,10 @@ PrefabInstance:
     - target: {fileID: 6105042161204887810, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
       propertyPath: m_Name
       value: Panel - Show Effects Information Duration Text (TMP)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6251583878998309758, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
+      propertyPath: m_Name
+      value: New UI - Pop Up Information Name
       objectReference: {fileID: 0}
     - target: {fileID: 6587253904065194535, guid: 30c188c80e187fd4da4f8eb29aa62c96, type: 3}
       propertyPath: m_AnchorMax.y
