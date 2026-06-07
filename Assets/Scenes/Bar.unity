@@ -1899,6 +1899,10 @@ PrefabInstance:
       propertyPath: commitments.Array.data[0].commitmentName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
+      propertyPath: commitments.Array.data[0].dialogueTrigger
+      value: 
+      objectReference: {fileID: 11400000, guid: 0a2d456d30a4f2b42b559549e99fa085, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2168,7 +2172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9110614058926632122, guid: 32a7def019a3e0f4c92e827355b689a4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -51.603027
+      value: -51.603012
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2457,27 +2461,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bcabe29e235b744a4de1b34612c5c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1912178579 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7527636984259972288, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
-  m_PrefabInstance: {fileID: 1929278182921885518}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1912178581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912178579}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 866ddd3543d1cca4d84af26dbd45e40f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueTriggers:
-  - {fileID: 11400000, guid: f1b03abffcf573645be8e5a08e0645c9, type: 2}
-  - {fileID: 11400000, guid: d778b66c96409eb45a4e79adc7055001, type: 2}
-  - {fileID: 11400000, guid: bf866bbb55357c84882018ff19fe5379, type: 2}
 --- !u!1 &1945772504
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,7 +3140,7 @@ PrefabInstance:
     - target: {fileID: 8010698773224677116, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
       propertyPath: listOfDialogueTrigger
       value: 
-      objectReference: {fileID: 1912178581}
+      objectReference: {fileID: 0}
     - target: {fileID: 8064827452481336077, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3182,9 +3165,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7527636984259972288, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1912178581}
     - targetCorrespondingSourceObject: {fileID: 4268730075594828647, guid: 6fc6474b404ca67428cf3e993d23b161, type: 3}
       insertIndex: 4
       addedObject: {fileID: 1824967411}

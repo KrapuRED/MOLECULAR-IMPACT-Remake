@@ -1,6 +1,7 @@
-using UnityEngine;
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 [System.Serializable]
 public class InteractionData
@@ -65,8 +66,15 @@ public class InteractionManager : MonoBehaviour
         
         GameStateManager.instance.SetInteractionDataGameState(charName, charID); //interaction count++
         int interactionCount =  GameStateManager.instance.GetInteractionCharacterByID(charID);
-        
-        var interactionData = interactionDataList.Find(interactionData => interactionData.characterID == charID);
+
+        var interactions = interactionDataList.Where(data => data.characterID == charID).ToList();
+
+        if (interactions.Count == 0)
+            return;
+
+        int index = Mathf.Min(interactionCount - 1, interactions.Count - 1);
+
+        var interactionData = interactions[index];
 
         interactionData.dialogueTrigger.TriggerDialogue();
         //GameStateManager.instance.SetInteractionDataGameState(charName, charID);
