@@ -17,7 +17,7 @@ MonoBehaviour:
     - character:
         name: Short Lived
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: 1271798195208881824, guid: 2d9dd8df27c002649a73f54349d8e0d1, type: 3}
       onTheRight: 0
       line: Ten years have passed. You lie on a hospital bed, your body failing faster
         than time ever should. Years of late nights, heavy drinking, and neglected
@@ -26,7 +26,7 @@ MonoBehaviour:
     - character:
         name: Short Lived
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: 1271798195208881824, guid: 2d9dd8df27c002649a73f54349d8e0d1, type: 3}
       onTheRight: 0
       line: "Machines surround you, measuring what little strength remains. The old
         watch sits beside you, still counting time you no longer have. There is no
@@ -34,7 +34,7 @@ MonoBehaviour:
     - character:
         name: Short Lived
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: 1271798195208881824, guid: 2d9dd8df27c002649a73f54349d8e0d1, type: 3}
       onTheRight: 0
       line: "The monitor lets out a long, steady tone.\L The line goes flat."
   dialogueChoices: []

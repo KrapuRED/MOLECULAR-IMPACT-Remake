@@ -17,7 +17,7 @@ MonoBehaviour:
     - character:
         name: Beggar
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: 3640421042187713997, guid: 0f10a860f0b31264da65bafbfddb7471, type: 3}
       onTheRight: 0
       line: "Ten years have passed. You sit alone on a cracked stairway, counting
         loose coins in your palm. The city moves around you, indifferent. Expensive
@@ -26,14 +26,14 @@ MonoBehaviour:
     - character:
         name: Beggar
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: 3640421042187713997, guid: 0f10a860f0b31264da65bafbfddb7471, type: 3}
       onTheRight: 0
       line: You ignored the warnings. Debt replaced savings. Pleasure replaced planning.
         By the time you noticed, there was nothing left to recover.
     - character:
         name: Beggar
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: 3640421042187713997, guid: 0f10a860f0b31264da65bafbfddb7471, type: 3}
       onTheRight: 0
       line: "The old watch hangs from your fingers, still ticking.\L Ten years ago,
         you were given a chance to change your life.\L You spent it."

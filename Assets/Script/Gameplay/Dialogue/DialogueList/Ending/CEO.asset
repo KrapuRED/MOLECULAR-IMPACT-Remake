@@ -17,7 +17,7 @@ MonoBehaviour:
     - character:
         name: CEO
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -3113753526686159144, guid: 31daf87e9c20b714f9180ed5f723d500, type: 3}
       onTheRight: 0
       line: Ten years have passed. You stand at the top floor of a glass tower, the
         city stretching beneath you. This life was not built overnight. Long evenings
@@ -26,7 +26,7 @@ MonoBehaviour:
     - character:
         name: CEO
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -3113753526686159144, guid: 31daf87e9c20b714f9180ed5f723d500, type: 3}
       onTheRight: 0
       line: Surrounded by people who valued knowledge and ambition, you sharpened
         your thinking and invested in yourself. Money followed effort. Opportunity
@@ -34,7 +34,7 @@ MonoBehaviour:
     - character:
         name: CEO
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: -3113753526686159144, guid: 31daf87e9c20b714f9180ed5f723d500, type: 3}
       onTheRight: 0
       line: "The old watch rests in your pocket, still ticking\u2014no longer a symbol
         of regret, but of patience.\nTen years ago, you were given a chance to change

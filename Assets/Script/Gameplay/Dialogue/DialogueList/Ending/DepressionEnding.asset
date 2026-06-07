@@ -17,7 +17,7 @@ MonoBehaviour:
     - character:
         name: Deppresion Ending
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: 2521614412307146051, guid: 2737a1849fa9a654f8601da6a0a8b170, type: 3}
       onTheRight: 0
       line: "Ten years have passed. You stand once again at the edge of the same
         skyscraper. The city below glows just as it did before\u2014but the weight
@@ -27,7 +27,7 @@ MonoBehaviour:
     - character:
         name: Deppresion Ending
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: 2521614412307146051, guid: 2737a1849fa9a654f8601da6a0a8b170, type: 3}
       onTheRight: 0
       line: "The old watch rests in your palm, cold and unmoving. The chance you
         were given was real. So were your decisions. In the end, nothing forced you
@@ -35,7 +35,7 @@ MonoBehaviour:
     - character:
         name: Deppresion Ending
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: 2521614412307146051, guid: 2737a1849fa9a654f8601da6a0a8b170, type: 3}
       onTheRight: 0
       line: "Time gave you a second chance\u2026 but it was never time that needed
         to change."

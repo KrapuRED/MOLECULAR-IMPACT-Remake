@@ -17,7 +17,7 @@ MonoBehaviour:
     - character:
         name: Happy
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: 7838683145625251734, guid: 05fac6660299b31459998fce9f7611a7, type: 3}
       onTheRight: 0
       line: "Ten years have passed. You stand in an open field as the sun sinks low,
         painting the sky in warm colors. Silhouettes move beside you\u2014people
@@ -26,7 +26,7 @@ MonoBehaviour:
     - character:
         name: Happy
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: 7838683145625251734, guid: 05fac6660299b31459998fce9f7611a7, type: 3}
       onTheRight: 0
       line: "Your body feels steady. Your mind feels at peace. The life before you
         was shaped by the habits you chose when no one was watching\u2014small, quiet
@@ -34,7 +34,7 @@ MonoBehaviour:
     - character:
         name: Happy
         icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
-      backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+      backGroundImage: {fileID: 7838683145625251734, guid: 05fac6660299b31459998fce9f7611a7, type: 3}
       onTheRight: 0
       line: "The old watch rests in your pocket, still ticking, but no longer heavy.\L
         This time, the future feels right."
