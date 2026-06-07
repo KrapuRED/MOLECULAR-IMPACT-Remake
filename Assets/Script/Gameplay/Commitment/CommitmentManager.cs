@@ -23,6 +23,9 @@ public class CommitmentData
     [Header("Effects on Activities")]
     public List<ChangeActivity> changeActivitys = new();
     public List<ActivityMultipliers> activityMultipliers = new();
+
+    [Header("Commitment Dialogue")]
+    public DialogueTrigger dialogueTrigger;
 }
 
 public class CommitmentManager : MonoBehaviour
@@ -163,6 +166,8 @@ public class CommitmentManager : MonoBehaviour
                 _pendingActivityChanges.AddRange(commitment.changeActivitys);
             }
         }
+
+        commitment.dialogueTrigger.TriggerDialogue();
 
         // 6) Add this commitmentData to the active commitments list
         activeCommitments.Add(commitment);
