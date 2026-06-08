@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: fdd61f1042950b74cbbce9d897183348
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3327785101887395130
+    second: SchedulerUI_0006s_0001s_0000_Intelligence_0
+  - first:
+      213: -694656429583526445
+    second: SchedulerUI_0006s_0001s_0000_Intelligence_1
+  - first:
+      213: 7620911990504085842
+    second: SchedulerUI_0006s_0001s_0000_Intelligence_2
+  - first:
+      213: -2457139235318732056
+    second: SchedulerUI_0006s_0001s_0000_Intelligence_3
+  - first:
+      213: -7405872941868921746
+    second: SchedulerUI_0006s_0001s_0000_Intelligence_4
+  - first:
+      213: 5094640809777288286
+    second: SchedulerUI_0006s_0001s_0000_Intelligence_5
+  - first:
+      213: 5744185562537701096
+    second: SchedulerUI_0006s_0001s_0000_Intelligence_6
+  - first:
+      213: -7754554075613231856
+    second: SchedulerUI_0006s_0001s_0000_Intelligence_7
+  - first:
+      213: -4404466624689119146
+    second: SchedulerUI_0006s_0001s_0000_Intelligence_8
+  - first:
+      213: -7224813882782631490
+    second: SchedulerUI_0006s_0001s_0000_Intelligence_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SchedulerUI_0006s_0001s_0000_Intelligence_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35d5d63beaae2e20800000000000000
+      internalID: 3327785101887395130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchedulerUI_0006s_0001s_0000_Intelligence_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 6
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d59bb168a51c56f0800000000000000
+      internalID: -694656429583526445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchedulerUI_0006s_0001s_0000_Intelligence_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 6
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259d28af31be2c960800000000000000
+      internalID: 7620911990504085842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchedulerUI_0006s_0001s_0000_Intelligence_3
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 6
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eae62b42ec76edd0800000000000000
+      internalID: -2457139235318732056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchedulerUI_0006s_0001s_0000_Intelligence_4
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 6
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6cc9302ccd093990800000000000000
+      internalID: -7405872941868921746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchedulerUI_0006s_0001s_0000_Intelligence_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 20
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54dbfce2dcc3b640800000000000000
+      internalID: 5094640809777288286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchedulerUI_0006s_0001s_0000_Intelligence_6
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eeacfac55277bf40800000000000000
+      internalID: 5744185562537701096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchedulerUI_0006s_0001s_0000_Intelligence_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 6
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0150483572a426490800000000000000
+      internalID: -7754554075613231856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchedulerUI_0006s_0001s_0000_Intelligence_8
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 6
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6506752d0f030e2c0800000000000000
+      internalID: -4404466624689119146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchedulerUI_0006s_0001s_0000_Intelligence_9
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 6
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb93e646d0e4cbb90800000000000000
+      internalID: -7224813882782631490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SchedulerUI_0006s_0001s_0000_Intelligence_0: 3327785101887395130
+      SchedulerUI_0006s_0001s_0000_Intelligence_1: -694656429583526445
+      SchedulerUI_0006s_0001s_0000_Intelligence_2: 7620911990504085842
+      SchedulerUI_0006s_0001s_0000_Intelligence_3: -2457139235318732056
+      SchedulerUI_0006s_0001s_0000_Intelligence_4: -7405872941868921746
+      SchedulerUI_0006s_0001s_0000_Intelligence_5: 5094640809777288286
+      SchedulerUI_0006s_0001s_0000_Intelligence_6: 5744185562537701096
+      SchedulerUI_0006s_0001s_0000_Intelligence_7: -7754554075613231856
+      SchedulerUI_0006s_0001s_0000_Intelligence_8: -4404466624689119146
+      SchedulerUI_0006s_0001s_0000_Intelligence_9: -7224813882782631490
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
