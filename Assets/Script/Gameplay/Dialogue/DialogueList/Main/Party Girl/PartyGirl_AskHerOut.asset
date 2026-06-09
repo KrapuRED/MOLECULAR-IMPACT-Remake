@@ -17,31 +17,31 @@ MonoBehaviour:
     - character:
         name: 
         icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+      backGroundImage: {fileID: 8060284321016725970, guid: dc5b6c9522db7ce45984c561e2f4b3dd, type: 3}
       onTheRight: 0
       line: (Outside the bar, quieter night air)
     - character:
         name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -8637076117102513298, guid: e36157216ec2c474cae30c006f2fa2ab, type: 3}
+      backGroundImage: {fileID: 8060284321016725970, guid: dc5b6c9522db7ce45984c561e2f4b3dd, type: 3}
       onTheRight: 0
       line: Want to go somewhere less noisy next time?
     - character:
         name: Party Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -7161875548082157734, guid: 39fd1c5da95648c4fb8a74bac8e2b9a9, type: 3}
+      backGroundImage: {fileID: 8060284321016725970, guid: dc5b6c9522db7ce45984c561e2f4b3dd, type: 3}
       onTheRight: 1
       line: A real date? Bold move.
     - character:
         name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -8637076117102513298, guid: e36157216ec2c474cae30c006f2fa2ab, type: 3}
+      backGroundImage: {fileID: 8060284321016725970, guid: dc5b6c9522db7ce45984c561e2f4b3dd, type: 3}
       onTheRight: 0
       line: Too bold?
     - character:
         name: Party Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -7161875548082157734, guid: 39fd1c5da95648c4fb8a74bac8e2b9a9, type: 3}
+      backGroundImage: {fileID: 8060284321016725970, guid: dc5b6c9522db7ce45984c561e2f4b3dd, type: 3}
       onTheRight: 1
       line: "No\u2026 I like it."
   dialogueChoices: []

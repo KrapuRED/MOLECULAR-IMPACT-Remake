@@ -63,6 +63,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue, List<DialogueTrigger> dialogueChoices)
     {
+        charImageLeft.sprite = null;
+        charImageRight.sprite = null;
         choicePanel.alpha = 0;
         Debug.Log("Dialogue Start");
         isDialogueActive = true;
@@ -100,17 +102,47 @@ public class DialogueManager : MonoBehaviour
         DialogueLines currLines = lines.Dequeue();
         if (currLines.onTheRight)
         {
-            ShowChar(charImageRight);
             charImageRight.transform.localScale = new Vector2(-1, 1);
             charImageRight.sprite = currLines.character.icon;
-            DimImage(charImageLeft);
+            if (charImageRight.sprite == null)
+            {
+                HideImage(charImageRight);
+            }
+            else if(charImageRight.sprite != null)
+            {
+                ShowChar(charImageRight);
+            }
+            
+            if (charImageLeft.sprite == null)
+            {
+                HideImage(charImageLeft);
+            }
+            else if (charImageLeft.sprite != null)
+            {
+                DimImage(charImageLeft);
+            }
         }
         else
         {
-            ShowChar(charImageLeft);
             charImageLeft.transform.localScale = new Vector2(1, 1);
             charImageLeft.sprite = currLines.character.icon;
-            DimImage(charImageRight);
+            if (charImageLeft.sprite == null)
+            {
+                HideImage(charImageLeft);
+            }
+            else if(charImageLeft.sprite != null)
+            {
+                ShowChar(charImageLeft);
+            }
+            
+            if (charImageRight.sprite == null)
+            {
+                HideImage(charImageRight);
+            }
+            else if(charImageRight.sprite != null)
+            {
+                DimImage(charImageRight);
+            }
         }
         backgroundImage.sprite = currLines.backGroundImage;
         charName.text = currLines.character.name;
@@ -177,13 +209,21 @@ public class DialogueManager : MonoBehaviour
         Color c = image.color;
         c.a = 0.5f;
         image.color = c;
+        image.SetNativeSize();
+    }
+
+    private void HideImage(Image image)
+    {
+        image.enabled = false;
     }
 
     private void ShowChar(Image image)
     {
+        image.enabled = true;
         Color c = image.color;
         c.a = 1f;
         image.color = c;
+        image.SetNativeSize();
     }
     
     private void HideDialoguePanel()
