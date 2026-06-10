@@ -1084,7 +1084,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.00844203, y: 0.07126739}
   m_AnchorMax: {x: 1, y: 0.92873263}
-  m_AnchoredPosition: {x: 0, y: -2.499998}
+  m_AnchoredPosition: {x: 0, y: -2.4999986}
   m_SizeDelta: {x: 0, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &323238550
@@ -7764,7 +7764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
       propertyPath: commitments.Array.data[0].characterID
-      value: ' '
+      value: char_bar_01
       objectReference: {fileID: 0}
     - target: {fileID: 8425011398163916518, guid: b89e8fa06911b964a930b44ae031ca6b, type: 3}
       propertyPath: commitments.Array.data[0].commitmentName

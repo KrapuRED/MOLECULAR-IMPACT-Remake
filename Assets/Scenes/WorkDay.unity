@@ -1073,14 +1073,14 @@ MonoBehaviour:
     dialogueWorkDay: You are late to work and the rest of the day feels tense as
       you struggle to catch up and repair the damage.
     EventStatusEffected: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
-    illustrastionImg: {fileID: -1981711178113112253, guid: 41ceacd263fda4e4eb8d0b3f122bc25e, type: 3}
+    illustrastionImg: {fileID: -328633827656170926, guid: e6bcc688402c1ca46a29534e4260f6d5, type: 3}
     EffectValue: -10
     percentageChance: 20
   - EventName: Normal at Work
     dialogueWorkDay: "You arrive on time, complete your tasks, and leave the office
       without incident. It\u2019s an ordinary day\u2014steady, predictable, and unchanged."
     EventStatusEffected: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
-    illustrastionImg: {fileID: 7783123108577308525, guid: 6c0b68a15bde26d48930f84f74664793, type: 3}
+    illustrastionImg: {fileID: -2052070399228182314, guid: e8d07112930c8fc4eafb843da7db22b4, type: 3}
     EffectValue: -5
     percentageChance: 35
   - EventName: Busy at work
@@ -1088,14 +1088,14 @@ MonoBehaviour:
       slipping away behind a desk. The work gets done, but by the time evening comes,
       your energy is drained and your mind feels heavy.
     EventStatusEffected: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
-    illustrastionImg: {fileID: -7229063679609938981, guid: 58c20237826861a4eac036d9ed7460c7, type: 3}
+    illustrastionImg: {fileID: -1230678978516505283, guid: 2b254fa544987bb49a6c740c9c5882b9, type: 3}
     EffectValue: -15
     percentageChance: 30
   - EventName: Smooth at Work
     dialogueWorkDay: Your tasks flow effortlessly today. Meetings are short, work
       gets done, and you leave the office feeling light and unburdened.
     EventStatusEffected: {fileID: 11400000, guid: 0c760d08aabb8664cab787229a4c9323, type: 2}
-    illustrastionImg: {fileID: -8577951145411897643, guid: 5db231336746e8f468f4bdbb843df000, type: 3}
+    illustrastionImg: {fileID: 1753425739411613638, guid: 47c7eaa79c4353543a7f8107609ee375, type: 3}
     EffectValue: 0
     percentageChance: 15
 --- !u!1 &1258063589
