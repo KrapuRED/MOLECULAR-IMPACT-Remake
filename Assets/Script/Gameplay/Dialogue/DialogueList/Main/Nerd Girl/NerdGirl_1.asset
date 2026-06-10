@@ -17,38 +17,38 @@ MonoBehaviour:
     - character:
         name: 
         icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 0
       line: (Quiet library. Pages turning, faint footsteps.)
     - character:
         name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -8637076117102513298, guid: e36157216ec2c474cae30c006f2fa2ab, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 0
       line: "You\u2019ve been at that table for hours."
     - character:
         name: Nerd Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -7320651596997933905, guid: 1884c933b0b3e814d8120e9f2ce34349, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 1
       line: "Oh\u2014! Please don\u2019t talk so loud\u2026"
     - character:
         name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
-      onTheRight: 1
+        icon: {fileID: -8637076117102513298, guid: e36157216ec2c474cae30c006f2fa2ab, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
+      onTheRight: 0
       line: Sorry. What are you reading?
     - character:
         name: Nerd Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -7320651596997933905, guid: 1884c933b0b3e814d8120e9f2ce34349, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 1
       line: "Sci-fi. It\u2019s\u2026 dense. Most people don\u2019t get into it."
     - character:
         name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
-      onTheRight: 1
+        icon: {fileID: -8637076117102513298, guid: e36157216ec2c474cae30c006f2fa2ab, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
+      onTheRight: 0
       line: "Maybe I\u2019m not most people."
     - character:
         name: Nerd Girl

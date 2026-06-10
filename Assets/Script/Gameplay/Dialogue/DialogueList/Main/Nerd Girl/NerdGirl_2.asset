@@ -17,37 +17,37 @@ MonoBehaviour:
     - character:
         name: 
         icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 0
       line: (Stack of books beside her. She slides one over.)
     - character:
         name: Nerd Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -7320651596997933905, guid: 1884c933b0b3e814d8120e9f2ce34349, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 0
       line: "This one\u2019s easier to start with."
     - character:
         name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -8637076117102513298, guid: e36157216ec2c474cae30c006f2fa2ab, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 1
       line: You picked it for me?
     - character:
         name: Nerd Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -7320651596997933905, guid: 1884c933b0b3e814d8120e9f2ce34349, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 0
       line: "Y-Yes. Don\u2019t misunderstand, I just thought\u2014"
     - character:
         name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -8637076117102513298, guid: e36157216ec2c474cae30c006f2fa2ab, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 1
       line: I appreciate it.
     - character:
         name: Nerd Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -7320651596997933905, guid: 1884c933b0b3e814d8120e9f2ce34349, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 0
       line: "\u2026Tell me what you think when you\u2019re done.\L"
   dialogueChoices: []

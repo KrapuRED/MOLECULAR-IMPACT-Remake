@@ -753,22 +753,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6470255418303629725, guid: 32a7def019a3e0f4c92e827355b689a4, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+    - target: {fileID: 6801280532422063369, guid: 32a7def019a3e0f4c92e827355b689a4, type: 3}
+      propertyPath: m_Alpha
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7135980005624961369, guid: 32a7def019a3e0f4c92e827355b689a4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 453882120}
-    - target: {fileID: 7135980005624961369, guid: 32a7def019a3e0f4c92e827355b689a4, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DisplayNextDialogue
-      objectReference: {fileID: 0}
-    - target: {fileID: 9110614058926632122, guid: 32a7def019a3e0f4c92e827355b689a4, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -51.603012
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -942,8 +934,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueTriggers:
-  - {fileID: 11400000, guid: f5e1f53379c040d41a9454c637373404, type: 2}
-  - {fileID: 11400000, guid: 9b6a6407258a7bc41967e7abb222c906, type: 2}
+  - {fileID: 11400000, guid: 10396073af8368447899a1fd006fb706, type: 2}
+  - {fileID: 11400000, guid: 4e08a6a57e2ea98479981784a6907ea5, type: 2}
 --- !u!1 &1968410107
 GameObject:
   m_ObjectHideFlags: 0

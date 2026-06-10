@@ -17,31 +17,31 @@ MonoBehaviour:
     - character:
         name: 
         icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+      backGroundImage: {fileID: 2556307546612451020, guid: 76bfa90229963d741acebf322dfe663b, type: 3}
       onTheRight: 0
       line: (Cooling down, sitting against the wall)
     - character:
         name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -8637076117102513298, guid: e36157216ec2c474cae30c006f2fa2ab, type: 3}
+      backGroundImage: {fileID: 2556307546612451020, guid: 76bfa90229963d741acebf322dfe663b, type: 3}
       onTheRight: 0
       line: I kept up today.
     - character:
         name: Athletic Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -238943321961459314, guid: 9b161ebf30038ff44b9c19dda2d7a562, type: 3}
+      backGroundImage: {fileID: 2556307546612451020, guid: 76bfa90229963d741acebf322dfe663b, type: 3}
       onTheRight: 1
       line: "Barely\u2014but yeah. Not bad."
     - character:
         name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -8637076117102513298, guid: e36157216ec2c474cae30c006f2fa2ab, type: 3}
+      backGroundImage: {fileID: 2556307546612451020, guid: 76bfa90229963d741acebf322dfe663b, type: 3}
       onTheRight: 0
       line: High praise from you.
     - character:
         name: Athletic Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -238943321961459314, guid: 9b161ebf30038ff44b9c19dda2d7a562, type: 3}
+      backGroundImage: {fileID: 2556307546612451020, guid: 76bfa90229963d741acebf322dfe663b, type: 3}
       onTheRight: 1
       line: Means you earned it.
   dialogueChoices: []

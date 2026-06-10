@@ -17,31 +17,31 @@ MonoBehaviour:
     - character:
         name: 
         icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+      backGroundImage: {fileID: 2556307546612451020, guid: 76bfa90229963d741acebf322dfe663b, type: 3}
       onTheRight: 0
       line: (Sound of weights and sneakers squeaking.)
     - character:
         name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -8637076117102513298, guid: e36157216ec2c474cae30c006f2fa2ab, type: 3}
+      backGroundImage: {fileID: 2556307546612451020, guid: 76bfa90229963d741acebf322dfe663b, type: 3}
       onTheRight: 0
       line: "You\u2019ve been going nonstop."
     - character:
         name: Athletic Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -238943321961459314, guid: 9b161ebf30038ff44b9c19dda2d7a562, type: 3}
+      backGroundImage: {fileID: 2556307546612451020, guid: 76bfa90229963d741acebf322dfe663b, type: 3}
       onTheRight: 1
       line: What, you counting my reps?
     - character:
         name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -8637076117102513298, guid: e36157216ec2c474cae30c006f2fa2ab, type: 3}
+      backGroundImage: {fileID: 2556307546612451020, guid: 76bfa90229963d741acebf322dfe663b, type: 3}
       onTheRight: 0
       line: Just impressed.
     - character:
         name: Athletic Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -238943321961459314, guid: 9b161ebf30038ff44b9c19dda2d7a562, type: 3}
+      backGroundImage: {fileID: 2556307546612451020, guid: 76bfa90229963d741acebf322dfe663b, type: 3}
       onTheRight: 1
       line: Then stop watching and try it yourself.
   dialogueChoices: []

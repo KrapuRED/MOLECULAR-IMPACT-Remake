@@ -17,37 +17,37 @@ MonoBehaviour:
     - character:
         name: 
         icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 0
       line: (They sit side by side, whispering over the same book.)
     - character:
         name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -8637076117102513298, guid: e36157216ec2c474cae30c006f2fa2ab, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 0
       line: "I\u2019m stuck here."
     - character:
         name: Nerd Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -7320651596997933905, guid: 1884c933b0b3e814d8120e9f2ce34349, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 1
       line: "You skipped a detail earlier. Look\u2014"
     - character:
         name: 
         icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 0
       line: (leans closer, pointing at the page)
     - character:
         name: Novar
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -8637076117102513298, guid: e36157216ec2c474cae30c006f2fa2ab, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 0
       line: "You\u2019re really into this."
     - character:
         name: Nerd Girl
-        icon: {fileID: 0}
-      backGroundImage: {fileID: 0}
+        icon: {fileID: -7320651596997933905, guid: 1884c933b0b3e814d8120e9f2ce34349, type: 3}
+      backGroundImage: {fileID: 4347836666197109457, guid: 04d04fdad5f61e348a0f8c1a3f4f9dfa, type: 3}
       onTheRight: 1
       line: "Of course. And now\u2026 you are too."
   dialogueChoices: []
