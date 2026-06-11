@@ -17,6 +17,7 @@ public class EndingManager : MonoBehaviour
 
     [SerializeField] private ListOfDialogueTrigger listOfDialogueTrigger;
     [SerializeField] private GameObject summaryPanel;
+    [SerializeField] private EndingCalculation endingCalculation;
 
     private void Start()
     {
@@ -25,7 +26,7 @@ public class EndingManager : MonoBehaviour
 
     public void EndingCutsceneTrigger()
     {
-        listOfDialogueTrigger.TriggerEndingDialogueList(1);
+        listOfDialogueTrigger.TriggerEndingDialogueList(endingCalculation.CheckEnding());
         Debug.Log("Tes Start");
     }
 

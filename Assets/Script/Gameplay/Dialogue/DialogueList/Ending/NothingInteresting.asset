@@ -16,7 +16,7 @@ MonoBehaviour:
     dialogueLines:
     - character:
         name: Nothing Interesting
-        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+        icon: {fileID: -2052070399228182314, guid: e8d07112930c8fc4eafb843da7db22b4, type: 3}
       backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: "Ten years have passed. You sit at the same office desk, under the same
@@ -25,7 +25,7 @@ MonoBehaviour:
         feels meaningful either."
     - character:
         name: Nothing Interesting
-        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+        icon: {fileID: -2052070399228182314, guid: e8d07112930c8fc4eafb843da7db22b4, type: 3}
       backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: The watch rests in your drawer, ticking softly between stacks of paperwork.
@@ -33,7 +33,7 @@ MonoBehaviour:
         anywhere new.
     - character:
         name: Nothing Interesting
-        icon: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
+        icon: {fileID: -2052070399228182314, guid: e8d07112930c8fc4eafb843da7db22b4, type: 3}
       backGroundImage: {fileID: -681178344135522496, guid: 7a20e9ef1e160f14c99b5991eb9f9b04, type: 3}
       onTheRight: 0
       line: Ten years ago, you were given a chance to change your life. In the end,

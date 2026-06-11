@@ -81,6 +81,46 @@ public class EndingCalculation : MonoBehaviour
     }
 
 
+    //public int CheckEnding()
+    //{
+    //    Debug.Log("Check Ending");
+    //    if (currencyVal < 0)
+    //    {
+    //        if (happinessVal < happinessHigh)
+    //            return 1; //Depression Ending
+
+    //        if (happinessVal >= happinessHigh && PerkManager.instance.IsPerkActive(gamblingAddictionID))
+    //            return 2; //Beggar Ending
+    //    }
+    //    if (PerkManager.instance.IsPerkActive(alcoholAddictionID) && fitnessVal < statusLow)
+    //    {
+    //        return 3; //Short Lived Ending
+    //    }
+    //    if (PerkManager.instance.IsPerkActive(gymRatsCircleID) || PerkManager.instance.IsPerkActive(heavyExcerciseID) || PerkManager.instance.IsPerkActive(scholarCircleID) || PerkManager.instance.IsPerkActive(dedicatedBookReadingID))
+    //    {
+    //        if (happinessVal >= happinessHigh)
+    //        {
+    //            if (PerkManager.instance.IsPerkActive(heavyExcerciseID) && PerkManager.instance.IsPerkActive(gymRatsCircleID) && fitnessVal >= statusHigh)
+    //            {
+    //                return 4; //Athlete Life Ending
+    //            }
+    //            else if (PerkManager.instance.IsPerkActive(dedicatedBookReadingID) && PerkManager.instance.IsPerkActive(scholarCircleID) && intelligenceVal >= statusHigh)
+    //            {
+    //                return 5; //CEO Ending
+    //            }
+
+    //        }
+
+    //    }
+
+    //    if (!PerkManager.instance.IsThereAnyBadTag())
+    //    {
+    //        return 6; //Happy Life Ending
+    //    }
+    //    //Nothing Interesting Ending Factor
+    //    return 0;
+    //}
+
     public int CheckEnding()
     {
         Debug.Log("Check Ending");
@@ -89,29 +129,29 @@ public class EndingCalculation : MonoBehaviour
             if (happinessVal < happinessHigh)
                 return 1; //Depression Ending
 
-            if (happinessVal >= happinessHigh && PerkManager.instance.IsPerkActive(gamblingAddictionID))
+            if (happinessVal >= happinessHigh)
                 return 2; //Beggar Ending
         }
         if (PerkManager.instance.IsPerkActive(alcoholAddictionID) && fitnessVal < statusLow)
         {
             return 3; //Short Lived Ending
         }
-        if (PerkManager.instance.IsPerkActive(gymRatsCircleID) || PerkManager.instance.IsPerkActive(heavyExcerciseID) || PerkManager.instance.IsPerkActive(scholarCircleID) || PerkManager.instance.IsPerkActive(dedicatedBookReadingID))
+        //if (PerkManager.instance.IsPerkActive(gymRatsCircleID) || PerkManager.instance.IsPerkActive(heavyExcerciseID) || PerkManager.instance.IsPerkActive(scholarCircleID) || PerkManager.instance.IsPerkActive(dedicatedBookReadingID))
+        //{
+        if (happinessVal >= happinessHigh)
         {
-            if (happinessVal >= happinessHigh)
+            if (fitnessVal >= statusHigh)
             {
-                if (PerkManager.instance.IsPerkActive(heavyExcerciseID) && PerkManager.instance.IsPerkActive(gymRatsCircleID) && fitnessVal >= statusHigh)
-                {
-                    return 4; //Athlete Life Ending
-                }
-                else if (PerkManager.instance.IsPerkActive(dedicatedBookReadingID) && PerkManager.instance.IsPerkActive(scholarCircleID) && intelligenceVal >= statusHigh)
-                {
-                    return 5; //CEO Ending
-                }
-
+                return 4; //Athlete Life Ending
+            }
+            else if (intelligenceVal >= statusHigh)
+            {
+                return 5; //CEO Ending
             }
 
         }
+
+        //}
 
         if (!PerkManager.instance.IsThereAnyBadTag())
         {

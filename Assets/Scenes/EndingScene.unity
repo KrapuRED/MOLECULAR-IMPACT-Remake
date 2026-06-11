@@ -346,6 +346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listOfDialogueTrigger: {fileID: 202888367}
   summaryPanel: {fileID: 491599751}
+  endingCalculation: {fileID: 202888368}
 --- !u!4 &202888366
 Transform:
   m_ObjectHideFlags: 0
@@ -414,12 +415,12 @@ MonoBehaviour:
   fitnessVal: 0
   intelligenceVal: 0
   currencyVal: 0
-  happinessHigh: 0
-  happinessLow: 0
-  statusHigh: 0
-  statusLow: 0
+  happinessHigh: 70
+  happinessLow: 40
+  statusHigh: 200
+  statusLow: 100
   gamblingAddictionID: 
-  alcoholAddictionID: 
+  alcoholAddictionID: perk_alcohol_addiction
   gymRatsCircleID: 
   heavyExcerciseID: 
   scholarCircleID: 
@@ -523,6 +524,14 @@ PrefabInstance:
     - target: {fileID: 7135980005624961369, guid: 32a7def019a3e0f4c92e827355b689a4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: DisplayNextDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734977232789506450, guid: 32a7def019a3e0f4c92e827355b689a4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.3300781
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734977232789506450, guid: 32a7def019a3e0f4c92e827355b689a4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15.02002
       objectReference: {fileID: 0}
     - target: {fileID: 8858115133898189955, guid: 32a7def019a3e0f4c92e827355b689a4, type: 3}
       propertyPath: m_IsActive
